@@ -188,7 +188,7 @@ p{margin:0}
           <button type="button" class="chip" id="d-plugin" data-d="Plugin" aria-pressed="false">Engine / DCC plugin</button>
         </div>
       </div>
-      <div class="cards" id="cards"><section class="static-tab" id="static-2d"><h2>2D Art &amp; Concept</h2><p class="intro">Image models for concept exploration, key art, paintovers, UI and LiveOps art. 2D is the most mature AI discipline, but many client contracts still limit AI to exploration and keep it out of final assets.</p><p><strong>Typical gain:</strong> 40–60% (render-stage time; 10–20% across a whole project (Room 8, measured))</p><p><strong>Where AI fits best:</strong> Exploring many concept options, combining multiple references, unifying artist-made pieces, style-locked LiveOps and UA art volume.</p><p><strong>Integration notes:</strong> Train a style model or LoRA per client or IP. Run open models (Qwen, FLUX, SDXL) locally through ComfyUI for work under NDA. Keep artist overpaint as the final step for quality and copyright.</p><div class="cards"><article class="card">
+      <div class="cards" id="cards"><section class="static-tab" id="static-2d"><h2>2D Art &amp; Concept</h2><p class="intro">Image models for concept exploration, key art, paintovers, UI and LiveOps art. 2D is the most mature AI discipline, but many client contracts still limit AI to exploration and keep it out of final assets.</p><p><strong>Typical gain:</strong> 40–60% (render-stage time; 10–20% across a whole project (studio-measured))</p><p><strong>Where AI fits best:</strong> Exploring many concept options, combining multiple references, unifying artist-made pieces, style-locked LiveOps and UA art volume.</p><p><strong>Integration notes:</strong> Train a style model or LoRA per client or IP. Run open models (Qwen, FLUX, SDXL) locally through ComfyUI for work under NDA. Keep artist overpaint as the final step for quality and copyright.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Qwen Image / Qwen Image Edit 2509</h3><span class="vendor">Alibaba</span></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span></div>
@@ -200,8 +200,8 @@ p{margin:0}
     </div>
     <div class="eff">
       <span class="val">40–60%</span>
-      <span class="lbl">render-stage time when unifying artist pieces, part of Room 8's 2D toolset</span>
-      <span class="meta"><span class="grade measured">Measured</span>Room 8 Group</span>
+      <span class="lbl">render-stage time when unifying artist pieces, in a studio's 2D toolset</span>
+      <span class="meta"><span class="grade measured">Measured</span>Studio case study</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -216,7 +216,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">30–50%</span>
       <span class="lbl">sketch-to-render and variation passes</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 render-stage data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio render-stage data</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -231,7 +231,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">20–40%</span>
       <span class="lbl">on style-locked variations once a fine-tune is trained</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 2D data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio 2D data</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -261,7 +261,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">30–50%</span>
       <span class="lbl">paintover, extension and UI mock-up passes</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 render-stage data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio render-stage data</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -339,7 +339,7 @@ p{margin:0}
       <span class="meta"><span class="grade est">Estimate</span>No published figure</span>
     </div>
   </article></div></section>
-<section class="static-tab" id="static-3d"><h2>3D Modeling</h2><p class="intro">Image- and text-to-3D generators for blockouts, high-poly starting points and prop variations. Close to production for props and simple characters. Not ready for hero, modular or multi-material assets.</p><p><strong>Typical gain:</strong> 10–15% (faster prop production overall (Room 8, measured); blockout steps gain more)</p><p><strong>Where AI fits best:</strong> Blockouts from 2D concepts, high-poly hypotheses, prop and character variations, filling angles missing from concept art.</p><p><strong>Integration notes:</strong> Generate in Hunyuan3D, Tripo or Rodin, then retopologize, UV and texture. Check scale, pivots, LODs and collision in-engine. Tripo and TRELLIS can run locally for work under NDA.</p><div class="cards"><article class="card">
+<section class="static-tab" id="static-3d"><h2>3D Modeling</h2><p class="intro">Image- and text-to-3D generators for blockouts, high-poly starting points and prop variations. Close to production for props and simple characters. Not ready for hero, modular or multi-material assets.</p><p><strong>Typical gain:</strong> 10–15% (faster prop production overall (studio-measured); blockout steps gain more)</p><p><strong>Where AI fits best:</strong> Blockouts from 2D concepts, high-poly hypotheses, prop and character variations, filling angles missing from concept art.</p><p><strong>Integration notes:</strong> Generate in Hunyuan3D, Tripo or Rodin, then retopologize, UV and texture. Check scale, pivots, LODs and collision in-engine. Tripo and TRELLIS can run locally for work under NDA.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Hunyuan3D 3.0 / 3.1</h3><span class="vendor">Tencent</span></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
@@ -351,8 +351,8 @@ p{margin:0}
     </div>
     <div class="eff">
       <span class="val">10–15%</span>
-      <span class="lbl">faster prop production; Room 8 tested it for blockout and high-poly</span>
-      <span class="meta"><span class="grade measured">Measured</span>Room 8 Group</span>
+      <span class="lbl">faster prop production; tested in production for blockout and high-poly</span>
+      <span class="meta"><span class="grade measured">Measured</span>Studio case study</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -366,8 +366,8 @@ p{margin:0}
     </div>
     <div class="eff">
       <span class="val">10–15%</span>
-      <span class="lbl">faster prop production; part of Room 8's local 3D setup</span>
-      <span class="meta"><span class="grade measured">Measured</span>Room 8 Group</span>
+      <span class="lbl">faster prop production; used in a studio's local 3D setup</span>
+      <span class="meta"><span class="grade measured">Measured</span>Studio case study</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -382,7 +382,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">20–35%</span>
       <span class="lbl">on character blockout to a rig-ready base</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 3D data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio 3D data</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -397,7 +397,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">15–30%</span>
       <span class="lbl">on prop production</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 3D data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio 3D data</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -412,7 +412,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">10–25%</span>
       <span class="lbl">on blockout and high-poly starting points</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 3D data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio 3D data</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -460,7 +460,7 @@ p{margin:0}
       <span class="meta"><span class="grade est">Estimate</span>No published figure</span>
     </div>
   </article></div></section>
-<section class="static-tab" id="static-tex"><h2>Retopo, UVs &amp; Texturing</h2><p class="intro">Tools that turn dense AI or sculpted meshes into engine-ready assets: retopology, UV unwrapping and PBR materials. Room 8 reports its most reliable 3D savings at this step.</p><p><strong>Typical gain:</strong> 30–40% (average saving on low-poly optimisation; up to 80% on one character (Room 8, measured))</p><p><strong>Where AI fits best:</strong> Low-poly versions for engines, semantic UVs, tileable materials from a text prompt or photo, retexturing to a new style.</p><p><strong>Integration notes:</strong> Use for repetitive, precise steps. Keep a technical artist checking edge flow before rigging, and check texel density and channel packing for each target platform.</p><div class="cards"><article class="card">
+<section class="static-tab" id="static-tex"><h2>Retopo, UVs &amp; Texturing</h2><p class="intro">Tools that turn dense AI or sculpted meshes into engine-ready assets: retopology, UV unwrapping and PBR materials. Studios report their most reliable 3D savings at this step.</p><p><strong>Typical gain:</strong> 30–40% (average saving on low-poly optimisation; up to 80% on one character (studio-measured))</p><p><strong>Where AI fits best:</strong> Low-poly versions for engines, semantic UVs, tileable materials from a text prompt or photo, retexturing to a new style.</p><p><strong>Integration notes:</strong> Use for repetitive, precise steps. Keep a technical artist checking edge flow before rigging, and check texel density and channel packing for each target platform.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Hunyuan3D Studio</h3><span class="vendor">Tencent</span></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
@@ -473,7 +473,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">30–40%</span>
       <span class="lbl">on low-poly and UV steps</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 low-poly data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio low-poly data</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -488,7 +488,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">30–40%</span>
       <span class="lbl">on retopology</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 low-poly data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio low-poly data</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -503,7 +503,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">30–40%</span>
       <span class="lbl">on low-poly optimisation</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 low-poly data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio low-poly data</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -642,7 +642,7 @@ p{margin:0}
       <span class="meta"><span class="grade est">Estimate</span>No published figure</span>
     </div>
   </article></div></section>
-<section class="static-tab" id="static-anim"><h2>Animation &amp; Mocap</h2><p class="intro">Motion synthesis, markerless capture, AI-assisted keyframing and facial animation. This tab has the largest measured gains in the catalogue, and Room 8 grew its animation team rather than shrinking it.</p><p><strong>Typical gain:</strong> ~88% (stance set from 26 min of mocap in ~1 week vs 2+ months; lip-sync for a new language 80% faster (Room 8, measured))</p><p><strong>Where AI fits best:</strong> Stance and transition coverage, locomotion variants, lip-sync in many languages, previs mocap without a stage, player emotes.</p><p><strong>Integration notes:</strong> Lock a retargeting skeleton first. Use AI for coverage and base layers, and keep animators on performance and polish. Treat markerless capture as previs unless it is cleaned.</p><div class="cards"><article class="card">
+<section class="static-tab" id="static-anim"><h2>Animation &amp; Mocap</h2><p class="intro">Motion synthesis, markerless capture, AI-assisted keyframing and facial animation. This tab has the largest measured gains in the catalogue, and one studio grew its animation team rather than shrinking it.</p><p><strong>Typical gain:</strong> ~88% (stance set from 26 min of mocap in ~1 week vs 2+ months; lip-sync for a new language 80% faster (studio-measured))</p><p><strong>Where AI fits best:</strong> Stance and transition coverage, locomotion variants, lip-sync in many languages, previs mocap without a stage, player emotes.</p><p><strong>Integration notes:</strong> Lock a retargeting skeleton first. Use AI for coverage and base layers, and keep animators on performance and polish. Treat markerless capture as previs unless it is cleaned.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Motorica</h3><span class="vendor">Motorica (Stockholm)</span></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">Plugin</span></div>
@@ -655,7 +655,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">~88%</span>
       <span class="lbl">all stances in ~1 week vs 2+ months (AAA combat game)</span>
-      <span class="meta"><span class="grade measured">Measured</span>Room 8 Group</span>
+      <span class="meta"><span class="grade measured">Measured</span>Studio case study</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -670,7 +670,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">80%</span>
       <span class="lbl">lip-sync to a new language: 1 day instead of 5</span>
-      <span class="meta"><span class="grade measured">Measured</span>Room 8 Group</span>
+      <span class="meta"><span class="grade measured">Measured</span>Studio case study</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -685,7 +685,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">60–80%</span>
       <span class="lbl">on dialogue facial passes</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 JALI data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio JALI data</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -884,7 +884,7 @@ p{margin:0}
       <span class="meta"><span class="grade est">Estimate</span>No published figure</span>
     </div>
   </article></div></section>
-<section class="static-tab" id="static-engine"><h2>Engine Integration &amp; Code</h2><p class="intro">Coding agents and AI built into Unity and Unreal. Both engines adopted the Model Context Protocol (MCP) in 2026, so agents can now edit scenes, assets and Blueprints directly rather than only writing code.</p><p><strong>Typical gain:</strong> 15–20% (faster delivery on UI logic, refactoring and integration; 50–70% less boilerplate (Room 8, measured))</p><p><strong>Where AI fits best:</strong> UI logic, refactoring, scripting, API integration, getting up to speed on unfamiliar engines, scene setup, test boilerplate, commit and documentation work.</p><p><strong>Integration notes:</strong> Use private or local LLMs for client code. Require code review on everything AI writes. Keep architecture-level code human-written, which is Room 8's QA policy.</p><div class="cards"><article class="card">
+<section class="static-tab" id="static-engine"><h2>Engine Integration &amp; Code</h2><p class="intro">Coding agents and AI built into Unity and Unreal. Both engines adopted the Model Context Protocol (MCP) in 2026, so agents can now edit scenes, assets and Blueprints directly rather than only writing code.</p><p><strong>Typical gain:</strong> 15–20% (faster delivery on UI logic, refactoring and integration; 50–70% less boilerplate (studio-measured))</p><p><strong>Where AI fits best:</strong> UI logic, refactoring, scripting, API integration, getting up to speed on unfamiliar engines, scene setup, test boilerplate, commit and documentation work.</p><p><strong>Integration notes:</strong> Use private or local LLMs for client code. Require code review on everything AI writes. Keep architecture-level code human-written, a common studio QA policy.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Unity AI (Assistant, Gateway, MCP)</h3><span class="vendor">Unity</span></div>
       <div class="deploy"><span class="dep">Plugin</span><span class="dep">Cloud</span></div>
@@ -897,7 +897,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">15–20%</span>
       <span class="lbl">engineering delivery in proven areas</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 engineering data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio engineering data</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -912,7 +912,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">15–20%</span>
       <span class="lbl">on scene setup and engine tasks</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 engineering data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio engineering data</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -927,7 +927,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">15–20%</span>
       <span class="lbl">on UI logic and integration tasks</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 engineering data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio engineering data</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -942,7 +942,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">50–70%</span>
       <span class="lbl">less boilerplate and admin work</span>
-      <span class="meta"><span class="grade measured">Measured</span>Room 8 Group (QA engineering)</span>
+      <span class="meta"><span class="grade measured">Measured</span>Studio case study (QA engineering)</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -957,7 +957,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">15–20%</span>
       <span class="lbl">on scripting and refactoring</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 engineering data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio engineering data</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -1017,7 +1017,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">15–20%</span>
       <span class="lbl">UI logic in an unfamiliar custom engine, quality unchanged</span>
-      <span class="meta"><span class="grade measured">Measured</span>Room 8 Group (private cloud LLM)</span>
+      <span class="meta"><span class="grade measured">Measured</span>Studio case study (private cloud LLM)</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -1168,7 +1168,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">100s of hrs</span>
       <span class="lbl">saved upscaling UI textures for a console port</span>
-      <span class="meta"><span class="grade measured">Measured</span>Room 8 Group</span>
+      <span class="meta"><span class="grade measured">Measured</span>Studio case study</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -1183,10 +1183,10 @@ p{margin:0}
     <div class="eff">
       <span class="val">50–80%</span>
       <span class="lbl">on batch texture upscaling</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 upscaling data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio upscaling data</span>
     </div>
   </article></div></section>
-<section class="static-tab" id="static-audio"><h2>Audio &amp; Voice</h2><p class="intro">Text-to-speech, voice cloning, sound effects and music generation. Use is held back by licensing and performer agreements more than by quality.</p><p><strong>Typical gain:</strong> 66% (narration recording time saved, 20 of 30 hours (Room 8, measured))</p><p><strong>Where AI fits best:</strong> Scratch and placeholder VO, internal and demo narration, sound-effect one-shots, background music, runtime voices for AI characters.</p><p><strong>Integration notes:</strong> Clone voices only with written consent. The SAG-AFTRA 2025 agreement requires consent and disclosure, and pays at least 7.5× scale for real-time use. Check each tool's commercial tier.</p><div class="cards"><article class="card">
+<section class="static-tab" id="static-audio"><h2>Audio &amp; Voice</h2><p class="intro">Text-to-speech, voice cloning, sound effects and music generation. Use is held back by licensing and performer agreements more than by quality.</p><p><strong>Typical gain:</strong> 66% (narration recording time saved, 20 of 30 hours (studio-measured))</p><p><strong>Where AI fits best:</strong> Scratch and placeholder VO, internal and demo narration, sound-effect one-shots, background music, runtime voices for AI characters.</p><p><strong>Integration notes:</strong> Clone voices only with written consent. The SAG-AFTRA 2025 agreement requires consent and disclosure, and pays at least 7.5× scale for real-time use. Check each tool's commercial tier.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>ElevenLabs</h3><span class="vendor">ElevenLabs</span></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
@@ -1199,14 +1199,14 @@ p{margin:0}
     <div class="eff">
       <span class="val">66%</span>
       <span class="lbl">recording time for narrated presentations (20 of 30 hrs)</span>
-      <span class="meta"><span class="grade measured">Measured</span>Room 8 Group</span>
+      <span class="meta"><span class="grade measured">Measured</span>Studio case study</span>
     </div>
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Microsoft VibeVoice</h3><span class="vendor">Microsoft (open source)</span></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span></div>
     </div>
-    <p class="what">Open long-form text-to-speech that can run on-prem. Room 8 paired it with ElevenLabs.</p>
+    <p class="what">Open long-form text-to-speech that can run on-prem. Often paired with ElevenLabs for higher-quality takes.</p>
     <div class="sw">
       <div class="pro"><h4>Strengths</h4><ul><li>Self-hosted, so voices stay private</li><li>Free</li></ul></div>
       <div class="con"><h4>Weaknesses</h4><ul><li>Lower quality than ElevenLabs</li><li>Needs post-processing for tone and pronunciation</li></ul></div>
@@ -1214,7 +1214,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">50–66%</span>
       <span class="lbl">on internal narration</span>
-      <span class="meta"><span class="grade est">Estimate</span>Scaled from Room 8 data</span>
+      <span class="meta"><span class="grade est">Estimate</span>Scaled from studio data</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -1277,7 +1277,7 @@ p{margin:0}
       <span class="meta"><span class="grade est">Estimate</span>—</span>
     </div>
   </article></div></section>
-<section class="static-tab" id="static-qa"><h2>QA &amp; Playtesting</h2><p class="intro">Playtest bots, autonomous test agents and AI help for test engineers. Level-difficulty bots are proven at scale. General test agents still produce non-deterministic results.</p><p><strong>Typical gain:</strong> Up to 50% (lower manual QA cost (nunu.ai, vendor claim); 50–70% less test-code boilerplate (Room 8, measured))</p><p><strong>Where AI fits best:</strong> Predicting level difficulty, exploratory and stress testing, regression smoke tests, writing test scripts, bug-report summaries.</p><p><strong>Integration notes:</strong> Mix approaches: deterministic scripts for CI regression, AI agents for exploratory testing, humans for fun, balance and narrative. Log agent seeds and replays so results can be reproduced.</p><div class="cards"><article class="card">
+<section class="static-tab" id="static-qa"><h2>QA &amp; Playtesting</h2><p class="intro">Playtest bots, autonomous test agents and AI help for test engineers. Level-difficulty bots are proven at scale. General test agents still produce non-deterministic results.</p><p><strong>Typical gain:</strong> Up to 50% (lower manual QA cost (nunu.ai, vendor claim); 50–70% less test-code boilerplate (studio-measured))</p><p><strong>Where AI fits best:</strong> Predicting level difficulty, exploratory and stress testing, regression smoke tests, writing test scripts, bug-report summaries.</p><p><strong>Integration notes:</strong> Mix approaches: deterministic scripts for CI regression, AI agents for exploratory testing, humans for fun, balance and narrative. Log agent seeds and replays so results can be reproduced.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Custom playtest bots</h3><span class="vendor">In-house (King approach)</span></div>
       <div class="deploy"><span class="dep">Local</span></div>
@@ -1335,7 +1335,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">50–70%</span>
       <span class="lbl">less admin and boilerplate</span>
-      <span class="meta"><span class="grade measured">Measured</span>Room 8 Group</span>
+      <span class="meta"><span class="grade measured">Measured</span>Studio case study</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -1444,7 +1444,7 @@ p{margin:0}
       <span class="meta"><span class="grade vendor">Vendor</span>Loxily</span>
     </div>
   </article></div></section>
-<section class="static-tab" id="static-mkt"><h2>Trailers &amp; UA Creative</h2><p class="intro">Video models for previs, pitch trailers and ad creative. Final gameplay trailers still use captured footage. Mobile publishers use AI most heavily in UA ad creative.</p><p><strong>Typical gain:</strong> ~15% (faster trailer concepting with LLM scripts and AI imagery (Room 8, measured))</p><p><strong>Where AI fits best:</strong> Pitch and previs videos, style frames, cinematic intros, social cuts, high-volume UA creative variations.</p><p><strong>Integration notes:</strong> Keep gameplay sections real. Steam advises that first trailers should be mostly gameplay. Disclose AI in ads where the platform or region requires it. The tool landscape is consolidating: OpenAI shut the Sora app in April 2026 and Google retired the Veo 3 API in June 2026.</p><div class="cards"><article class="card">
+<section class="static-tab" id="static-mkt"><h2>Trailers &amp; UA Creative</h2><p class="intro">Video models for previs, pitch trailers and ad creative. Final gameplay trailers still use captured footage. Mobile publishers use AI most heavily in UA ad creative.</p><p><strong>Typical gain:</strong> ~15% (faster trailer concepting with LLM scripts and AI imagery (studio-measured))</p><p><strong>Where AI fits best:</strong> Pitch and previs videos, style frames, cinematic intros, social cuts, high-volume UA creative variations.</p><p><strong>Integration notes:</strong> Keep gameplay sections real. Steam advises that first trailers should be mostly gameplay. Disclose AI in ads where the platform or region requires it. The tool landscape is consolidating: OpenAI shut the Sora app in April 2026 and Google retired the Veo 3 API in June 2026.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Google Veo 3.1</h3><span class="vendor">Google</span></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
@@ -1517,7 +1517,7 @@ p{margin:0}
     <div class="eff">
       <span class="val">~15%</span>
       <span class="lbl">concepting workflow (scripts and visual alignment)</span>
-      <span class="meta"><span class="grade measured">Measured</span>Room 8 Group (HEROIC)</span>
+      <span class="meta"><span class="grade measured">Measured</span>Studio case study (trailers)</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -1537,7 +1537,7 @@ p{margin:0}
   </article></div></section></div>
 
       <section class="method" aria-label="Method">
-        <div><h3>How to read the efficiency figures</h3><p>Every number applies to one step of the work, not a whole project. The best measured data (Room 8 Group's 2026 report) shows step-level gains of 40–80% shrinking to 10–20% across a full project once review, rework and the steps without AI are counted.</p></div>
+        <div><h3>How to read the efficiency figures</h3><p>Every number applies to one step of the work, not a whole project. The best measured data (studio case studies from 2025–26) shows step-level gains of 40–80% shrinking to 10–20% across a full project once review, rework and the steps without AI are counted.</p></div>
         <div><h3>Estimates</h3><p>Where no figure has been published, the card shows an estimate scaled from measured results on a similar step, labelled <span class="grade est">Estimate</span>. Use it as a starting hypothesis and log your own before-and-after time on a pilot.</p></div>
         <div><h3>Before you adopt a tool</h3><ul><li>Check the commercial licence and plan tier.</li><li>Confirm the client contract allows AI at that stage.</li><li>Keep client IP off cloud tools you haven't approved.</li><li>Log the provenance of anything players will see (Steam, China and EU disclosure rules).</li></ul></div>
       </section>
@@ -1550,7 +1550,7 @@ p{margin:0}
 const TABS = [
 { id:"2d", name:"2D Art & Concept",
   intro:"Image models for concept exploration, key art, paintovers, UI and LiveOps art. 2D is the most mature AI discipline, but many client contracts still limit AI to exploration and keep it out of final assets.",
-  gain:"40–60%", gainNote:"render-stage time; 10–20% across a whole project (Room 8, measured)",
+  gain:"40–60%", gainNote:"render-stage time; 10–20% across a whole project (studio-measured)",
   fit:"Exploring many concept options, combining multiple references, unifying artist-made pieces, style-locked LiveOps and UA art volume.",
   integrate:"Train a style model or LoRA per client or IP. Run open models (Qwen, FLUX, SDXL) locally through ComfyUI for work under NDA. Keep artist overpaint as the final step for quality and copyright.",
   tools:[
@@ -1558,17 +1558,17 @@ const TABS = [
    what:"Open-weight image generation and instruction-based editing that takes 1–3 reference images, which suits multi-reference concepts. Community LoRAs add multi-angle turnarounds.",
    pro:["Strong multi-reference editing","Runs locally, so client IP never leaves the studio","Fine-tunable with LoRAs"],
    con:["Needs a high-VRAM GPU and ComfyUI skills","Newer editing versions (2511) keep changing workflows"],
-   e:{v:"40–60%",l:"render-stage time when unifying artist pieces, part of Room 8's 2D toolset",g:"measured",s:"Room 8 Group"}},
+   e:{v:"40–60%",l:"render-stage time when unifying artist pieces, in a studio's 2D toolset",g:"measured",s:"Studio case study"}},
   {n:"FLUX.2 / FLUX.1 Kontext",v:"Black Forest Labs",d:["Local","API"],
    what:"High-quality image models. Kontext edits an image from text instructions while keeping characters and layout, and FLUX.2 supports LoRAs for consistent characters and styles.",
    pro:["Edits keep characters and layout consistent","Large LoRA ecosystem","Available hosted or self-hosted"],
    con:["The FLUX.1 Kontext [dev] licence restricts commercial use, so check each variant","Heavy GPU requirements locally"],
-   e:{v:"30–50%",l:"sketch-to-render and variation passes",g:"est",s:"Scaled from Room 8 render-stage data"}},
+   e:{v:"30–50%",l:"sketch-to-render and variation passes",g:"est",s:"Scaled from studio render-stage data"}},
   {n:"Stable Diffusion XL + ComfyUI",v:"Stability AI / open source",d:["Local","Open"],
    what:"The mature open-source base model and node-graph pipeline: ControlNet pose and depth control, inpainting, and custom checkpoints trained on a studio's art.",
    pro:["Runs on older hardware","Most tooling and control options","Stable for long projects"],
    con:["Lower image quality than 2025–26 models","Pipeline upkeep needs a technical artist"],
-   e:{v:"20–40%",l:"on style-locked variations once a fine-tune is trained",g:"est",s:"Scaled from Room 8 2D data"}},
+   e:{v:"20–40%",l:"on style-locked variations once a fine-tune is trained",g:"est",s:"Scaled from studio 2D data"}},
   {n:"Midjourney (V7 / V8.1)",v:"Midjourney",d:["Cloud"],
    what:"Text and image-reference generator known for its look, colour and composition. Mostly used for moodboards and early direction.",
    pro:["Best-looking images out of the box","Fast exploration of many directions","Style and character reference controls"],
@@ -1578,7 +1578,7 @@ const TABS = [
    what:"Image model that edits from instructions while keeping characters consistent across images, and renders text accurately.",
    pro:["Scored 9.50 vs Midjourney V7's 8.62 in one 29-prompt blind test","Best text rendering, useful for UI mock-ups and key art","API priced per resolution"],
    con:["Less painterly than Midjourney","Google cloud only"],
-   e:{v:"30–50%",l:"paintover, extension and UI mock-up passes",g:"est",s:"Scaled from Room 8 render-stage data"}},
+   e:{v:"30–50%",l:"paintover, extension and UI mock-up passes",g:"est",s:"Scaled from studio render-stage data"}},
   {n:"Adobe Firefly / Photoshop Generative Fill",v:"Adobe",d:["Cloud","Plugin"],
    what:"Generative fill, extension and reference-based generation inside Photoshop, from a model trained on licensed content.",
    pro:["IP indemnity for enterprise customers on listed features","Built into artists' existing tools","Lowest legal risk"],
@@ -1608,7 +1608,7 @@ const TABS = [
 
 { id:"3d", name:"3D Modeling",
   intro:"Image- and text-to-3D generators for blockouts, high-poly starting points and prop variations. Close to production for props and simple characters. Not ready for hero, modular or multi-material assets.",
-  gain:"10–15%", gainNote:"faster prop production overall (Room 8, measured); blockout steps gain more",
+  gain:"10–15%", gainNote:"faster prop production overall (studio-measured); blockout steps gain more",
   fit:"Blockouts from 2D concepts, high-poly hypotheses, prop and character variations, filling angles missing from concept art.",
   integrate:"Generate in Hunyuan3D, Tripo or Rodin, then retopologize, UV and texture. Check scale, pivots, LODs and collision in-engine. Tripo and TRELLIS can run locally for work under NDA.",
   tools:[
@@ -1616,27 +1616,27 @@ const TABS = [
    what:"Generates textured meshes from a photo, up to 8 views, or a sketch, with PBR materials and polygon counts up to 1.5M faces. Version 2.1 is open-weight.",
    pro:["High geometric detail","Multi-view input improves accuracy","Part of Tencent's full Studio pipeline"],
    con:["Dense meshes need retopology","Version 3.x is subscription and cloud"],
-   e:{v:"10–15%",l:"faster prop production; Room 8 tested it for blockout and high-poly",g:"measured",s:"Room 8 Group"}},
+   e:{v:"10–15%",l:"faster prop production; tested in production for blockout and high-poly",g:"measured",s:"Studio case study"}},
   {n:"Tripo 3D",v:"VAST",d:["Cloud","Local","API"],
    what:"Image and text to 3D with controllable quad or triangle topology and built-in auto-rigging. Offers local server deployment.",
    pro:["Cleanest rig-ready meshes in reviews","Local deployment for NDA work","Exports straight to Unity without Blender cleanup (one tester)"],
    con:["Narrower art-style range","Less depth in PBR texturing"],
-   e:{v:"10–15%",l:"faster prop production; part of Room 8's local 3D setup",g:"measured",s:"Room 8 Group"}},
+   e:{v:"10–15%",l:"faster prop production; used in a studio's local 3D setup",g:"measured",s:"Studio case study"}},
   {n:"Rodin Gen-2",v:"Hyper3D (Deemos)",d:["Cloud","API"],
    what:"10-billion-parameter 3D model that takes text or up to 5 images. Quad-dominant or raw mesh, PBR, T/A-pose control, bounding-box limits, GLB/FBX/USDZ export.",
    pro:["T/A-pose output ready for rigging","Polygon budget control","4× the geometry quality of Gen-1"],
    con:["Paid per generation","Version naming (Gen-2 vs 2.5) is unclear"],
-   e:{v:"20–35%",l:"on character blockout to a rig-ready base",g:"est",s:"Scaled from Room 8 3D data"}},
+   e:{v:"20–35%",l:"on character blockout to a rig-ready base",g:"est",s:"Scaled from studio 3D data"}},
   {n:"Meshy 6",v:"Meshy",d:["Cloud","API","Plugin"],
    what:"Text and image to 3D with strong texturing, Low Poly mode, 5k–100k face budgets and one-step remesh plus UV. Generally available since January 2026.",
    pro:["Best texture quality among generators","Polygon-budget control for games","DCC plugins"],
    con:["Auto-rigging weaker than Tripo's","Organic hero assets still need sculpting"],
-   e:{v:"15–30%",l:"on prop production",g:"est",s:"Scaled from Room 8 3D data"}},
+   e:{v:"15–30%",l:"on prop production",g:"est",s:"Scaled from studio 3D data"}},
   {n:"TRELLIS.2",v:"Microsoft (open source)",d:["Local","Open"],
    what:"Open-source image or text to 3D at up to 1536³ voxel resolution. Handles open surfaces and transparent materials.",
    pro:["Free and self-hostable","Handles difficult geometry","Available hosted on Scenario and Layer"],
    con:["Needs Linux, CUDA and a 24GB+ GPU","Output needs LODs, pivots and collision added"],
-   e:{v:"10–25%",l:"on blockout and high-poly starting points",g:"est",s:"Scaled from Room 8 3D data"}},
+   e:{v:"10–25%",l:"on blockout and high-poly starting points",g:"est",s:"Scaled from studio 3D data"}},
   {n:"Meta SAM 3D Objects",v:"Meta",d:["Local","Open"],
    what:"Reconstructs a full 3D object with texture and layout from a single photo, even with clutter and occlusion. Output is a mesh or Gaussian splat.",
    pro:["Photo to prop reconstruction","Open weights under a commercial-use licence"],
@@ -1655,8 +1655,8 @@ const TABS = [
   ]},
 
 { id:"tex", name:"Retopo, UVs & Texturing",
-  intro:"Tools that turn dense AI or sculpted meshes into engine-ready assets: retopology, UV unwrapping and PBR materials. Room 8 reports its most reliable 3D savings at this step.",
-  gain:"30–40%", gainNote:"average saving on low-poly optimisation; up to 80% on one character (Room 8, measured)",
+  intro:"Tools that turn dense AI or sculpted meshes into engine-ready assets: retopology, UV unwrapping and PBR materials. Studios report their most reliable 3D savings at this step.",
+  gain:"30–40%", gainNote:"average saving on low-poly optimisation; up to 80% on one character (studio-measured)",
   fit:"Low-poly versions for engines, semantic UVs, tileable materials from a text prompt or photo, retexturing to a new style.",
   integrate:"Use for repetitive, precise steps. Keep a technical artist checking edge flow before rigging, and check texel density and channel packing for each target platform.",
   tools:[
@@ -1664,17 +1664,17 @@ const TABS = [
    what:"Seven-stage pipeline: concept, geometry, part splitting, retopology, semantic UV, PBR materials, then rigging and skinning.",
    pro:["Most complete automated pipeline","Built around a published technical report"],
    con:["The public website may not expose every stage","Tencent-hosted"],
-   e:{v:"30–40%",l:"on low-poly and UV steps",g:"est",s:"Scaled from Room 8 low-poly data"}},
+   e:{v:"30–40%",l:"on low-poly and UV steps",g:"est",s:"Scaled from studio low-poly data"}},
   {n:"Hunyuan3D Polygen 1.5 + Hunyuan3D-Part",v:"Tencent",d:["Cloud","Open"],
    what:"Polygen rebuilds dense, point-cloud-like meshes into structured, quad-dominant geometry. Part splits meshes into independently editable components.",
    pro:["Quad-dominant retopology","Part splitting is open source"],
    con:["Edge loops at joints still need checking","Fairly new"],
-   e:{v:"30–40%",l:"on retopology",g:"est",s:"Scaled from Room 8 low-poly data"}},
+   e:{v:"30–40%",l:"on retopology",g:"est",s:"Scaled from studio low-poly data"}},
   {n:"Meshy Remesh & Retexture",v:"Meshy",d:["Cloud","API"],
    what:"Rebuilds topology and generates new UVs in one step, and retextures existing models into a new style from a prompt.",
    pro:["Remesh and UV in a single pass","Works on any imported model"],
    con:["Less control over edge flow","Cloud only"],
-   e:{v:"30–40%",l:"on low-poly optimisation",g:"est",s:"Scaled from Room 8 low-poly data"}},
+   e:{v:"30–40%",l:"on low-poly optimisation",g:"est",s:"Scaled from studio low-poly data"}},
   {n:"Substance 3D Sampler (Firefly)",v:"Adobe",d:["Local","Plugin"],
    what:"Text to Texture makes tileable textures from a prompt, and Image to Material turns photos into full PBR materials, feeding Substance Designer and Painter.",
    pro:["Industry-standard material pipeline","Tileable, correct-perspective output","Firefly's licensed training data"],
@@ -1731,8 +1731,8 @@ const TABS = [
   ]},
 
 { id:"anim", name:"Animation & Mocap",
-  intro:"Motion synthesis, markerless capture, AI-assisted keyframing and facial animation. This tab has the largest measured gains in the catalogue, and Room 8 grew its animation team rather than shrinking it.",
-  gain:"~88%", gainNote:"stance set from 26 min of mocap in ~1 week vs 2+ months; lip-sync for a new language 80% faster (Room 8, measured)",
+  intro:"Motion synthesis, markerless capture, AI-assisted keyframing and facial animation. This tab has the largest measured gains in the catalogue, and one studio grew its animation team rather than shrinking it.",
+  gain:"~88%", gainNote:"stance set from 26 min of mocap in ~1 week vs 2+ months; lip-sync for a new language 80% faster (studio-measured)",
   fit:"Stance and transition coverage, locomotion variants, lip-sync in many languages, previs mocap without a stage, player emotes.",
   integrate:"Lock a retargeting skeleton first. Use AI for coverage and base layers, and keep animators on performance and polish. Treat markerless capture as previs unless it is cleaned.",
   tools:[
@@ -1740,17 +1740,17 @@ const TABS = [
    what:"Motion synthesis: a transformer trained on thousands of hours of mocap generates large sets of styled animations from a style library and user controls.",
    pro:["Generates full stance sets from little source mocap","Style-consistent variants"],
    con:["Small company (21 staff)","Vendor claims of 200× faster and 90%+ cheaper are unverified"],
-   e:{v:"~88%",l:"all stances in ~1 week vs 2+ months (AAA combat game)",g:"measured",s:"Room 8 Group"}},
+   e:{v:"~88%",l:"all stances in ~1 week vs 2+ months (AAA combat game)",g:"measured",s:"Studio case study"}},
   {n:"JALI",v:"JALI Research",d:["Local","Plugin"],
    what:"Generates facial animation and lip-sync from audio, transcript and emotion tags, with animator-adjustable jaw and lip controls.",
    pro:["Proven at AAA scale (Cyberpunk 2077, 10 languages)","Handles language switches mid-sentence"],
    con:["Licensed per studio","Needs JALI-compatible face rigs"],
-   e:{v:"80%",l:"lip-sync to a new language: 1 day instead of 5",g:"measured",s:"Room 8 Group"}},
+   e:{v:"80%",l:"lip-sync to a new language: 1 day instead of 5",g:"measured",s:"Studio case study"}},
   {n:"NVIDIA Audio2Face",v:"NVIDIA (open source)",d:["Local","Open","Plugin"],
    what:"Audio to facial animation, with Audio2Emotion. Models, SDK, training framework and UE5 plugin open-sourced September 2025.",
    pro:["Free and fine-tunable","Used by Codemasters, GSC, NetEase, Perfect World; shipped in F1 25","Runs offline or streams live"],
    con:["Needs tuning per face rig","Best quality on NVIDIA GPUs"],
-   e:{v:"60–80%",l:"on dialogue facial passes",g:"est",s:"Scaled from Room 8 JALI data"}},
+   e:{v:"60–80%",l:"on dialogue facial passes",g:"est",s:"Scaled from studio JALI data"}},
   {n:"Cascadeur",v:"Nekki",d:["Local"],
    what:"Keyframe animation app with AutoPosing (move a few controls, AI fills in the body), AI inbetweening and AutoPhysics.",
    pro:["Fast blocking with physically plausible poses","Unreal integration","Indie plan about $8/mo"],
@@ -1828,35 +1828,35 @@ const TABS = [
 
 { id:"engine", name:"Engine Integration & Code",
   intro:"Coding agents and AI built into Unity and Unreal. Both engines adopted the Model Context Protocol (MCP) in 2026, so agents can now edit scenes, assets and Blueprints directly rather than only writing code.",
-  gain:"15–20%", gainNote:"faster delivery on UI logic, refactoring and integration; 50–70% less boilerplate (Room 8, measured)",
+  gain:"15–20%", gainNote:"faster delivery on UI logic, refactoring and integration; 50–70% less boilerplate (studio-measured)",
   fit:"UI logic, refactoring, scripting, API integration, getting up to speed on unfamiliar engines, scene setup, test boilerplate, commit and documentation work.",
-  integrate:"Use private or local LLMs for client code. Require code review on everything AI writes. Keep architecture-level code human-written, which is Room 8's QA policy.",
+  integrate:"Use private or local LLMs for client code. Require code review on everything AI writes. Keep architecture-level code human-written, a common studio QA policy.",
   tools:[
   {n:"Unity AI (Assistant, Gateway, MCP)",v:"Unity",d:["Plugin","Cloud"],
    what:"In-editor agent with Ask, Plan and Agent modes. The AI Gateway runs Claude Code, Codex, Gemini CLI or Cursor with your own keys. The MCP server lets outside agents control the editor. Open beta since May 2026.",
    pro:["Full access to scenes, Inspector values and serialized data","Choose your model","Includes sprite, texture and layout generators"],
    con:["Beta","Personal tier uses credits"],
-   e:{v:"15–20%",l:"engineering delivery in proven areas",g:"est",s:"Scaled from Room 8 engineering data"}},
+   e:{v:"15–20%",l:"engineering delivery in proven areas",g:"est",s:"Scaled from studio engineering data"}},
   {n:"Unreal MCP plugin (UE 5.8) → UE6",v:"Epic Games",d:["Plugin"],
    what:"Experimental MCP plugin that connects any LLM to Blueprints, assets, levels, materials and meshes. UE6 will build in Claude and Gemini, with early access around end of 2027.",
    pro:["Official engine-level access","Bring your own model"],
    con:["Experimental","UE6 is more than a year away"],
-   e:{v:"15–20%",l:"on scene setup and engine tasks",g:"est",s:"Scaled from Room 8 engineering data"}},
+   e:{v:"15–20%",l:"on scene setup and engine tasks",g:"est",s:"Scaled from studio engineering data"}},
   {n:"Claude Code",v:"Anthropic",d:["Cloud","API"],
    what:"Terminal-based coding agent that reads the whole codebase, edits across files, runs builds and tests, and drives the engines through their MCP servers. Epic used it in its UE6 demos.",
    pro:["Strong on large, unfamiliar codebases","Works with Unity's Gateway and Unreal's MCP"],
    con:["Cloud model: check client permission","No controlled studies for Unreal C++"],
-   e:{v:"15–20%",l:"on UI logic and integration tasks",g:"est",s:"Scaled from Room 8 engineering data"}},
+   e:{v:"15–20%",l:"on UI logic and integration tasks",g:"est",s:"Scaled from studio engineering data"}},
   {n:"GitHub Copilot / JetBrains AI",v:"GitHub · JetBrains",d:["Plugin","Cloud"],
    what:"Code completion, documentation and commit messages inside the IDE (VS Code, Visual Studio, Rider).",
    pro:["Least disruption to how engineers work","Enterprise data controls"],
    con:["Mostly completion; less agentic","Weaker on project-wide reasoning"],
-   e:{v:"50–70%",l:"less boilerplate and admin work",g:"measured",s:"Room 8 Group (QA engineering)"}},
+   e:{v:"50–70%",l:"less boilerplate and admin work",g:"measured",s:"Studio case study (QA engineering)"}},
   {n:"Cursor",v:"Anysphere",d:["Local","Cloud"],
    what:"AI-first code editor with agent mode, codebase indexing and model choice. Selectable inside Unity's AI Gateway.",
    pro:["Fast multi-file edits","Works with many models"],
    con:["Separate IDE from Rider or Visual Studio","Cloud indexing needs approval"],
-   e:{v:"15–20%",l:"on scripting and refactoring",g:"est",s:"Scaled from Room 8 engineering data"}},
+   e:{v:"15–20%",l:"on scripting and refactoring",g:"est",s:"Scaled from studio engineering data"}},
   {n:"Aura (incl. Coplay)",v:"Ramen",d:["Plugin"],
    what:"AI assistant for Unity and Unreal. It acquired Coplay in March 2026. The free, MIT-licensed Unity MCP stays available.",
    pro:["One subscription covers both engines","Free open-source MCP option"],
@@ -1876,7 +1876,7 @@ const TABS = [
    what:"Self-hosted models for reasoning over the whole project, analysing architecture and assisting with code, without client code leaving the network.",
    pro:["Strongest IP protection","Meets client NDA requirements"],
    con:["Behind frontier models on hard tasks","Infrastructure cost"],
-   e:{v:"15–20%",l:"UI logic in an unfamiliar custom engine, quality unchanged",g:"measured",s:"Room 8 Group (private cloud LLM)"}},
+   e:{v:"15–20%",l:"UI logic in an unfamiliar custom engine, quality unchanged",g:"measured",s:"Studio case study (private cloud LLM)"}},
   {n:"Unity Inference Engine (Sentis)",v:"Unity",d:["Plugin","Local"],
    what:"Runs ONNX neural networks inside the game on any Unity platform, including mobile, with no cloud round trip.",
    pro:["No server cost or latency","Models can be split across frames"],
@@ -1934,17 +1934,17 @@ const TABS = [
    what:"Multi-model AI upscaler with a GUI, built for art workflows: UI, textures and key art for ports and remasters.",
    pro:["Runs locally","Artist-friendly batch processing"],
    con:["About 10% of outputs had hallucinated details (letters, extra features)"],
-   e:{v:"100s of hrs",l:"saved upscaling UI textures for a console port",g:"measured",s:"Room 8 Group"}},
+   e:{v:"100s of hrs",l:"saved upscaling UI textures for a console port",g:"measured",s:"Studio case study"}},
   {n:"ESRGAN / Real-ESRGAN",v:"Open source",d:["Local","Open"],
    what:"Open-source framework for image restoration and upscaling, with custom training for project-specific textures.",
    pro:["Free, scriptable, trainable","Fits automated pipelines"],
    con:["Needs engineering setup","Same hallucination risk without QA"],
-   e:{v:"50–80%",l:"on batch texture upscaling",g:"est",s:"Scaled from Room 8 upscaling data"}}
+   e:{v:"50–80%",l:"on batch texture upscaling",g:"est",s:"Scaled from studio upscaling data"}}
   ]},
 
 { id:"audio", name:"Audio & Voice",
   intro:"Text-to-speech, voice cloning, sound effects and music generation. Use is held back by licensing and performer agreements more than by quality.",
-  gain:"66%", gainNote:"narration recording time saved, 20 of 30 hours (Room 8, measured)",
+  gain:"66%", gainNote:"narration recording time saved, 20 of 30 hours (studio-measured)",
   fit:"Scratch and placeholder VO, internal and demo narration, sound-effect one-shots, background music, runtime voices for AI characters.",
   integrate:"Clone voices only with written consent. The SAG-AFTRA 2025 agreement requires consent and disclosure, and pays at least 7.5× scale for real-time use. Check each tool's commercial tier.",
   tools:[
@@ -1952,12 +1952,12 @@ const TABS = [
    what:"Voice generation and cloning, sound effects from text, and a music model trained on licensed data (deals with Merlin and Kobalt).",
    pro:["Highest voice quality","Understands game sound-effect vocabulary","Gaming named in its commercial terms"],
    con:["The provider keeps a licence to train on your outputs","Commercial rights depend on plan tier"],
-   e:{v:"66%",l:"recording time for narrated presentations (20 of 30 hrs)",g:"measured",s:"Room 8 Group"}},
+   e:{v:"66%",l:"recording time for narrated presentations (20 of 30 hrs)",g:"measured",s:"Studio case study"}},
   {n:"Microsoft VibeVoice",v:"Microsoft (open source)",d:["Local","Open"],
-   what:"Open long-form text-to-speech that can run on-prem. Room 8 paired it with ElevenLabs.",
+   what:"Open long-form text-to-speech that can run on-prem. Often paired with ElevenLabs for higher-quality takes.",
    pro:["Self-hosted, so voices stay private","Free"],
    con:["Lower quality than ElevenLabs","Needs post-processing for tone and pronunciation"],
-   e:{v:"50–66%",l:"on internal narration",g:"est",s:"Scaled from Room 8 data"}},
+   e:{v:"50–66%",l:"on internal narration",g:"est",s:"Scaled from studio data"}},
   {n:"Inworld TTS-1.5",v:"Inworld AI",d:["Cloud","API"],
    what:"Low-latency text-to-speech for runtime game characters. Inworld has repositioned as AI infrastructure with voice and an agent runtime.",
    pro:["$5–10 per million characters","P90 latency 130 ms (Mini) / 250 ms (Max)"],
@@ -1982,7 +1982,7 @@ const TABS = [
 
 { id:"qa", name:"QA & Playtesting",
   intro:"Playtest bots, autonomous test agents and AI help for test engineers. Level-difficulty bots are proven at scale. General test agents still produce non-deterministic results.",
-  gain:"Up to 50%", gainNote:"lower manual QA cost (nunu.ai, vendor claim); 50–70% less test-code boilerplate (Room 8, measured)",
+  gain:"Up to 50%", gainNote:"lower manual QA cost (nunu.ai, vendor claim); 50–70% less test-code boilerplate (studio-measured)",
   fit:"Predicting level difficulty, exploratory and stress testing, regression smoke tests, writing test scripts, bug-report summaries.",
   integrate:"Mix approaches: deterministic scripts for CI regression, AI agents for exploratory testing, humans for fun, balance and narrative. Log agent seeds and replays so results can be reproduced.",
   tools:[
@@ -2005,7 +2005,7 @@ const TABS = [
    what:"Explain unfamiliar engine components, refine Jira and Slack updates, summarise action items and transcripts.",
    pro:["Closes knowledge gaps quickly","Helps juniors without using senior time"],
    con:["Only for non-sensitive material unless privately hosted"],
-   e:{v:"50–70%",l:"less admin and boilerplate",g:"measured",s:"Room 8 Group"}},
+   e:{v:"50–70%",l:"less admin and boilerplate",g:"measured",s:"Studio case study"}},
   {n:"DeepMind SIMA 2",v:"Google DeepMind",d:["Cloud"],
    what:"Research agent that follows instructions, reasons about goals and improves itself in games it has never seen.",
    pro:["Points to QA agents that need no scripting"],
@@ -2053,7 +2053,7 @@ const TABS = [
 
 { id:"mkt", name:"Trailers & UA Creative",
   intro:"Video models for previs, pitch trailers and ad creative. Final gameplay trailers still use captured footage. Mobile publishers use AI most heavily in UA ad creative.",
-  gain:"~15%", gainNote:"faster trailer concepting with LLM scripts and AI imagery (Room 8, measured)",
+  gain:"~15%", gainNote:"faster trailer concepting with LLM scripts and AI imagery (studio-measured)",
   fit:"Pitch and previs videos, style frames, cinematic intros, social cuts, high-volume UA creative variations.",
   integrate:"Keep gameplay sections real. Steam advises that first trailers should be mostly gameplay. Disclose AI in ads where the platform or region requires it. The tool landscape is consolidating: OpenAI shut the Sora app in April 2026 and Google retired the Veo 3 API in June 2026.",
   tools:[
@@ -2081,7 +2081,7 @@ const TABS = [
    what:"First-pass trailer scripts, narrative routes and themes, plus research for pitches.",
    pro:["Many creative routes in minutes"],
    con:["Writers still set tone and quality"],
-   e:{v:"~15%",l:"concepting workflow (scripts and visual alignment)",g:"measured",s:"Room 8 Group (HEROIC)"}},
+   e:{v:"~15%",l:"concepting workflow (scripts and visual alignment)",g:"measured",s:"Studio case study (trailers)"}},
   {n:"AppLovin SparkLabs",v:"AppLovin",d:["Cloud"],
    what:"AppLovin's creative studio using AI for ad concepts and production, now including AI-generated interactive ads.",
    pro:["Tied to a major mobile ad network","Interactive and playable formats"],
