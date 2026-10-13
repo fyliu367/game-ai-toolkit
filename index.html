@@ -119,6 +119,9 @@ p{margin:0}
 .card-title{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
 .card h3{font-size:1.18rem;font-weight:700;letter-spacing:-.005em}
 .vendor{font-size:.82rem;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.84rem;font-weight:500}
+.links a{text-decoration:none}
+.links a:hover{text-decoration:underline}
 .deploy{display:flex;gap:5px;flex-wrap:wrap}
 .dep{font-family:var(--mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--line);border-radius:4px;padding:1px 6px;color:var(--muted)}
 .what{padding:10px 18px 0;font-size:.92rem}
@@ -184,6 +187,7 @@ p{margin:0}
       <div class="cards" id="cards"><section class="static-tab" id="static-2d"><h2>2D Art &amp; Concept</h2><p class="intro">Image models for concept exploration, key art, paintovers, UI and LiveOps art. 2D is the most mature AI discipline, but many client contracts still limit AI to exploration and keep it out of final assets.</p><p><strong>Typical gain:</strong> 40–60% (render-stage time; 10–20% across a whole project (studio-reported))</p><p><strong>Where AI fits best:</strong> Exploring many concept options, combining multiple references, unifying artist-made pieces, style-locked LiveOps and UA art volume.</p><p><strong>Integration notes:</strong> Train a style model or LoRA per client or IP. Run open models (Qwen, FLUX, SDXL) locally through ComfyUI for work under NDA. Keep artist overpaint as the final step for quality and copyright.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Qwen Image / Qwen Image Edit 2509</h3><span class="vendor">Alibaba</span></div>
+      <div class="links"><a href="https://huggingface.co/Qwen/Qwen-Image-Edit-2509" target="_blank" rel="noopener">Hugging Face ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span></div>
     </div>
     <p class="what">Open-weight image generation and instruction-based editing that takes 1–3 reference images, which suits multi-reference concepts. Community LoRAs add multi-angle turnarounds.</p>
@@ -199,6 +203,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>FLUX.2 / FLUX.1 Kontext</h3><span class="vendor">Black Forest Labs</span></div>
+      <div class="links"><a href="https://bfl.ai" target="_blank" rel="noopener">Black Forest Labs ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">API</span></div>
     </div>
     <p class="what">High-quality image models. Kontext edits an image from text instructions while keeping characters and layout, and FLUX.2 supports LoRAs for consistent characters and styles.</p>
@@ -214,6 +219,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Stable Diffusion XL + ComfyUI</h3><span class="vendor">Stability AI / open source</span></div>
+      <div class="links"><a href="https://www.comfy.org" target="_blank" rel="noopener">ComfyUI ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span></div>
     </div>
     <p class="what">The mature open-source base model and node-graph pipeline: ControlNet pose and depth control, inpainting, and custom checkpoints trained on a studio's art.</p>
@@ -229,6 +235,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Midjourney (V7 and later)</h3><span class="vendor">Midjourney</span></div>
+      <div class="links"><a href="https://www.midjourney.com" target="_blank" rel="noopener">Midjourney ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Text and image-reference generator known for its look, colour and composition. Mostly used for moodboards and early direction.</p>
@@ -244,6 +251,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Nano Banana Pro (Gemini 3 Pro Image)</h3><span class="vendor">Google</span></div>
+      <div class="links"><a href="https://deepmind.google/models/gemini-image/pro/" target="_blank" rel="noopener">Google DeepMind ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
     <p class="what">Image model that edits from instructions while keeping characters consistent across images, and renders text accurately.</p>
@@ -259,6 +267,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Adobe Firefly / Photoshop Generative Fill</h3><span class="vendor">Adobe</span></div>
+      <div class="links"><a href="https://www.adobe.com/products/firefly.html" target="_blank" rel="noopener">Adobe Firefly ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Generative fill, extension and reference-based generation inside Photoshop, from a model trained on licensed content.</p>
@@ -274,6 +283,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Scenario</h3><span class="vendor">Scenario</span></div>
+      <div class="links"><a href="https://www.scenario.com" target="_blank" rel="noopener">Scenario ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
     <p class="what">Platform for training custom style models on studio art and generating consistent assets. It also hosts third-party models (Hunyuan 3D, TRELLIS, Retro Diffusion, Uthana).</p>
@@ -289,6 +299,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Layer AI</h3><span class="vendor">Layer</span></div>
+      <div class="links"><a href="https://www.layer.ai" target="_blank" rel="noopener">Layer ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
     <p class="what">Mobile-focused platform for brand-trained art: LiveOps event art, store assets and ad creative sized for Meta, TikTok, Google and AppLovin.</p>
@@ -304,6 +315,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>PixelLab</h3><span class="vendor">PixelLab</span></div>
+      <div class="links"><a href="https://www.pixellab.ai" target="_blank" rel="noopener">PixelLab ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Pixel-art generator that treats a sprite as a skeleton: pose it, rotate to 4 or 8 directions, build tilesets and inpaint on a true pixel grid.</p>
@@ -319,6 +331,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Retro Diffusion</h3><span class="vendor">Retro Diffusion</span></div>
+      <div class="links"><a href="https://www.retrodiffusion.ai" target="_blank" rel="noopener">Retro Diffusion ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Pixel-art models trained with pixel artists, including RD Animation for sprite sheets and RD Tile. Available as an Aseprite extension or through Scenario.</p>
@@ -335,6 +348,7 @@ p{margin:0}
 <section class="static-tab" id="static-3d"><h2>3D Modeling</h2><p class="intro">Image- and text-to-3D generators for blockouts, high-poly starting points and prop variations. Close to production for props and simple characters. Not ready for hero, modular or multi-material assets.</p><p><strong>Typical gain:</strong> 10–15% (faster prop production overall (studio-reported); blockout steps gain more)</p><p><strong>Where AI fits best:</strong> Blockouts from 2D concepts, high-poly hypotheses, prop and character variations, filling angles missing from concept art.</p><p><strong>Integration notes:</strong> Generate in Hunyuan3D, Tripo or Rodin, then retopologize, UV and texture. Check scale, pivots, LODs and collision in-engine. Tripo and TRELLIS can run locally for work under NDA.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Hunyuan3D 3.0 / 3.1</h3><span class="vendor">Tencent</span></div>
+      <div class="links"><a href="https://3d.hunyuan.tencent.com" target="_blank" rel="noopener">Hunyuan 3D ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
     <p class="what">Generates textured meshes from a photo, up to 8 views, or a sketch, with PBR materials and polygon counts up to 1.5M faces. Version 2.1 is open-weight.</p>
@@ -350,6 +364,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Tripo 3D</h3><span class="vendor">VAST</span></div>
+      <div class="links"><a href="https://www.tripo3d.ai" target="_blank" rel="noopener">Tripo ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">Local</span><span class="dep">API</span></div>
     </div>
     <p class="what">Image and text to 3D with controllable quad or triangle topology and built-in auto-rigging. Offers local server deployment.</p>
@@ -365,6 +380,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Rodin Gen-2</h3><span class="vendor">Hyper3D (Deemos)</span></div>
+      <div class="links"><a href="https://hyper3d.ai" target="_blank" rel="noopener">Hyper3D ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
     <p class="what">10-billion-parameter 3D model that takes text or up to 5 images. Quad-dominant or raw mesh, PBR, T/A-pose control, bounding-box limits, GLB/FBX/USDZ export.</p>
@@ -380,6 +396,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Meshy 6</h3><span class="vendor">Meshy</span></div>
+      <div class="links"><a href="https://www.meshy.ai" target="_blank" rel="noopener">Meshy ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Text and image to 3D with strong texturing, Low Poly mode, 5k–100k face budgets and one-step remesh plus UV. Generally available since January 2026.</p>
@@ -395,6 +412,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>TRELLIS.2</h3><span class="vendor">Microsoft (open source)</span></div>
+      <div class="links"><a href="https://github.com/microsoft/TRELLIS.2" target="_blank" rel="noopener">GitHub ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span></div>
     </div>
     <p class="what">Open-source image or text to 3D at up to 1536³ voxel resolution. Handles open surfaces and transparent materials.</p>
@@ -410,6 +428,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Meta SAM 3D Objects</h3><span class="vendor">Meta</span></div>
+      <div class="links"><a href="https://github.com/facebookresearch/sam-3d-objects" target="_blank" rel="noopener">GitHub ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span></div>
     </div>
     <p class="what">Reconstructs a full 3D object with texture and layout from a single photo, even with clutter and occlusion. Output is a mesh or Gaussian splat.</p>
@@ -425,6 +444,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Autodesk Flow Studio · Wonder 3D</h3><span class="vendor">Autodesk</span></div>
+      <div class="links"><a href="https://www.autodesk.com/products/flow-studio" target="_blank" rel="noopener">Autodesk ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Added in March 2026: generates simple 3D models from text or images, and remeshes and retextures existing assets.</p>
@@ -440,6 +460,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Sloyd</h3><span class="vendor">Sloyd</span></div>
+      <div class="links"><a href="https://www.sloyd.ai" target="_blank" rel="noopener">Sloyd ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
     <p class="what">Parametric, template-driven prop generator where dimensions and structure matter more than sculptural uniqueness.</p>
@@ -456,6 +477,7 @@ p{margin:0}
 <section class="static-tab" id="static-tex"><h2>Retopo, UVs &amp; Texturing</h2><p class="intro">Tools that turn dense AI or sculpted meshes into engine-ready assets: retopology, UV unwrapping and PBR materials. Studios report their most reliable 3D savings at this step.</p><p><strong>Typical gain:</strong> 30–40% (average saving on low-poly optimisation; up to 80% on one character (studio-reported))</p><p><strong>Where AI fits best:</strong> Low-poly versions for engines, semantic UVs, tileable materials from a text prompt or photo, retexturing to a new style.</p><p><strong>Integration notes:</strong> Use for repetitive, precise steps. Keep a technical artist checking edge flow before rigging, and check texel density and channel packing for each target platform.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Hunyuan3D Studio</h3><span class="vendor">Tencent</span></div>
+      <div class="links"><a href="https://arxiv.org/abs/2509.12815" target="_blank" rel="noopener">Technical report ↗</a><a href="https://3d.hunyuan.tencent.com" target="_blank" rel="noopener">Hunyuan 3D ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Seven-stage pipeline: concept, geometry, part splitting, retopology, semantic UV, PBR materials, then rigging and skinning.</p>
@@ -471,6 +493,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Hunyuan3D Polygen 1.5 + Hunyuan3D-Part</h3><span class="vendor">Tencent</span></div>
+      <div class="links"><a href="https://github.com/Tencent-Hunyuan/Hunyuan3D-Part" target="_blank" rel="noopener">Hunyuan3D-Part ↗</a><a href="https://3d.hunyuan.tencent.com" target="_blank" rel="noopener">Hunyuan 3D ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">Open</span></div>
     </div>
     <p class="what">Polygen rebuilds dense, point-cloud-like meshes into structured, quad-dominant geometry. Part splits meshes into independently editable components.</p>
@@ -486,6 +509,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Meshy Remesh &amp; Retexture</h3><span class="vendor">Meshy</span></div>
+      <div class="links"><a href="https://www.meshy.ai" target="_blank" rel="noopener">Meshy ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
     <p class="what">Rebuilds topology and generates new UVs in one step, and retextures existing models into a new style from a prompt.</p>
@@ -501,6 +525,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Substance 3D Sampler (Firefly)</h3><span class="vendor">Adobe</span></div>
+      <div class="links"><a href="https://www.adobe.com/products/substance3d/apps/sampler.html" target="_blank" rel="noopener">Adobe ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Text to Texture makes tileable textures from a prompt, and Image to Material turns photos into full PBR materials, feeding Substance Designer and Painter.</p>
@@ -516,6 +541,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>NVIDIA RTX Remix</h3><span class="vendor">NVIDIA</span></div>
+      <div class="links"><a href="https://www.nvidia.com/en-us/geforce/rtx-remix/" target="_blank" rel="noopener">NVIDIA ↗</a></div>
       <div class="deploy"><span class="dep">Local</span></div>
     </div>
     <p class="what">Remastering platform that captures classic game assets and uses AI to upscale textures and generate PBR maps for path-traced rebuilds.</p>
@@ -532,6 +558,7 @@ p{margin:0}
 <section class="static-tab" id="static-rig"><h2>Rigging &amp; Skinning</h2><p class="intro">Auto-rigging and skin-weight tools. Standard humanoids are largely automated. Garments, non-humanoids and hero deformation still need a rigger.</p><p><strong>Typical gain:</strong> Minutes (vs 1–3.5 days to rig and skin a character manually (Tencent's baseline, vendor claim))</p><p><strong>Where AI fits best:</strong> Humanoid NPCs, skins and outfit variants, characters for pre-vis, converting scanned or AI meshes into animatable characters.</p><p><strong>Integration notes:</strong> Standardize on one skeleton (Epic, Mixamo or in-house) so retargeting works. Run deformation tests on extreme poses before approving any automated skinning.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>VISVISE GoSkinning</h3><span class="vendor">Tencent Games</span></div>
+      <div class="links"><a href="https://visvise.com" target="_blank" rel="noopener">VISVISE ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Automatic skin weights combining bone-chain prediction and weight refinement, including garments. A 20,000-vertex model reportedly takes about 30 seconds.</p>
@@ -547,6 +574,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Tripo Auto-Rig</h3><span class="vendor">VAST</span></div>
+      <div class="links"><a href="https://www.tripo3d.ai" target="_blank" rel="noopener">Tripo ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
     <p class="what">Automatic character rigging with standard joint hierarchies and skin weights, applied straight to generated or uploaded meshes.</p>
@@ -562,6 +590,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>AccuRIG 2</h3><span class="vendor">Reallusion</span></div>
+      <div class="links"><a href="https://actorcore.reallusion.com/auto-rig" target="_blank" rel="noopener">Reallusion ↗</a></div>
       <div class="deploy"><span class="dep">Local</span></div>
     </div>
     <p class="what">Free auto-rigger for body and fingers that accepts A-pose, T-pose or scan poses. Exports FBX/USD and retargets ActorCore animation.</p>
@@ -577,6 +606,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Mixamo</h3><span class="vendor">Adobe</span></div>
+      <div class="links"><a href="https://www.mixamo.com" target="_blank" rel="noopener">Mixamo ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">The original free web auto-rigger and animation library.</p>
@@ -592,6 +622,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Mesh to MetaHuman (UE 5.8)</h3><span class="vendor">Epic Games</span></div>
+      <div class="links"><a href="https://www.metahuman.com" target="_blank" rel="noopener">MetaHuman ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Turns any human mesh of any topology into a fully rigged MetaHuman in one workflow. Epic open-sourced RigLogic/DNA under MIT.</p>
@@ -607,6 +638,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Unreal ML Deformer</h3><span class="vendor">Epic Games</span></div>
+      <div class="links"><a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/ml-deformer-framework-in-unreal-engine" target="_blank" rel="noopener">Epic docs ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Trains a model on offline muscle and cloth simulation so high-quality deformation runs in real time.</p>
@@ -622,6 +654,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Cascadeur QuickRig</h3><span class="vendor">Nekki</span></div>
+      <div class="links"><a href="https://cascadeur.com" target="_blank" rel="noopener">Cascadeur ↗</a></div>
       <div class="deploy"><span class="dep">Local</span></div>
     </div>
     <p class="what">Fast auto-rig inside Cascadeur that sets characters up for its AI posing and physics tools.</p>
@@ -638,6 +671,7 @@ p{margin:0}
 <section class="static-tab" id="static-anim"><h2>Animation &amp; Mocap</h2><p class="intro">Motion synthesis, markerless capture, AI-assisted keyframing and facial animation. This tab has the largest studio-reported gains in the catalogue, and one studio grew its animation team rather than shrinking it.</p><p><strong>Typical gain:</strong> ~88% (stance set from 26 min of mocap in ~1 week vs 2+ months; lip-sync for a new language 80% faster (studio-reported))</p><p><strong>Where AI fits best:</strong> Stance and transition coverage, locomotion variants, lip-sync in many languages, previs mocap without a stage, player emotes.</p><p><strong>Integration notes:</strong> Lock a retargeting skeleton first. Use AI for coverage and base layers, and keep animators on performance and polish. Treat markerless capture as previs unless it is cleaned.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Motorica</h3><span class="vendor">Motorica (Stockholm)</span></div>
+      <div class="links"><a href="https://motorica.com" target="_blank" rel="noopener">Motorica ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Motion synthesis: a transformer trained on thousands of hours of mocap generates styled animation sets. MoGen runs in the browser with FBX export, and Motorica Studio is an Unreal plugin.</p>
@@ -653,6 +687,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>JALI</h3><span class="vendor">JALI Research</span></div>
+      <div class="links"><a href="https://jaliresearch.com" target="_blank" rel="noopener">JALI Research ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Generates facial animation and lip-sync from audio, transcript and emotion tags, with animator-adjustable jaw and lip controls.</p>
@@ -668,6 +703,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>NVIDIA Audio2Face</h3><span class="vendor">NVIDIA (open source)</span></div>
+      <div class="links"><a href="https://github.com/NVIDIA/Audio2Face-3D" target="_blank" rel="noopener">GitHub ↗</a><a href="https://developer.nvidia.com/ace-for-games" target="_blank" rel="noopener">NVIDIA ACE ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Audio to facial animation, with Audio2Emotion. Models, SDK, training framework and UE5 plugin open-sourced September 2025.</p>
@@ -683,6 +719,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Cascadeur</h3><span class="vendor">Nekki</span></div>
+      <div class="links"><a href="https://cascadeur.com" target="_blank" rel="noopener">Cascadeur ↗</a></div>
       <div class="deploy"><span class="dep">Local</span></div>
     </div>
     <p class="what">Keyframe animation app with AutoPosing (move a few controls, AI fills in the body), AI inbetweening and AutoPhysics.</p>
@@ -698,6 +735,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>MetaHuman Animator (UE 5.8)</h3><span class="vendor">Epic Games</span></div>
+      <div class="links"><a href="https://www.metahuman.com" target="_blank" rel="noopener">MetaHuman ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Face capture, and now experimental single-camera body capture, from webcams or phones, solved onto MetaHumans.</p>
@@ -713,6 +751,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Move AI</h3><span class="vendor">Move AI</span></div>
+      <div class="links"><a href="https://www.move.ai" target="_blank" rel="noopener">Move AI ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Markerless motion capture from standard multi-camera video, indoors or outdoors.</p>
@@ -728,6 +767,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Rokoko Vision</h3><span class="vendor">Rokoko</span></div>
+      <div class="links"><a href="https://www.rokoko.com/products/vision" target="_blank" rel="noopener">Rokoko ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Markerless capture in the browser from one or two webcams.</p>
@@ -743,6 +783,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Uthana</h3><span class="vendor">Uthana</span></div>
+      <div class="links"><a href="https://uthana.com" target="_blank" rel="noopener">Uthana ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Text to Motion 3.0 and Video to Motion 2.1. Retargets to your character and exports FBX/GLB at 24/30/60 fps, with in-place, transition-stitching and Roblox-compatible options.</p>
@@ -758,6 +799,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>VISVISE MotionBlink</h3><span class="vendor">Tencent Games</span></div>
+      <div class="links"><a href="https://visvise.com" target="_blank" rel="noopener">VISVISE ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Generates keyframes and in-betweens, reducing foot sliding and jitter.</p>
@@ -773,6 +815,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Kinetix</h3><span class="vendor">Kinetix</span></div>
+      <div class="links"><a href="https://www.kinetix.tech" target="_blank" rel="noopener">Kinetix ↗</a></div>
       <div class="deploy"><span class="dep">API</span><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Player-facing emote SDK. Players turn any video into an emote on their avatar, in game.</p>
@@ -789,6 +832,7 @@ p{margin:0}
 <section class="static-tab" id="static-vfx"><h2>VFX</h2><p class="intro">Real-time VFX is the least mature AI area in the pipeline. Most practical speed-ups come from GPU simulation tools and AI-generated flipbooks. Cinematic VFX is further along.</p><p><strong>Typical gain:</strong> No data (no studio or vendor has published VFX efficiency figures yet)</p><p><strong>Where AI fits best:</strong> Flipbook and sprite-sheet look development, stylized effect concepts, cinematic character replacement, clean plates and camera tracking.</p><p><strong>Integration notes:</strong> Use AI for look development and flipbook drafts, then rebuild in Niagara or VFX Graph for timing, alpha and performance. Budget the texture memory of each flipbook for mobile.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>JangaFX EmberGen</h3><span class="vendor">JangaFX</span></div>
+      <div class="links"><a href="https://jangafx.com/software/embergen" target="_blank" rel="noopener">JangaFX ↗</a></div>
       <div class="deploy"><span class="dep">Local</span></div>
     </div>
     <p class="what">Real-time GPU volumetric fluid simulation for fire, smoke and explosions. Exports flipbooks, image sequences and VDBs with all game data channels. Not generative AI.</p>
@@ -804,6 +848,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>AI Flipbook Generator plugin (UE5)</h3><span class="vendor">Third party on Fab</span></div>
+      <div class="links"><a href="https://www.fab.com/search?q=AI%20flipbook" target="_blank" rel="noopener">Search on Fab ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span><span class="dep">API</span></div>
     </div>
     <p class="what">Uses OpenAI image models to generate 4×4, 6×6 or 8×8 sprite-sheet flipbooks and bakes them into a Texture, Material Instance and Niagara System in one click.</p>
@@ -819,6 +864,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Wan 2.2 / LTX (open video)</h3><span class="vendor">Alibaba / Lightricks</span></div>
+      <div class="links"><a href="https://github.com/Wan-Video/Wan2.2" target="_blank" rel="noopener">Wan 2.2 ↗</a><a href="https://github.com/Lightricks/LTX-Video" target="_blank" rel="noopener">LTX-Video ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span></div>
     </div>
     <p class="what">Open-weight video models run locally (often in ComfyUI) to create stylized effect loops that are converted into flipbooks.</p>
@@ -834,6 +880,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Runway Gen-4.5</h3><span class="vendor">Runway</span></div>
+      <div class="links"><a href="https://runwayml.com" target="_blank" rel="noopener">Runway ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Video generation with Motion Brush control over what moves. Used for effect and cinematic look development.</p>
@@ -849,6 +896,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Autodesk Flow Studio</h3><span class="vendor">Autodesk (formerly Wonder Studio)</span></div>
+      <div class="links"><a href="https://www.autodesk.com/products/flow-studio" target="_blank" rel="noopener">Autodesk ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Replaces a filmed actor with a CG character, matches lighting, and outputs clean plates, alpha masks, camera tracks and mocap data for Maya, Blender, Unreal or USD.</p>
@@ -864,6 +912,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>SideFX Houdini (ML toolset)</h3><span class="vendor">SideFX</span></div>
+      <div class="links"><a href="https://www.sidefx.com/products/houdini/" target="_blank" rel="noopener">SideFX ↗</a></div>
       <div class="deploy"><span class="dep">Local</span></div>
     </div>
     <p class="what">Procedural VFX standard. Its machine-learning nodes train models on simulation data, for example fast approximations of costly sims.</p>
@@ -880,6 +929,7 @@ p{margin:0}
 <section class="static-tab" id="static-engine"><h2>Engine Integration &amp; Code</h2><p class="intro">Coding agents and AI built into Unity and Unreal. Both engines adopted the Model Context Protocol (MCP) in 2026, so agents can now edit scenes, assets and Blueprints directly rather than only writing code.</p><p><strong>Typical gain:</strong> 15–20% (faster delivery on UI logic, refactoring and integration; 50–70% less boilerplate (studio-reported))</p><p><strong>Where AI fits best:</strong> UI logic, refactoring, scripting, API integration, getting up to speed on unfamiliar engines, scene setup, test boilerplate, commit and documentation work.</p><p><strong>Integration notes:</strong> Use private or local LLMs for client code. Require code review on everything AI writes. Keep architecture-level code human-written, a common studio QA policy.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Unity AI (Assistant, Gateway, MCP)</h3><span class="vendor">Unity</span></div>
+      <div class="links"><a href="https://unity.com/products/ai" target="_blank" rel="noopener">Unity ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span><span class="dep">Cloud</span></div>
     </div>
     <p class="what">In-editor agent with Ask, Plan and Agent modes. The AI Gateway runs Claude Code, Codex, Gemini CLI or Cursor with your own keys. The MCP server lets outside agents control the editor. Open beta since May 2026.</p>
@@ -895,6 +945,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Unreal MCP plugin (UE 5.8) → UE6</h3><span class="vendor">Epic Games</span></div>
+      <div class="links"><a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-release-notes" target="_blank" rel="noopener">UE 5.8 release notes ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Experimental MCP plugin that connects any LLM to Blueprints, assets, levels, materials and meshes. UE6 will build in Claude and Gemini, with early access around end of 2027.</p>
@@ -910,6 +961,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Claude Code</h3><span class="vendor">Anthropic</span></div>
+      <div class="links"><a href="https://www.claude.com/product/claude-code" target="_blank" rel="noopener">Anthropic ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
     <p class="what">Terminal-based coding agent that reads the whole codebase, edits across files, runs builds and tests, and drives the engines through their MCP servers. Epic demoed Claude inside Unreal at State of Unreal 2026.</p>
@@ -925,6 +977,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>GitHub Copilot / JetBrains AI</h3><span class="vendor">GitHub · JetBrains</span></div>
+      <div class="links"><a href="https://github.com/features/copilot" target="_blank" rel="noopener">GitHub Copilot ↗</a><a href="https://www.jetbrains.com/ai/" target="_blank" rel="noopener">JetBrains AI ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Code completion, documentation and commit messages inside the IDE (VS Code, Visual Studio, Rider).</p>
@@ -940,6 +993,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Cursor</h3><span class="vendor">Anysphere</span></div>
+      <div class="links"><a href="https://cursor.com" target="_blank" rel="noopener">Cursor ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Cloud</span></div>
     </div>
     <p class="what">AI-first code editor with agent mode, codebase indexing and model choice. Selectable inside Unity's AI Gateway.</p>
@@ -955,6 +1009,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Aura (incl. Coplay)</h3><span class="vendor">Ramen</span></div>
+      <div class="links"><a href="https://coplay.dev" target="_blank" rel="noopener">Coplay / Aura ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
     <p class="what">AI assistant for Unity and Unreal. It acquired Coplay in March 2026. The free, MIT-licensed Unity MCP stays available.</p>
@@ -970,6 +1025,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Ludus AI</h3><span class="vendor">Ludus</span></div>
+      <div class="links"><a href="https://ludusengine.com" target="_blank" rel="noopener">Ludus AI ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Unreal plugin plus web app that generates C++, Blueprints, 3D models, animation, VFX and UI layouts.</p>
@@ -985,6 +1041,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Bezi</h3><span class="vendor">Bezi</span></div>
+      <div class="links"><a href="https://www.bezi.com" target="_blank" rel="noopener">Bezi ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Unity AI assistant that runs alongside the editor, for scripting and project questions.</p>
@@ -1000,6 +1057,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Private / local LLMs (Qwen, Aya)</h3><span class="vendor">Open weights</span></div>
+      <div class="links"><a href="https://huggingface.co/Qwen" target="_blank" rel="noopener">Qwen ↗</a><a href="https://cohere.com/research/aya" target="_blank" rel="noopener">Aya ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span></div>
     </div>
     <p class="what">Self-hosted models for reasoning over the whole project, analysing architecture and assisting with code, without client code leaving the network.</p>
@@ -1015,6 +1073,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Unity Inference Engine (Sentis)</h3><span class="vendor">Unity</span></div>
+      <div class="links"><a href="https://docs.unity3d.com/Packages/com.unity.ai.inference@2.6/manual/index.html" target="_blank" rel="noopener">Unity docs ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span><span class="dep">Local</span></div>
     </div>
     <p class="what">Runs ONNX neural networks inside the game on any Unity platform, including mobile, with no cloud round trip.</p>
@@ -1031,6 +1090,7 @@ p{margin:0}
 <section class="static-tab" id="static-render"><h2>Rendering &amp; Tech Art</h2><p class="intro">Neural upscaling, frame generation, neural texture compression and offline AI upscaling. On PC these are mainstream. On mobile, neural hardware only started arriving in late 2026.</p><p><strong>Typical gain:</strong> Up to 50% (GPU workload saved by rendering at lower resolution (Arm NSS, simulated); 85% less texture memory in NVIDIA's demo)</p><p><strong>Where AI fits best:</strong> Reaching frame-rate targets, mid-range phone budgets, VRAM limits, UI and texture upscaling for ports and remasters.</p><p><strong>Integration notes:</strong> Use the vendor SDK for each platform. Test temporal stability and input latency with frame generation. QA AI-upscaled textures for hallucinated detail.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>NVIDIA DLSS 4.5</h3><span class="vendor">NVIDIA</span></div>
+      <div class="links"><a href="https://www.nvidia.com/en-us/geforce/technologies/dlss/" target="_blank" rel="noopener">NVIDIA ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Second-generation transformer super resolution and dynamic multi frame generation up to 6× (five generated frames per rendered frame). Announced at CES 2026.</p>
@@ -1046,6 +1106,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>AMD FSR Redstone (FSR 4.1)</h3><span class="vendor">AMD</span></div>
+      <div class="links"><a href="https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html" target="_blank" rel="noopener">AMD ↗</a><a href="https://gpuopen.com/amd-fidelityfx-sdk/" target="_blank" rel="noopener">FidelityFX SDK ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
     <p class="what">AMD's first machine-learning upscaler, plus ML ray-tracing denoising, neural radiance caching and frame generation.</p>
@@ -1061,6 +1122,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Intel XeSS 2 / 3</h3><span class="vendor">Intel</span></div>
+      <div class="links"><a href="https://github.com/intel/xess" target="_blank" rel="noopener">XeSS SDK ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Upscaling and frame generation that run on NVIDIA, AMD and Qualcomm hardware as well as Intel.</p>
@@ -1076,6 +1138,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Arm Neural Super Sampling</h3><span class="vendor">Arm</span></div>
+      <div class="links"><a href="https://www.arm.com/technologies/neural-technology" target="_blank" rel="noopener">Arm ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Neural upscaling for mobile GPUs: 540p to 1080p in about 4 ms. Unreal plugin available, and the first neural-accelerator Mali GPU (G2-Ultra NX) was reported in September 2026.</p>
@@ -1091,6 +1154,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Snapdragon GSR 2</h3><span class="vendor">Qualcomm</span></div>
+      <div class="links"><a href="https://github.com/SnapdragonGameStudios/snapdragon-gsr" target="_blank" rel="noopener">GitHub ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span><span class="dep">Open</span></div>
     </div>
     <p class="what">Temporal anti-aliasing and upscaling tuned for Adreno GPUs. Not neural, but the practical Android upscaler today.</p>
@@ -1106,6 +1170,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Apple MetalFX</h3><span class="vendor">Apple</span></div>
+      <div class="links"><a href="https://developer.apple.com/documentation/metalfx" target="_blank" rel="noopener">Apple docs ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Spatial and temporal upscaling on iPhone and Mac. Metal 4 added frame interpolation and denoising.</p>
@@ -1121,6 +1186,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>NVIDIA RTX Neural Texture Compression</h3><span class="vendor">NVIDIA</span></div>
+      <div class="links"><a href="https://github.com/NVIDIA-RTX/RTXNTC" target="_blank" rel="noopener">GitHub ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Stores textures as compact neural representations decoded on the GPU. Beta SDK for RTX 20-series and newer.</p>
@@ -1136,6 +1202,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Tencent MagicDawn</h3><span class="vendor">Tencent</span></div>
+      <div class="links"><a href="https://magicdawn.tencent.com" target="_blank" rel="noopener">MagicDawn ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Rendering technology covering global illumination, Neural Dynamic GI (beta), and neural upscaling and denoising with Arm (Arena Breakout: Infinite demo).</p>
@@ -1151,6 +1218,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Topaz Gigapixel</h3><span class="vendor">Topaz Labs</span></div>
+      <div class="links"><a href="https://www.topazlabs.com/gigapixel" target="_blank" rel="noopener">Topaz Labs ↗</a></div>
       <div class="deploy"><span class="dep">Local</span></div>
     </div>
     <p class="what">Multi-model AI upscaler with a GUI, built for art workflows: UI, textures and key art for ports and remasters.</p>
@@ -1166,6 +1234,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>ESRGAN / Real-ESRGAN</h3><span class="vendor">Open source</span></div>
+      <div class="links"><a href="https://github.com/xinntao/Real-ESRGAN" target="_blank" rel="noopener">GitHub ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span></div>
     </div>
     <p class="what">Open-source framework for image restoration and upscaling, with custom training for project-specific textures.</p>
@@ -1182,6 +1251,7 @@ p{margin:0}
 <section class="static-tab" id="static-audio"><h2>Audio &amp; Voice</h2><p class="intro">Text-to-speech, voice cloning, sound effects and music generation. Use is held back by licensing and performer agreements more than by quality.</p><p><strong>Typical gain:</strong> 66% (narration recording time saved, 20 of 30 hours (studio-reported))</p><p><strong>Where AI fits best:</strong> Scratch and placeholder VO, internal and demo narration, sound-effect one-shots, background music, runtime voices for AI characters.</p><p><strong>Integration notes:</strong> Clone voices only with written consent. The SAG-AFTRA 2025 agreement requires consent and disclosure, and pays at least 7.5× scale for real-time use. Check each tool's commercial tier.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>ElevenLabs</h3><span class="vendor">ElevenLabs</span></div>
+      <div class="links"><a href="https://elevenlabs.io" target="_blank" rel="noopener">ElevenLabs ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
     <p class="what">Voice generation and cloning, sound effects from text, and a music model trained on licensed data (deals with Merlin and Kobalt).</p>
@@ -1197,6 +1267,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Microsoft VibeVoice</h3><span class="vendor">Microsoft (open source)</span></div>
+      <div class="links"><a href="https://huggingface.co/microsoft/VibeVoice-1.5B" target="_blank" rel="noopener">Hugging Face ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span></div>
     </div>
     <p class="what">Open long-form text-to-speech that can run on-prem. Microsoft pulled the TTS code from its GitHub in September 2025 after misuse; the MIT-licensed weights remain on Hugging Face.</p>
@@ -1212,6 +1283,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Inworld TTS-1.5</h3><span class="vendor">Inworld AI</span></div>
+      <div class="links"><a href="https://inworld.ai/tts" target="_blank" rel="noopener">Inworld ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
     <p class="what">Low-latency text-to-speech for runtime game characters. Inworld has repositioned as AI infrastructure with voice and an agent runtime.</p>
@@ -1227,6 +1299,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Stable Audio</h3><span class="vendor">Stability AI</span></div>
+      <div class="links"><a href="https://stableaudio.com" target="_blank" rel="noopener">Stable Audio ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">Local</span></div>
     </div>
     <p class="what">Generates music and sound effects, with clips long enough to cut clean loops.</p>
@@ -1242,6 +1315,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>ACE-Step</h3><span class="vendor">Open source</span></div>
+      <div class="links"><a href="https://github.com/ace-step/ACE-Step" target="_blank" rel="noopener">GitHub ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span></div>
     </div>
     <p class="what">Open-source music generation model. v1 is Apache 2.0 and v1.5 is MIT, with commercial use of outputs allowed.</p>
@@ -1257,6 +1331,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Suno</h3><span class="vendor">Suno</span></div>
+      <div class="links"><a href="https://suno.com" target="_blank" rel="noopener">Suno ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Song and music generation from prompts.</p>
@@ -1273,6 +1348,7 @@ p{margin:0}
 <section class="static-tab" id="static-qa"><h2>QA &amp; Playtesting</h2><p class="intro">Playtest bots, autonomous test agents and AI help for test engineers. Level-difficulty bots are proven at scale. General test agents still produce non-deterministic results.</p><p><strong>Typical gain:</strong> Up to 50% (lower manual QA cost (nunu.ai, vendor claim); 50–70% less test-code boilerplate (studio-reported))</p><p><strong>Where AI fits best:</strong> Predicting level difficulty, exploratory and stress testing, regression smoke tests, writing test scripts, bug-report summaries.</p><p><strong>Integration notes:</strong> Mix approaches: deterministic scripts for CI regression, AI agents for exploratory testing, humans for fun, balance and narrative. Log agent seeds and replays so results can be reproduced.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Custom playtest bots</h3><span class="vendor">In-house (King approach)</span></div>
+      <div class="links"><a href="https://mobilegamer.biz/how-king-balances-human-and-ai-powered-design-in-candy-crush-saga/" target="_blank" rel="noopener">King case (mobilegamer.biz) ↗</a></div>
       <div class="deploy"><span class="dep">Local</span></div>
     </div>
     <p class="what">Bots trained to play every level before release and predict difficulty and pass rates. King uses this for Candy Crush Saga.</p>
@@ -1288,6 +1364,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>modl.ai (modl:test)</h3><span class="vendor">modl.ai</span></div>
+      <div class="links"><a href="https://modl.ai" target="_blank" rel="noopener">modl.ai ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">Plugin</span></div>
     </div>
     <p class="what">Autonomous bots that play builds to find bugs and simulate players. Integrates with Unity and Unreal and runs in CI/CD.</p>
@@ -1303,6 +1380,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>nunu.ai</h3><span class="vendor">nunu.ai</span></div>
+      <div class="links"><a href="https://nunu.ai" target="_blank" rel="noopener">nunu.ai ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Multimodal agents (Gemini on Google Cloud) that watch frames, send inputs like a player, and turn natural-language test cases into recordings, reasoning logs and reports.</p>
@@ -1318,6 +1396,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>LLM assistants for test engineers</h3><span class="vendor">ChatGPT · Claude · Gemini</span></div>
+      <div class="links"><a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT ↗</a><a href="https://claude.ai" target="_blank" rel="noopener">Claude ↗</a><a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Explain unfamiliar engine components, refine Jira and Slack updates, summarise action items and transcripts.</p>
@@ -1333,6 +1412,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>DeepMind SIMA 2</h3><span class="vendor">Google DeepMind</span></div>
+      <div class="links"><a href="https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/" target="_blank" rel="noopener">DeepMind ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Research agent that follows instructions, reasons about goals and improves itself in games it has never seen.</p>
@@ -1349,6 +1429,7 @@ p{margin:0}
 <section class="static-tab" id="static-loc"><h2>Localization</h2><p class="intro">LLM translation with human review, automated LQA error detection and multilingual lip-sync. Localization has the most rigorous independent benchmark in this catalogue.</p><p><strong>Typical gain:</strong> 60% (less LQA review time (Gridly, vendor claim); one SLG publisher cut cost 59% (Loxily, vendor case))</p><p><strong>Where AI fits best:</strong> High-volume LiveOps text, first-pass translation, LQA error spotting, terminology consistency, lip-sync for localized VO.</p><p><strong>Integration notes:</strong> Keep human linguists on final quality. Use open-weight models (Qwen, Aya) on controlled data for unreleased content. Feed glossaries and string context to the model.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Lionbridge Samurai</h3><span class="vendor">Lionbridge Games</span></div>
+      <div class="links"><a href="https://games.lionbridge.com" target="_blank" rel="noopener">Lionbridge Games ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">LLM translation with human linguists at the core for translation, editing and proofreading. Named &quot;Best Overall Use of AI in Gaming&quot; at the 2026 AI Breakthrough Awards.</p>
@@ -1364,6 +1445,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Claude Sonnet 4 (LQA)</h3><span class="vendor">Anthropic</span></div>
+      <div class="links"><a href="https://www.anthropic.com/claude/sonnet" target="_blank" rel="noopener">Anthropic ↗</a><a href="https://aclanthology.org/2026.amta-research.12/" target="_blank" rel="noopener">Benchmark paper ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
     <p class="what">Best of 8 LLMs at detecting game LQA errors from English into 6 languages in an AMTA 2026 benchmark.</p>
@@ -1379,6 +1461,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Qwen-2.5-72B / Aya (open)</h3><span class="vendor">Alibaba · Cohere</span></div>
+      <div class="links"><a href="https://huggingface.co/Qwen" target="_blank" rel="noopener">Qwen ↗</a><a href="https://cohere.com/research/aya" target="_blank" rel="noopener">Aya ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span></div>
     </div>
     <p class="what">Open-weight LLMs for self-hosted LQA and translation experiments on fully controlled data.</p>
@@ -1394,6 +1477,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Gemini 2.0 Flash (LQA)</h3><span class="vendor">Google</span></div>
+      <div class="links"><a href="https://ai.google.dev/gemini-api/docs/models" target="_blank" rel="noopener">Gemini API ↗</a><a href="https://aclanthology.org/2026.amta-research.12/" target="_blank" rel="noopener">Benchmark paper ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
     <p class="what">Fast, low-cost model for high-volume LQA screening.</p>
@@ -1409,6 +1493,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Gridly</h3><span class="vendor">Gridly</span></div>
+      <div class="links"><a href="https://www.gridly.com" target="_blank" rel="noopener">Gridly ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Localization content management for games, with AI-assisted LQA built in.</p>
@@ -1424,6 +1509,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Loxily</h3><span class="vendor">Loxily</span></div>
+      <div class="links"><a href="https://loxily.com" target="_blank" rel="noopener">Loxily ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">AI-first game localization service.</p>
@@ -1440,6 +1526,7 @@ p{margin:0}
 <section class="static-tab" id="static-mkt"><h2>Trailers &amp; UA Creative</h2><p class="intro">Video models for previs, pitch trailers and ad creative. Final gameplay trailers still use captured footage. Mobile publishers use AI most heavily in UA ad creative.</p><p><strong>Typical gain:</strong> ~15% (faster trailer concepting with LLM scripts and AI imagery (studio-reported))</p><p><strong>Where AI fits best:</strong> Pitch and previs videos, style frames, cinematic intros, social cuts, high-volume UA creative variations.</p><p><strong>Integration notes:</strong> Keep gameplay sections real. Steam advises that first trailers should be mostly gameplay. Disclose AI in ads where the platform or region requires it. OpenAI announced in March 2026 that it is shutting down Sora, so check a tool is still supported before building on it.</p><div class="cards"><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Google Veo 3.1</h3><span class="vendor">Google</span></div>
+      <div class="links"><a href="https://deepmind.google/models/veo/" target="_blank" rel="noopener">Google DeepMind ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
     <p class="what">Video generation with native audio and 4K output.</p>
@@ -1455,6 +1542,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Kling 3.0</h3><span class="vendor">Kuaishou</span></div>
+      <div class="links"><a href="https://kling.ai" target="_blank" rel="noopener">Kling AI ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
     <p class="what">Multi-shot video with strong subject consistency and storyboard tools.</p>
@@ -1470,6 +1558,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Runway Gen-4.5</h3><span class="vendor">Runway</span></div>
+      <div class="links"><a href="https://runwayml.com" target="_blank" rel="noopener">Runway ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">Video generation with Motion Brush and fine-grained shot control.</p>
@@ -1485,6 +1574,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Wan 2.2 / LTX-2.5 (open)</h3><span class="vendor">Alibaba · Lightricks</span></div>
+      <div class="links"><a href="https://github.com/Wan-Video/Wan2.2" target="_blank" rel="noopener">Wan 2.2 ↗</a><a href="https://github.com/Lightricks/LTX-Video" target="_blank" rel="noopener">LTX-Video ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span></div>
     </div>
     <p class="what">Open-weight video models to self-host for confidential pitch work.</p>
@@ -1500,6 +1590,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>LLMs for scripts (ChatGPT, Claude, Gemini)</h3><span class="vendor">Various</span></div>
+      <div class="links"><a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT ↗</a><a href="https://claude.ai" target="_blank" rel="noopener">Claude ↗</a><a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">First-pass trailer scripts, narrative routes and themes, plus research for pitches.</p>
@@ -1515,6 +1606,7 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>AppLovin SparkLabs</h3><span class="vendor">AppLovin</span></div>
+      <div class="links"><a href="https://www.applovin.com" target="_blank" rel="noopener">AppLovin ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span></div>
     </div>
     <p class="what">AppLovin's creative studio using AI for ad concepts and production, now including AI-generated interactive ads.</p>
@@ -1547,52 +1639,52 @@ const TABS = [
   fit:"Exploring many concept options, combining multiple references, unifying artist-made pieces, style-locked LiveOps and UA art volume.",
   integrate:"Train a style model or LoRA per client or IP. Run open models (Qwen, FLUX, SDXL) locally through ComfyUI for work under NDA. Keep artist overpaint as the final step for quality and copyright.",
   tools:[
-  {n:"Qwen Image / Qwen Image Edit 2509",v:"Alibaba",d:["Local","Open"],
+  {n:"Qwen Image / Qwen Image Edit 2509",u:[["Hugging Face", "https://huggingface.co/Qwen/Qwen-Image-Edit-2509"]],v:"Alibaba",d:["Local","Open"],
    what:"Open-weight image generation and instruction-based editing that takes 1–3 reference images, which suits multi-reference concepts. Community LoRAs add multi-angle turnarounds.",
    pro:["Strong multi-reference editing","Runs locally, so client IP never leaves the studio","Fine-tunable with LoRAs"],
    con:["Needs a high-VRAM GPU and ComfyUI skills","Newer editing versions (2511) keep changing workflows"],
    e:{v:"40–60%",l:"render-stage time in a studio's AI-assisted 2D pipeline (stage-level; tool not isolated)",g:"measured",s:"Studio case study"}},
-  {n:"FLUX.2 / FLUX.1 Kontext",v:"Black Forest Labs",d:["Local","API"],
+  {n:"FLUX.2 / FLUX.1 Kontext",u:[["Black Forest Labs", "https://bfl.ai"]],v:"Black Forest Labs",d:["Local","API"],
    what:"High-quality image models. Kontext edits an image from text instructions while keeping characters and layout, and FLUX.2 supports LoRAs for consistent characters and styles.",
    pro:["Edits keep characters and layout consistent","Large LoRA ecosystem","Available hosted or self-hosted"],
    con:["The FLUX.1 Kontext [dev] licence restricts commercial use, so check each variant","Heavy GPU requirements locally"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Stable Diffusion XL + ComfyUI",v:"Stability AI / open source",d:["Local","Open"],
+  {n:"Stable Diffusion XL + ComfyUI",u:[["ComfyUI", "https://www.comfy.org"]],v:"Stability AI / open source",d:["Local","Open"],
    what:"The mature open-source base model and node-graph pipeline: ControlNet pose and depth control, inpainting, and custom checkpoints trained on a studio's art.",
    pro:["Runs on older hardware","Most tooling and control options","Stable for long projects"],
    con:["Lower image quality than 2025–26 models","Pipeline upkeep needs a technical artist"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Midjourney (V7 and later)",v:"Midjourney",d:["Cloud"],
+  {n:"Midjourney (V7 and later)",u:[["Midjourney", "https://www.midjourney.com"]],v:"Midjourney",d:["Cloud"],
    what:"Text and image-reference generator known for its look, colour and composition. Mostly used for moodboards and early direction.",
    pro:["Best-looking images out of the box","Fast exploration of many directions","Style and character reference controls"],
    con:["Companies with over $1M annual revenue need the Pro or Mega plan","No IP indemnity; cloud only","Weaker at precise edits"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Nano Banana Pro (Gemini 3 Pro Image)",v:"Google",d:["Cloud","API"],
+  {n:"Nano Banana Pro (Gemini 3 Pro Image)",u:[["Google DeepMind", "https://deepmind.google/models/gemini-image/pro/"]],v:"Google",d:["Cloud","API"],
    what:"Image model that edits from instructions while keeping characters consistent across images, and renders text accurately.",
    pro:["Scored 9.50 vs Midjourney V7's 8.62 in one blog's 29-prompt blind test","Best text rendering, useful for UI mock-ups and key art","API priced per resolution"],
    con:["Less painterly than Midjourney","Google cloud only"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Adobe Firefly / Photoshop Generative Fill",v:"Adobe",d:["Cloud","Plugin"],
+  {n:"Adobe Firefly / Photoshop Generative Fill",u:[["Adobe Firefly", "https://www.adobe.com/products/firefly.html"]],v:"Adobe",d:["Cloud","Plugin"],
    what:"Generative fill, extension and reference-based generation inside Photoshop, from a model trained on licensed content.",
    pro:["IP indemnity for enterprise customers on listed features","Built into artists' existing tools","Lowest legal risk"],
    con:["Lower stylistic ceiling","Credit-based usage","Output can still resemble existing works"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Scenario",v:"Scenario",d:["Cloud","API"],
+  {n:"Scenario",u:[["Scenario", "https://www.scenario.com"]],v:"Scenario",d:["Cloud","API"],
    what:"Platform for training custom style models on studio art and generating consistent assets. It also hosts third-party models (Hunyuan 3D, TRELLIS, Retro Diffusion, Uthana).",
    pro:["Style training without ML engineers","Team workspace and API","One account covers 2D, 3D and motion models"],
    con:["Credit costs grow with volume","Mostly a wrapper around third-party models"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Layer AI",v:"Layer",d:["Cloud","API"],
+  {n:"Layer AI",u:[["Layer", "https://www.layer.ai"]],v:"Layer",d:["Cloud","API"],
    what:"Mobile-focused platform for brand-trained art: LiveOps event art, store assets and ad creative sized for Meta, TikTok, Google and AppLovin.",
    pro:["Built for mobile LiveOps volume","200+ studios, including Zynga and Tripledot","Seed round backed by a King co-founder's fund"],
    con:["Small company ($6.5M seed)","Best for 2D marketing art, not production 3D"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"PixelLab",v:"PixelLab",d:["Cloud","Plugin"],
+  {n:"PixelLab",u:[["PixelLab", "https://www.pixellab.ai"]],v:"PixelLab",d:["Cloud","Plugin"],
    what:"Pixel-art generator that treats a sprite as a skeleton: pose it, rotate to 4 or 8 directions, build tilesets and inpaint on a true pixel grid.",
    pro:["Animated, multi-direction sprites","Grid-accurate output"],
    con:["Pixel art only","Output still needs cleanup in Aseprite"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Retro Diffusion",v:"Retro Diffusion",d:["Local","Plugin"],
+  {n:"Retro Diffusion",u:[["Retro Diffusion", "https://www.retrodiffusion.ai"]],v:"Retro Diffusion",d:["Local","Plugin"],
    what:"Pixel-art models trained with pixel artists, including RD Animation for sprite sheets and RD Tile. Available as an Aseprite extension or through Scenario.",
    pro:["One-time price ($20 Lite / $65 full, per one comparison)","Fits Aseprite workflows","Limited, grid-aligned palettes"],
    con:["Small sprites only","Animations need palette locking and cleanup"],
@@ -1605,42 +1697,42 @@ const TABS = [
   fit:"Blockouts from 2D concepts, high-poly hypotheses, prop and character variations, filling angles missing from concept art.",
   integrate:"Generate in Hunyuan3D, Tripo or Rodin, then retopologize, UV and texture. Check scale, pivots, LODs and collision in-engine. Tripo and TRELLIS can run locally for work under NDA.",
   tools:[
-  {n:"Hunyuan3D 3.0 / 3.1",v:"Tencent",d:["Cloud","API"],
+  {n:"Hunyuan3D 3.0 / 3.1",u:[["Hunyuan 3D", "https://3d.hunyuan.tencent.com"]],v:"Tencent",d:["Cloud","API"],
    what:"Generates textured meshes from a photo, up to 8 views, or a sketch, with PBR materials and polygon counts up to 1.5M faces. Version 2.1 is open-weight.",
    pro:["High geometric detail","Multi-view input improves accuracy","Part of Tencent's full Studio pipeline"],
    con:["Dense meshes need retopology","Version 3.x is subscription and cloud"],
    e:{v:"10–15%",l:"faster prop production in a studio pipeline that used it for blockout and high-poly (stage-level; tool not isolated)",g:"measured",s:"Studio case study"}},
-  {n:"Tripo 3D",v:"VAST",d:["Cloud","Local","API"],
+  {n:"Tripo 3D",u:[["Tripo", "https://www.tripo3d.ai"]],v:"VAST",d:["Cloud","Local","API"],
    what:"Image and text to 3D with controllable quad or triangle topology and built-in auto-rigging. Offers local server deployment.",
    pro:["Cleanest rig-ready meshes in reviews","Local deployment for NDA work","Exports straight to Unity without Blender cleanup (one tester)"],
    con:["Narrower art-style range","Less depth in PBR texturing"],
    e:{v:"10–15%",l:"faster prop production in a studio pipeline that ran it locally (stage-level; tool not isolated)",g:"measured",s:"Studio case study"}},
-  {n:"Rodin Gen-2",v:"Hyper3D (Deemos)",d:["Cloud","API"],
+  {n:"Rodin Gen-2",u:[["Hyper3D", "https://hyper3d.ai"]],v:"Hyper3D (Deemos)",d:["Cloud","API"],
    what:"10-billion-parameter 3D model that takes text or up to 5 images. Quad-dominant or raw mesh, PBR, T/A-pose control, bounding-box limits, GLB/FBX/USDZ export.",
    pro:["T/A-pose output ready for rigging","Polygon budget control","4× the geometry quality of Gen-1"],
    con:["Paid per generation","Version naming (Gen-2 vs 2.5) is unclear"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Meshy 6",v:"Meshy",d:["Cloud","API","Plugin"],
+  {n:"Meshy 6",u:[["Meshy", "https://www.meshy.ai"]],v:"Meshy",d:["Cloud","API","Plugin"],
    what:"Text and image to 3D with strong texturing, Low Poly mode, 5k–100k face budgets and one-step remesh plus UV. Generally available since January 2026.",
    pro:["Strong texturing; reviewers favour it for props","Polygon-budget control for games"],
    con:["Auto-rigging weaker than Tripo's","Organic hero assets still need sculpting"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"TRELLIS.2",v:"Microsoft (open source)",d:["Local","Open"],
+  {n:"TRELLIS.2",u:[["GitHub", "https://github.com/microsoft/TRELLIS.2"]],v:"Microsoft (open source)",d:["Local","Open"],
    what:"Open-source image or text to 3D at up to 1536³ voxel resolution. Handles open surfaces and transparent materials.",
    pro:["Free and self-hostable","Handles difficult geometry","Available hosted on Scenario and Layer"],
    con:["Needs Linux, CUDA and a 24GB+ GPU","Output needs LODs, pivots and collision added"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Meta SAM 3D Objects",v:"Meta",d:["Local","Open"],
+  {n:"Meta SAM 3D Objects",u:[["GitHub", "https://github.com/facebookresearch/sam-3d-objects"]],v:"Meta",d:["Local","Open"],
    what:"Reconstructs a full 3D object with texture and layout from a single photo, even with clutter and occlusion. Output is a mesh or Gaussian splat.",
    pro:["Photo to prop reconstruction","Open weights; Meta's licence permits commercial use (check terms)"],
    con:["Topology is not game-ready","Best for reference and set dressing, not hero assets"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Autodesk Flow Studio · Wonder 3D",v:"Autodesk",d:["Cloud"],
+  {n:"Autodesk Flow Studio · Wonder 3D",u:[["Autodesk", "https://www.autodesk.com/products/flow-studio"]],v:"Autodesk",d:["Cloud"],
    what:"Added in March 2026: generates simple 3D models from text or images, and remeshes and retextures existing assets.",
    pro:["Inside the Autodesk ecosystem","Same workspace as rigging and LoRA training"],
    con:["Output reads as base assets that need manual refinement (CG Channel)","Credit-based"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Sloyd",v:"Sloyd",d:["Cloud","API"],
+  {n:"Sloyd",u:[["Sloyd", "https://www.sloyd.ai"]],v:"Sloyd",d:["Cloud","API"],
    what:"Parametric, template-driven prop generator where dimensions and structure matter more than sculptural uniqueness.",
    pro:["Predictable, parametric output","Suited to modular and architectural props"],
    con:["Limited to its template library","Not suited to organic or stylized hero work"],
@@ -1653,27 +1745,27 @@ const TABS = [
   fit:"Low-poly versions for engines, semantic UVs, tileable materials from a text prompt or photo, retexturing to a new style.",
   integrate:"Use for repetitive, precise steps. Keep a technical artist checking edge flow before rigging, and check texel density and channel packing for each target platform.",
   tools:[
-  {n:"Hunyuan3D Studio",v:"Tencent",d:["Cloud"],
+  {n:"Hunyuan3D Studio",u:[["Technical report", "https://arxiv.org/abs/2509.12815"], ["Hunyuan 3D", "https://3d.hunyuan.tencent.com"]],v:"Tencent",d:["Cloud"],
    what:"Seven-stage pipeline: concept, geometry, part splitting, retopology, semantic UV, PBR materials, then rigging and skinning.",
    pro:["Most complete automated pipeline","Built around a published technical report"],
    con:["The public website may not expose every stage","Tencent-hosted"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Hunyuan3D Polygen 1.5 + Hunyuan3D-Part",v:"Tencent",d:["Cloud","Open"],
+  {n:"Hunyuan3D Polygen 1.5 + Hunyuan3D-Part",u:[["Hunyuan3D-Part", "https://github.com/Tencent-Hunyuan/Hunyuan3D-Part"], ["Hunyuan 3D", "https://3d.hunyuan.tencent.com"]],v:"Tencent",d:["Cloud","Open"],
    what:"Polygen rebuilds dense, point-cloud-like meshes into structured, quad-dominant geometry. Part splits meshes into independently editable components.",
    pro:["Quad-dominant retopology","Part splitting is open source"],
    con:["Edge loops at joints still need checking","Fairly new"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Meshy Remesh & Retexture",v:"Meshy",d:["Cloud","API"],
+  {n:"Meshy Remesh & Retexture",u:[["Meshy", "https://www.meshy.ai"]],v:"Meshy",d:["Cloud","API"],
    what:"Rebuilds topology and generates new UVs in one step, and retextures existing models into a new style from a prompt.",
    pro:["Remesh and UV in a single pass","Works on any imported model"],
    con:["Less control over edge flow","Cloud only"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Substance 3D Sampler (Firefly)",v:"Adobe",d:["Local","Plugin"],
+  {n:"Substance 3D Sampler (Firefly)",u:[["Adobe", "https://www.adobe.com/products/substance3d/apps/sampler.html"]],v:"Adobe",d:["Local","Plugin"],
    what:"Text to Texture makes tileable textures from a prompt, and Image to Material turns photos into full PBR materials, feeding Substance Designer and Painter.",
    pro:["Industry-standard material pipeline","Tileable, correct-perspective output","Firefly's licensed training data"],
    con:["Text to Texture launched in beta in 2024 with no confirmed 2026 upgrade","Subscription only"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"NVIDIA RTX Remix",v:"NVIDIA",d:["Local"],
+  {n:"NVIDIA RTX Remix",u:[["NVIDIA", "https://www.nvidia.com/en-us/geforce/rtx-remix/"]],v:"NVIDIA",d:["Local"],
    what:"Remastering platform that captures classic game assets and uses AI to upscale textures and generate PBR maps for path-traced rebuilds.",
    pro:["Free","Batch AI texture upscaling with PBR generation"],
    con:["Only works with supported DirectX 8/9 games","RTX GPU required"],
@@ -1686,37 +1778,37 @@ const TABS = [
   fit:"Humanoid NPCs, skins and outfit variants, characters for pre-vis, converting scanned or AI meshes into animatable characters.",
   integrate:"Standardize on one skeleton (Epic, Mixamo or in-house) so retargeting works. Run deformation tests on extreme poses before approving any automated skinning.",
   tools:[
-  {n:"VISVISE GoSkinning",v:"Tencent Games",d:["Cloud"],
+  {n:"VISVISE GoSkinning",u:[["VISVISE", "https://visvise.com"]],v:"Tencent Games",d:["Cloud"],
    what:"Automatic skin weights combining bone-chain prediction and weight refinement, including garments. A 20,000-vertex model reportedly takes about 30 seconds.",
    pro:["Handles garment skinning","About 85% automation (Wikipedia); 90%+ weight accuracy (Tencent)"],
    con:["All figures are Tencent's own","Access outside Tencent partnerships is unclear"],
    e:{v:"8×",l:"character skinning throughput",g:"vendor",s:"Tencent Games"}},
-  {n:"Tripo Auto-Rig",v:"VAST",d:["Cloud","API"],
+  {n:"Tripo Auto-Rig",u:[["Tripo", "https://www.tripo3d.ai"]],v:"VAST",d:["Cloud","API"],
    what:"Automatic character rigging with standard joint hierarchies and skin weights, applied straight to generated or uploaded meshes.",
    pro:["Most praised AI auto-rigger in reviews","One step from generation to rigged mesh"],
    con:["Humanoid focus","Reviews cover bipeds; test other body types"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"AccuRIG 2",v:"Reallusion",d:["Local"],
+  {n:"AccuRIG 2",u:[["Reallusion", "https://actorcore.reallusion.com/auto-rig"]],v:"Reallusion",d:["Local"],
    what:"Free auto-rigger for body and fingers that accepts A-pose, T-pose or scan poses. Exports FBX/USD and retargets ActorCore animation.",
    pro:["Free","Finger rigs included","Works with high-poly and multi-mesh characters"],
    con:["Windows only","Humanoid only","Account needed for export"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Mixamo",v:"Adobe",d:["Cloud"],
+  {n:"Mixamo",u:[["Mixamo", "https://www.mixamo.com"]],v:"Adobe",d:["Cloud"],
    what:"The original free web auto-rigger and animation library.",
    pro:["Free, with a huge animation library","Widely supported skeleton"],
    con:["In maintenance mode","Humanoid T-pose only"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Mesh to MetaHuman (UE 5.8)",v:"Epic Games",d:["Plugin"],
+  {n:"Mesh to MetaHuman (UE 5.8)",u:[["MetaHuman", "https://www.metahuman.com"]],v:"Epic Games",d:["Plugin"],
    what:"Turns any human mesh of any topology into a fully rigged MetaHuman in one workflow. Epic open-sourced RigLogic/DNA under MIT.",
    pro:["Film-quality facial rig","Free with Unreal","Open rig logic"],
    con:["Realistic humans only","Ties you to Unreal"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Unreal ML Deformer",v:"Epic Games",d:["Plugin"],
+  {n:"Unreal ML Deformer",u:[["Epic docs", "https://dev.epicgames.com/documentation/en-us/unreal-engine/ml-deformer-framework-in-unreal-engine"]],v:"Epic Games",d:["Plugin"],
    what:"Trains a model on offline muscle and cloth simulation so high-quality deformation runs in real time.",
    pro:["Close to film-quality deformation at runtime","Fits hero characters"],
    con:["Needs simulation training data","Too costly at runtime for low-end mobile"],
    e:{v:"—",l:"improves quality rather than saving time",g:"none",s:""}},
-  {n:"Cascadeur QuickRig",v:"Nekki",d:["Local"],
+  {n:"Cascadeur QuickRig",u:[["Cascadeur", "https://cascadeur.com"]],v:"Nekki",d:["Local"],
    what:"Fast auto-rig inside Cascadeur that sets characters up for its AI posing and physics tools.",
    pro:["Connects directly to AutoPosing and AutoPhysics"],
    con:["Built for Cascadeur's own workflow","Non-humanoid support lags"],
@@ -1729,52 +1821,52 @@ const TABS = [
   fit:"Stance and transition coverage, locomotion variants, lip-sync in many languages, previs mocap without a stage, player emotes.",
   integrate:"Lock a retargeting skeleton first. Use AI for coverage and base layers, and keep animators on performance and polish. Treat markerless capture as previs unless it is cleaned.",
   tools:[
-  {n:"Motorica",v:"Motorica (Stockholm)",d:["Cloud","Plugin"],
+  {n:"Motorica",u:[["Motorica", "https://motorica.com"]],v:"Motorica (Stockholm)",d:["Cloud","Plugin"],
    what:"Motion synthesis: a transformer trained on thousands of hours of mocap generates styled animation sets. MoGen runs in the browser with FBX export, and Motorica Studio is an Unreal plugin.",
    pro:["Generates full stance sets from little source mocap","Style-consistent variants"],
    con:["Small company (21 staff)","Vendor claims of 200× faster and 90%+ cheaper are unverified"],
    e:{v:"~88%",l:"all stances in ~1 week vs 2+ months (AAA combat game)",g:"measured",s:"Studio case study"}},
-  {n:"JALI",v:"JALI Research",d:["Local","Plugin"],
+  {n:"JALI",u:[["JALI Research", "https://jaliresearch.com"]],v:"JALI Research",d:["Local","Plugin"],
    what:"Generates facial animation and lip-sync from audio, transcript and emotion tags, with animator-adjustable jaw and lip controls.",
    pro:["Proven at AAA scale (Cyberpunk 2077, 10 languages)","Handles language switches mid-sentence"],
    con:["Commercial licence; pricing on request","Output must be mapped to your face rig"],
    e:{v:"80%",l:"lip-sync to a new language: 1 day instead of 5",g:"measured",s:"Studio case study"}},
-  {n:"NVIDIA Audio2Face",v:"NVIDIA (open source)",d:["Local","Open","Plugin"],
+  {n:"NVIDIA Audio2Face",u:[["GitHub", "https://github.com/NVIDIA/Audio2Face-3D"], ["NVIDIA ACE", "https://developer.nvidia.com/ace-for-games"]],v:"NVIDIA (open source)",d:["Local","Open","Plugin"],
    what:"Audio to facial animation, with Audio2Emotion. Models, SDK, training framework and UE5 plugin open-sourced September 2025.",
    pro:["Free and fine-tunable","Used by Codemasters, GSC, NetEase, Perfect World; shipped in F1 25","Runs offline or streams live"],
    con:["Needs tuning per face rig","Optimised for NVIDIA hardware"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Cascadeur",v:"Nekki",d:["Local"],
+  {n:"Cascadeur",u:[["Cascadeur", "https://cascadeur.com"]],v:"Nekki",d:["Local"],
    what:"Keyframe animation app with AutoPosing (move a few controls, AI fills in the body), AI inbetweening and AutoPhysics.",
    pro:["Fast blocking with physically plausible poses","Unreal integration","Indie plan about $8/mo on annual billing (third-party listing)"],
    con:["Steep learning curve for physics workflows","Free tier exports only .casc"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"MetaHuman Animator (UE 5.8)",v:"Epic Games",d:["Plugin"],
+  {n:"MetaHuman Animator (UE 5.8)",u:[["MetaHuman", "https://www.metahuman.com"]],v:"Epic Games",d:["Plugin"],
    what:"Face capture, and now experimental single-camera body capture, from webcams or phones, solved onto MetaHumans.",
    pro:["Free","No mocap stage needed","Markerless plugin built on Meshcapade"],
    con:["Body capture is experimental","Best with MetaHuman rigs"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Move AI",v:"Move AI",d:["Cloud"],
+  {n:"Move AI",u:[["Move AI", "https://www.move.ai"]],v:"Move AI",d:["Cloud"],
    what:"Markerless motion capture from standard multi-camera video, indoors or outdoors.",
    pro:["No suits or markers","Captures complex, large-space moves"],
    con:["Needs synced cameras and good lighting","Older reviews note weak finger tracking"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Rokoko Vision",v:"Rokoko",d:["Cloud"],
+  {n:"Rokoko Vision",u:[["Rokoko", "https://www.rokoko.com/products/vision"]],v:"Rokoko",d:["Cloud"],
    what:"Markerless capture in the browser from one or two webcams.",
    pro:["Cheapest way into mocap","Instant previs"],
    con:["Struggles with occlusion","Rokoko's accuracy claims come from its own tests"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Uthana",v:"Uthana",d:["Cloud","API","Plugin"],
+  {n:"Uthana",u:[["Uthana", "https://uthana.com"]],v:"Uthana",d:["Cloud","API","Plugin"],
    what:"Text to Motion 3.0 and Video to Motion 2.1. Retargets to your character and exports FBX/GLB at 24/30/60 fps, with in-place, transition-stitching and Roblox-compatible options.",
    pro:["Game-ready export options","API and Blender plugin"],
    con:["Trained on realistic human motion; fantastical moves are weak","Text-to-Motion 3.0 API is in limited release"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"VISVISE MotionBlink",v:"Tencent Games",d:["Cloud"],
+  {n:"VISVISE MotionBlink",u:[["VISVISE", "https://visvise.com"]],v:"Tencent Games",d:["Cloud"],
    what:"Generates keyframes and in-betweens, reducing foot sliding and jitter.",
    pro:["Claims up to 200 frames generated in 4 seconds","Quality close to optical mocap (Tencent)"],
    con:["All figures are vendor claims","Availability outside Tencent is unclear"],
    e:{v:"Days → s",l:"skeletal animation, 3–7 days cut to about 10 seconds",g:"vendor",s:"Tencent Games"}},
-  {n:"Kinetix",v:"Kinetix",d:["API","Plugin"],
+  {n:"Kinetix",u:[["Kinetix", "https://www.kinetix.tech"]],v:"Kinetix",d:["API","Plugin"],
    what:"Player-facing emote SDK. Players turn any video into an emote on their avatar, in game.",
    pro:["Integrates in about a day (vendor)","Unity and Unreal SDKs"],
    con:["Runtime emotes, not production animation","I found no 2026 updates"],
@@ -1787,32 +1879,32 @@ const TABS = [
   fit:"Flipbook and sprite-sheet look development, stylized effect concepts, cinematic character replacement, clean plates and camera tracking.",
   integrate:"Use AI for look development and flipbook drafts, then rebuild in Niagara or VFX Graph for timing, alpha and performance. Budget the texture memory of each flipbook for mobile.",
   tools:[
-  {n:"JangaFX EmberGen",v:"JangaFX",d:["Local"],
+  {n:"JangaFX EmberGen",u:[["JangaFX", "https://jangafx.com/software/embergen"]],v:"JangaFX",d:["Local"],
    what:"Real-time GPU volumetric fluid simulation for fire, smoke and explosions. Exports flipbooks, image sequences and VDBs with all game data channels. Not generative AI.",
    pro:["Flipbooks with motion vectors and normals in seconds","Fast iteration compared with offline sims"],
    con:["Physics simulation, not AI","Volumetrics only"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"AI Flipbook Generator plugin (UE5)",v:"Third party on Fab",d:["Plugin","API"],
+  {n:"AI Flipbook Generator plugin (UE5)",u:[["Search on Fab", "https://www.fab.com/search?q=AI%20flipbook"]],v:"Third party on Fab",d:["Plugin","API"],
    what:"Uses OpenAI image models to generate 4×4, 6×6 or 8×8 sprite-sheet flipbooks and bakes them into a Texture, Material Instance and Niagara System in one click.",
    pro:["Prompt to Niagara effect in one tool","Batches many variants"],
    con:["Frames don't stay consistent with each other","Third-party plugin that depends on a cloud API"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Wan 2.2 / LTX (open video)",v:"Alibaba / Lightricks",d:["Local","Open"],
+  {n:"Wan 2.2 / LTX (open video)",u:[["Wan 2.2", "https://github.com/Wan-Video/Wan2.2"], ["LTX-Video", "https://github.com/Lightricks/LTX-Video"]],v:"Alibaba / Lightricks",d:["Local","Open"],
    what:"Open-weight video models run locally (often in ComfyUI) to create stylized effect loops that are converted into flipbooks.",
    pro:["Self-hosted; Wan 2.2 is Apache 2.0 (check LTX's licence)","Good for stylized magic and energy effects"],
    con:["No alpha channel, so needs keying","Loops and timing need manual work"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Runway Gen-4.5",v:"Runway",d:["Cloud"],
+  {n:"Runway Gen-4.5",u:[["Runway", "https://runwayml.com"]],v:"Runway",d:["Cloud"],
    what:"Video generation with Motion Brush control over what moves. Used for effect and cinematic look development.",
    pro:["Most precise motion control","Consistent characters across shots"],
    con:["Among the highest cost per second","Not for in-game assets"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Autodesk Flow Studio",v:"Autodesk (formerly Wonder Studio)",d:["Cloud"],
+  {n:"Autodesk Flow Studio",u:[["Autodesk", "https://www.autodesk.com/products/flow-studio"]],v:"Autodesk (formerly Wonder Studio)",d:["Cloud"],
    what:"Replaces a filmed actor with a CG character, matches lighting, and outputs clean plates, alpha masks, camera tracks and mocap data for Maya, Blender, Unreal or USD.",
    pro:["Several VFX tasks in one upload","Exports to Unreal and USD"],
    con:["Built for live action, not real-time effects","Credit-based (about $10–95/mo per third-party listing)"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"SideFX Houdini (ML toolset)",v:"SideFX",d:["Local"],
+  {n:"SideFX Houdini (ML toolset)",u:[["SideFX", "https://www.sidefx.com/products/houdini/"]],v:"SideFX",d:["Local"],
    what:"Procedural VFX standard. Its machine-learning nodes train models on simulation data, for example fast approximations of costly sims.",
    pro:["Production-proven","ML results stay inside procedural pipelines"],
    con:["Expert tool","ML features need technical directors"],
@@ -1825,52 +1917,52 @@ const TABS = [
   fit:"UI logic, refactoring, scripting, API integration, getting up to speed on unfamiliar engines, scene setup, test boilerplate, commit and documentation work.",
   integrate:"Use private or local LLMs for client code. Require code review on everything AI writes. Keep architecture-level code human-written, a common studio QA policy.",
   tools:[
-  {n:"Unity AI (Assistant, Gateway, MCP)",v:"Unity",d:["Plugin","Cloud"],
+  {n:"Unity AI (Assistant, Gateway, MCP)",u:[["Unity", "https://unity.com/products/ai"]],v:"Unity",d:["Plugin","Cloud"],
    what:"In-editor agent with Ask, Plan and Agent modes. The AI Gateway runs Claude Code, Codex, Gemini CLI or Cursor with your own keys. The MCP server lets outside agents control the editor. Open beta since May 2026.",
    pro:["Full access to scenes, Inspector values and serialized data","Choose your model","Includes sprite, texture and layout generators"],
    con:["Beta","Personal tier uses credits"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Unreal MCP plugin (UE 5.8) → UE6",v:"Epic Games",d:["Plugin"],
+  {n:"Unreal MCP plugin (UE 5.8) → UE6",u:[["UE 5.8 release notes", "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-release-notes"]],v:"Epic Games",d:["Plugin"],
    what:"Experimental MCP plugin that connects any LLM to Blueprints, assets, levels, materials and meshes. UE6 will build in Claude and Gemini, with early access around end of 2027.",
    pro:["Official engine-level access","Bring your own model"],
    con:["Experimental","UE6 is more than a year away"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Claude Code",v:"Anthropic",d:["Cloud","API"],
+  {n:"Claude Code",u:[["Anthropic", "https://www.claude.com/product/claude-code"]],v:"Anthropic",d:["Cloud","API"],
    what:"Terminal-based coding agent that reads the whole codebase, edits across files, runs builds and tests, and drives the engines through their MCP servers. Epic demoed Claude inside Unreal at State of Unreal 2026.",
    pro:["Strong on large, unfamiliar codebases","Works with Unity's Gateway and Unreal's MCP"],
    con:["Cloud model: check client permission","No controlled studies for Unreal C++"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"GitHub Copilot / JetBrains AI",v:"GitHub · JetBrains",d:["Plugin","Cloud"],
+  {n:"GitHub Copilot / JetBrains AI",u:[["GitHub Copilot", "https://github.com/features/copilot"], ["JetBrains AI", "https://www.jetbrains.com/ai/"]],v:"GitHub · JetBrains",d:["Plugin","Cloud"],
    what:"Code completion, documentation and commit messages inside the IDE (VS Code, Visual Studio, Rider).",
    pro:["Least disruption to how engineers work","Enterprise data controls"],
    con:["Mostly completion; less agentic","Weaker on project-wide reasoning"],
    e:{v:"50–70%",l:"less boilerplate and admin work for a QA engineering team using IDE agents and LLMs (stage-level)",g:"measured",s:"Studio case study (QA engineering)"}},
-  {n:"Cursor",v:"Anysphere",d:["Local","Cloud"],
+  {n:"Cursor",u:[["Cursor", "https://cursor.com"]],v:"Anysphere",d:["Local","Cloud"],
    what:"AI-first code editor with agent mode, codebase indexing and model choice. Selectable inside Unity's AI Gateway.",
    pro:["Fast multi-file edits","Works with many models"],
    con:["Separate IDE from Rider or Visual Studio","Cloud indexing needs approval"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Aura (incl. Coplay)",v:"Ramen",d:["Plugin"],
+  {n:"Aura (incl. Coplay)",u:[["Coplay / Aura", "https://coplay.dev"]],v:"Ramen",d:["Plugin"],
    what:"AI assistant for Unity and Unreal. It acquired Coplay in March 2026. The free, MIT-licensed Unity MCP stays available.",
    pro:["One subscription covers both engines","Free open-source MCP option"],
    con:["Coplay is now a legacy product","Young company"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Ludus AI",v:"Ludus",d:["Plugin","Cloud"],
+  {n:"Ludus AI",u:[["Ludus AI", "https://ludusengine.com"]],v:"Ludus",d:["Plugin","Cloud"],
    what:"Unreal plugin plus web app that generates C++, Blueprints, 3D models, animation, VFX and UI layouts.",
    pro:["Blueprint generation","ISO 27001 and SOC 2 Type 2 (listed)"],
    con:["Unreal only","Cloud-based"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Bezi",v:"Bezi",d:["Plugin"],
+  {n:"Bezi",u:[["Bezi", "https://www.bezi.com"]],v:"Bezi",d:["Plugin"],
    what:"Unity AI assistant that runs alongside the editor, for scripting and project questions.",
    pro:["Simple setup","Tiered pricing ($20 / $60 / $200 per month)"],
    con:["Less scene awareness than Unity's built-in AI","MCP support still on the roadmap"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Private / local LLMs (Qwen, Aya)",v:"Open weights",d:["Local","Open"],
+  {n:"Private / local LLMs (Qwen, Aya)",u:[["Qwen", "https://huggingface.co/Qwen"], ["Aya", "https://cohere.com/research/aya"]],v:"Open weights",d:["Local","Open"],
    what:"Self-hosted models for reasoning over the whole project, analysing architecture and assisting with code, without client code leaving the network.",
    pro:["Strongest IP protection","Meets client NDA requirements"],
    con:["Behind frontier models on hard tasks","Infrastructure cost"],
    e:{v:"15–20%",l:"UI logic in an unfamiliar custom engine, quality unchanged",g:"measured",s:"Studio case study (private cloud LLM)"}},
-  {n:"Unity Inference Engine (Sentis)",v:"Unity",d:["Plugin","Local"],
+  {n:"Unity Inference Engine (Sentis)",u:[["Unity docs", "https://docs.unity3d.com/Packages/com.unity.ai.inference@2.6/manual/index.html"]],v:"Unity",d:["Plugin","Local"],
    what:"Runs ONNX neural networks inside the game on any Unity platform, including mobile, with no cloud round trip.",
    pro:["No server cost or latency","Models can be split across frames"],
    con:["Small models only on phones","GPU compute support varies by device"],
@@ -1883,52 +1975,52 @@ const TABS = [
   fit:"Reaching frame-rate targets, mid-range phone budgets, VRAM limits, UI and texture upscaling for ports and remasters.",
   integrate:"Use the vendor SDK for each platform. Test temporal stability and input latency with frame generation. QA AI-upscaled textures for hallucinated detail.",
   tools:[
-  {n:"NVIDIA DLSS 4.5",v:"NVIDIA",d:["Plugin"],
+  {n:"NVIDIA DLSS 4.5",u:[["NVIDIA", "https://www.nvidia.com/en-us/geforce/technologies/dlss/"]],v:"NVIDIA",d:["Plugin"],
    what:"Second-generation transformer super resolution and dynamic multi frame generation up to 6× (five generated frames per rendered frame). Announced at CES 2026.",
    pro:["Best image quality and stability","Unreal and Unity plugins"],
    con:["RTX GPUs only","Frame generation adds latency"],
    e:{v:"+128%",l:"FPS vs native TAA, Cyberpunk 2077, 4K Quality (one test)",g:"bench",s:"Secondary benchmark"}},
-  {n:"AMD FSR Redstone (FSR 4.1)",v:"AMD",d:["Plugin"],
+  {n:"AMD FSR Redstone (FSR 4.1)",u:[["AMD", "https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html"], ["FidelityFX SDK", "https://gpuopen.com/amd-fidelityfx-sdk/"]],v:"AMD",d:["Plugin"],
    what:"AMD's first machine-learning upscaler, plus ML ray-tracing denoising, neural radiance caching and frame generation.",
    pro:["Strong uplift with frame generation","Ships in AMD's FidelityFX SDK"],
    con:["ML features target recent Radeon GPUs","Naming varies between sources"],
    e:{v:"+236%",l:"FPS with frame generation, Spider-Man 2, 1440p Performance (one test)",g:"bench",s:"Secondary benchmark"}},
-  {n:"Intel XeSS 2 / 3",v:"Intel",d:["Plugin"],
+  {n:"Intel XeSS 2 / 3",u:[["XeSS SDK", "https://github.com/intel/xess"]],v:"Intel",d:["Plugin"],
    what:"Upscaling and frame generation that run on NVIDIA, AMD and Qualcomm hardware as well as Intel.",
    pro:["Broadest hardware support","Includes Qualcomm PCs"],
    con:["Best quality only on Arc (XMX)","Few reliable XeSS 3 benchmarks"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Arm Neural Super Sampling",v:"Arm",d:["Plugin"],
+  {n:"Arm Neural Super Sampling",u:[["Arm", "https://www.arm.com/technologies/neural-technology"]],v:"Arm",d:["Plugin"],
    what:"Neural upscaling for mobile GPUs: 540p to 1080p in about 4 ms. Unreal plugin available, and the first neural-accelerator Mali GPU (G2-Ultra NX) was reported in September 2026.",
    pro:["The first DLSS-class upscaler for phones","Unreal plugin out now"],
    con:["Performance figures are simulated","Few devices with the hardware yet"],
    e:{v:"Up to 50%",l:"GPU workload saved",g:"vendor",s:"Arm (simulation)"}},
-  {n:"Snapdragon GSR 2",v:"Qualcomm",d:["Plugin","Open"],
+  {n:"Snapdragon GSR 2",u:[["GitHub", "https://github.com/SnapdragonGameStudios/snapdragon-gsr"]],v:"Qualcomm",d:["Plugin","Open"],
    what:"Temporal anti-aliasing and upscaling tuned for Adreno GPUs. Not neural, but the practical Android upscaler today.",
    pro:["Under 2 ms on Snapdragon 8 Gen 3 at 1260×2800 (target)","Open source"],
    con:["Not ML-based","Adreno-optimised"],
    e:{v:"< 2 ms",l:"upscale cost per frame on flagship phones",g:"vendor",s:"Qualcomm"}},
-  {n:"Apple MetalFX",v:"Apple",d:["Plugin"],
+  {n:"Apple MetalFX",u:[["Apple docs", "https://developer.apple.com/documentation/metalfx"]],v:"Apple",d:["Plugin"],
    what:"Spatial and temporal upscaling on iPhone and Mac. Metal 4 added frame interpolation and denoising.",
    pro:["Built into iOS","HoYoverse cited it for iPhone 15 Pro performance"],
    con:["Apple platforms only","Reportedly built on FSR 2-era techniques"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"NVIDIA RTX Neural Texture Compression",v:"NVIDIA",d:["Plugin"],
+  {n:"NVIDIA RTX Neural Texture Compression",u:[["GitHub", "https://github.com/NVIDIA-RTX/RTXNTC"]],v:"NVIDIA",d:["Plugin"],
    what:"Stores textures as compact neural representations decoded on the GPU. Beta SDK for RTX 20-series and newer.",
    pro:["6.5 GB to 970 MB of textures in NVIDIA's demo","Also shrinks install size on disk"],
    con:["Beta, with no confirmed shipped games","May cost frame rate"],
    e:{v:"64%",l:"less texture memory, independent test (transcode mode)",g:"bench",s:"Compusemble"}},
-  {n:"Tencent MagicDawn",v:"Tencent",d:["Plugin"],
+  {n:"Tencent MagicDawn",u:[["MagicDawn", "https://magicdawn.tencent.com"]],v:"Tencent",d:["Plugin"],
    what:"Rendering technology covering global illumination, Neural Dynamic GI (beta), and neural upscaling and denoising with Arm (Arena Breakout: Infinite demo).",
    pro:["Mobile-focused neural rendering","Proven in a large mobile shooter"],
    con:["Mostly available through Tencent partnerships","Several features still marked 'coming soon'"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Topaz Gigapixel",v:"Topaz Labs",d:["Local"],
+  {n:"Topaz Gigapixel",u:[["Topaz Labs", "https://www.topazlabs.com/gigapixel"]],v:"Topaz Labs",d:["Local"],
    what:"Multi-model AI upscaler with a GUI, built for art workflows: UI, textures and key art for ports and remasters.",
    pro:["Runs locally","Artist-friendly batch processing"],
    con:["In one studio's UI upscaling run, about 10% of outputs had hallucinated details (stray letters, extra features)"],
    e:{v:"100s of hrs",l:"saved upscaling UI textures for a console port with an AI upscaler (tool not named)",g:"measured",s:"Studio case study"}},
-  {n:"ESRGAN / Real-ESRGAN",v:"Open source",d:["Local","Open"],
+  {n:"ESRGAN / Real-ESRGAN",u:[["GitHub", "https://github.com/xinntao/Real-ESRGAN"]],v:"Open source",d:["Local","Open"],
    what:"Open-source framework for image restoration and upscaling, with custom training for project-specific textures.",
    pro:["Free, scriptable, trainable","Fits automated pipelines"],
    con:["Needs engineering setup","Same hallucination risk without QA"],
@@ -1941,32 +2033,32 @@ const TABS = [
   fit:"Scratch and placeholder VO, internal and demo narration, sound-effect one-shots, background music, runtime voices for AI characters.",
   integrate:"Clone voices only with written consent. The SAG-AFTRA 2025 agreement requires consent and disclosure, and pays at least 7.5× scale for real-time use. Check each tool's commercial tier.",
   tools:[
-  {n:"ElevenLabs",v:"ElevenLabs",d:["Cloud","API"],
+  {n:"ElevenLabs",u:[["ElevenLabs", "https://elevenlabs.io"]],v:"ElevenLabs",d:["Cloud","API"],
    what:"Voice generation and cloning, sound effects from text, and a music model trained on licensed data (deals with Merlin and Kobalt).",
    pro:["Highest voice quality","Understands game sound-effect vocabulary","Gaming named in its commercial terms"],
    con:["Check data-use terms: guides report outputs can be used for model training","Commercial rights depend on plan tier"],
    e:{v:"66%",l:"recording time for narrated presentations (20 of 30 hrs)",g:"measured",s:"Studio case study"}},
-  {n:"Microsoft VibeVoice",v:"Microsoft (open source)",d:["Local","Open"],
+  {n:"Microsoft VibeVoice",u:[["Hugging Face", "https://huggingface.co/microsoft/VibeVoice-1.5B"]],v:"Microsoft (open source)",d:["Local","Open"],
    what:"Open long-form text-to-speech that can run on-prem. Microsoft pulled the TTS code from its GitHub in September 2025 after misuse; the MIT-licensed weights remain on Hugging Face.",
    pro:["Self-hosted, so voices stay private","Free (MIT)"],
    con:["Research-oriented and no longer actively distributed as code","Model card bans voice impersonation without recorded consent"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Inworld TTS-1.5",v:"Inworld AI",d:["Cloud","API"],
+  {n:"Inworld TTS-1.5",u:[["Inworld", "https://inworld.ai/tts"]],v:"Inworld AI",d:["Cloud","API"],
    what:"Low-latency text-to-speech for runtime game characters. Inworld has repositioned as AI infrastructure with voice and an agent runtime.",
    pro:["$5–10 per million characters","P90 latency 130 ms (Mini) / 250 ms (Max)"],
    con:["Per-player cost grows with dialogue volume","I found no named shipped games"],
    e:{v:"—",l:"enables runtime voice rather than saving time",g:"none",s:""}},
-  {n:"Stable Audio",v:"Stability AI",d:["Cloud","Local"],
+  {n:"Stable Audio",u:[["Stable Audio", "https://stableaudio.com"]],v:"Stability AI",d:["Cloud","Local"],
    what:"Generates music and sound effects, with clips long enough to cut clean loops.",
    pro:["Long clips suit loops","Community Licence free under $1M revenue"],
    con:["Licence threshold to watch","Uneven quality on complex scores"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"ACE-Step",v:"Open source",d:["Local","Open"],
+  {n:"ACE-Step",u:[["GitHub", "https://github.com/ace-step/ACE-Step"]],v:"Open source",d:["Local","Open"],
    what:"Open-source music generation model. v1 is Apache 2.0 and v1.5 is MIT, with commercial use of outputs allowed.",
    pro:["Permissive licences","Self-hosted"],
    con:["Behind commercial models on quality","Needs setup"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Suno",v:"Suno",d:["Cloud"],
+  {n:"Suno",u:[["Suno", "https://suno.com"]],v:"Suno",d:["Cloud"],
    what:"Song and music generation from prompts.",
    pro:["Very high musical quality","v6 (Sept 2026) trained on music licensed from Warner, BMG and Believe"],
    con:["Universal and Sony lawsuits are still active","Commercial use on paid plans only"],
@@ -1979,27 +2071,27 @@ const TABS = [
   fit:"Predicting level difficulty, exploratory and stress testing, regression smoke tests, writing test scripts, bug-report summaries.",
   integrate:"Mix approaches: deterministic scripts for CI regression, AI agents for exploratory testing, humans for fun, balance and narrative. Log agent seeds and replays so results can be reproduced.",
   tools:[
-  {n:"Custom playtest bots",v:"In-house (King approach)",d:["Local"],
+  {n:"Custom playtest bots",u:[["King case (mobilegamer.biz)", "https://mobilegamer.biz/how-king-balances-human-and-ai-powered-design-in-candy-crush-saga/"]],v:"In-house (King approach)",d:["Local"],
    what:"Bots trained to play every level before release and predict difficulty and pass rates. King uses this for Candy Crush Saga.",
    pro:["Proven at the largest puzzle-game scale","Deterministic and tunable"],
    con:["Needs ML engineers and telemetry","Specific to one game"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"modl.ai (modl:test)",v:"modl.ai",d:["Cloud","Plugin"],
+  {n:"modl.ai (modl:test)",u:[["modl.ai", "https://modl.ai"]],v:"modl.ai",d:["Cloud","Plugin"],
    what:"Autonomous bots that play builds to find bugs and simulate players. Integrates with Unity and Unreal and runs in CI/CD.",
    pro:["No game-specific scripting needed","CI/CD integration"],
    con:["Black box with non-deterministic results","Results still need manual review"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"nunu.ai",v:"nunu.ai",d:["Cloud"],
+  {n:"nunu.ai",u:[["nunu.ai", "https://nunu.ai"]],v:"nunu.ai",d:["Cloud"],
    what:"Multimodal agents (Gemini on Google Cloud) that watch frames, send inputs like a player, and turn natural-language test cases into recordings, reasoning logs and reports.",
    pro:["Engine-agnostic, works from the screen","Writes test cases in plain English"],
    con:["Vendor figures only","Cloud processing of builds"],
    e:{v:"Up to 50%",l:"lower manual QA cost",g:"vendor",s:"nunu.ai via Google Cloud"}},
-  {n:"LLM assistants for test engineers",v:"ChatGPT · Claude · Gemini",d:["Cloud"],
+  {n:"LLM assistants for test engineers",u:[["ChatGPT", "https://chatgpt.com"], ["Claude", "https://claude.ai"], ["Gemini", "https://gemini.google.com"]],v:"ChatGPT · Claude · Gemini",d:["Cloud"],
    what:"Explain unfamiliar engine components, refine Jira and Slack updates, summarise action items and transcripts.",
    pro:["Closes knowledge gaps quickly","Helps juniors without using senior time"],
    con:["Only for non-sensitive material unless privately hosted"],
    e:{v:"50–70%",l:"less admin and boilerplate",g:"measured",s:"Studio case study"}},
-  {n:"DeepMind SIMA 2",v:"Google DeepMind",d:["Cloud"],
+  {n:"DeepMind SIMA 2",u:[["DeepMind", "https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/"]],v:"Google DeepMind",d:["Cloud"],
    what:"Research agent that follows instructions, reasons about goals and improves itself in games it has never seen.",
    pro:["Points to QA agents that need no scripting"],
    con:["Research only, not a product","Weak at long multi-step tasks"],
@@ -2012,32 +2104,32 @@ const TABS = [
   fit:"High-volume LiveOps text, first-pass translation, LQA error spotting, terminology consistency, lip-sync for localized VO.",
   integrate:"Keep human linguists on final quality. Use open-weight models (Qwen, Aya) on controlled data for unreleased content. Feed glossaries and string context to the model.",
   tools:[
-  {n:"Lionbridge Samurai",v:"Lionbridge Games",d:["Cloud"],
+  {n:"Lionbridge Samurai",u:[["Lionbridge Games", "https://games.lionbridge.com"]],v:"Lionbridge Games",d:["Cloud"],
    what:"LLM translation with human linguists at the core for translation, editing and proofreading. Named \"Best Overall Use of AI in Gaming\" at the 2026 AI Breakthrough Awards.",
    pro:["Major vendor with game expertise","Human-reviewed output"],
    con:["No published savings figures","Managed service, not a tool"],
    e:{v:"—",l:"vendor reports faster delivery at significantly lower cost, without figures",g:"vendor",s:"Lionbridge"}},
-  {n:"Claude Sonnet 4 (LQA)",v:"Anthropic",d:["Cloud","API"],
+  {n:"Claude Sonnet 4 (LQA)",u:[["Anthropic", "https://www.anthropic.com/claude/sonnet"], ["Benchmark paper", "https://aclanthology.org/2026.amta-research.12/"]],v:"Anthropic",d:["Cloud","API"],
    what:"Best of 8 LLMs at detecting game LQA errors from English into 6 languages in an AMTA 2026 benchmark.",
    pro:["Highest error-detection F1 in the benchmark"],
    con:["Cloud: needs client approval for unreleased text"],
    e:{v:"F1 0.766",l:"game LQA error detection",g:"bench",s:"AMTA 2026"}},
-  {n:"Qwen-2.5-72B / Aya (open)",v:"Alibaba · Cohere",d:["Local","Open"],
+  {n:"Qwen-2.5-72B / Aya (open)",u:[["Qwen", "https://huggingface.co/Qwen"], ["Aya", "https://cohere.com/research/aya"]],v:"Alibaba · Cohere",d:["Local","Open"],
    what:"Open-weight LLMs for self-hosted LQA and translation experiments on fully controlled data.",
    pro:["Close to the best (Qwen F1 0.711)","Much lower cost and data stays private"],
    con:["Needs GPU hosting","A little less accurate than the leader"],
    e:{v:"F1 0.711",l:"game LQA error detection (Qwen-2.5-72B)",g:"bench",s:"AMTA 2026"}},
-  {n:"Gemini 2.0 Flash (LQA)",v:"Google",d:["Cloud","API"],
+  {n:"Gemini 2.0 Flash (LQA)",u:[["Gemini API", "https://ai.google.dev/gemini-api/docs/models"], ["Benchmark paper", "https://aclanthology.org/2026.amta-research.12/"]],v:"Google",d:["Cloud","API"],
    what:"Fast, low-cost model for high-volume LQA screening.",
    pro:["Low cost per string","Fast"],
    con:["Lower accuracy than Claude and Qwen in the benchmark"],
    e:{v:"F1 0.691",l:"game LQA error detection",g:"bench",s:"AMTA 2026"}},
-  {n:"Gridly",v:"Gridly",d:["Cloud"],
+  {n:"Gridly",u:[["Gridly", "https://www.gridly.com"]],v:"Gridly",d:["Cloud"],
    what:"Localization content management for games, with AI-assisted LQA built in.",
    pro:["Spreadsheet-style workflow loc teams know","Built for continuous LiveOps updates"],
    con:["The 60% figure is the vendor's own"],
    e:{v:"60%",l:"less LQA review time",g:"vendor",s:"Gridly"}},
-  {n:"Loxily",v:"Loxily",d:["Cloud"],
+  {n:"Loxily",u:[["Loxily", "https://loxily.com"]],v:"Loxily",d:["Cloud"],
    what:"AI-first game localization service.",
    pro:["Case study: an SLG publisher moved 80% of translation to AI"],
    con:["One anonymous case study"],
@@ -2050,32 +2142,32 @@ const TABS = [
   fit:"Pitch and previs videos, style frames, cinematic intros, social cuts, high-volume UA creative variations.",
   integrate:"Keep gameplay sections real. Steam advises that first trailers should be mostly gameplay. Disclose AI in ads where the platform or region requires it. OpenAI announced in March 2026 that it is shutting down Sora, so check a tool is still supported before building on it.",
   tools:[
-  {n:"Google Veo 3.1",v:"Google",d:["Cloud","API"],
+  {n:"Google Veo 3.1",u:[["Google DeepMind", "https://deepmind.google/models/veo/"]],v:"Google",d:["Cloud","API"],
    what:"Video generation with native audio and 4K output.",
    pro:["Most polished hosted output with sound","Strong for previs and pitch videos"],
    con:["About $0.40 per second","Google cloud"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Kling 3.0",v:"Kuaishou",d:["Cloud","API"],
+  {n:"Kling 3.0",u:[["Kling AI", "https://kling.ai"]],v:"Kuaishou",d:["Cloud","API"],
    what:"Multi-shot video with strong subject consistency and storyboard tools.",
    pro:["Best character consistency across shots","About $0.10 per second"],
    con:["China-based provider, so check data policy"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Runway Gen-4.5",v:"Runway",d:["Cloud"],
+  {n:"Runway Gen-4.5",u:[["Runway", "https://runwayml.com"]],v:"Runway",d:["Cloud"],
    what:"Video generation with Motion Brush and fine-grained shot control.",
    pro:["Most control over what moves"],
    con:["Among the highest cost per second"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Wan 2.2 / LTX-2.5 (open)",v:"Alibaba · Lightricks",d:["Local","Open"],
+  {n:"Wan 2.2 / LTX-2.5 (open)",u:[["Wan 2.2", "https://github.com/Wan-Video/Wan2.2"], ["LTX-Video", "https://github.com/Lightricks/LTX-Video"]],v:"Alibaba · Lightricks",d:["Local","Open"],
    what:"Open-weight video models to self-host for confidential pitch work.",
    pro:["No upload of unannounced IP","Wan 2.2 is Apache 2.0; check LTX's licence"],
    con:["Lower quality than Veo or Kling","GPU infrastructure needed"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"LLMs for scripts (ChatGPT, Claude, Gemini)",v:"Various",d:["Cloud"],
+  {n:"LLMs for scripts (ChatGPT, Claude, Gemini)",u:[["ChatGPT", "https://chatgpt.com"], ["Claude", "https://claude.ai"], ["Gemini", "https://gemini.google.com"]],v:"Various",d:["Cloud"],
    what:"First-pass trailer scripts, narrative routes and themes, plus research for pitches.",
    pro:["Many creative routes in minutes"],
    con:["Writers still set tone and quality"],
    e:{v:"~15%",l:"concepting workflow (scripts and visual alignment)",g:"measured",s:"Studio case study (trailers)"}},
-  {n:"AppLovin SparkLabs",v:"AppLovin",d:["Cloud"],
+  {n:"AppLovin SparkLabs",u:[["AppLovin", "https://www.applovin.com"]],v:"AppLovin",d:["Cloud"],
    what:"AppLovin's creative studio using AI for ad concepts and production, now including AI-generated interactive ads.",
    pro:["Tied to a major mobile ad network","Interactive and playable formats"],
    con:["Figures come from AppLovin","Ads wear out in about 9 days, so volume is never-ending"],
@@ -2113,6 +2205,7 @@ function card(x, showTab){
   return `<article class="card">
     <div class="card-top">
       <div class="card-title"><h3>${esc(x.n)}</h3><span class="vendor">${esc(x.v)}</span></div>
+      ${x.u ? `<div class="links">${x.u.map(([t, h]) => `<a href="${esc(h)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`).join("")}</div>` : ""}
       <div class="deploy">${showTab ? `<span class="dep" style="color:var(--accent);border-color:var(--accent)">${esc(x.tab.name)}</span>` : ""}${x.d.map(d => `<span class="dep">${esc(d)}</span>`).join("")}</div>
     </div>
     <p class="what">${esc(x.what)}</p>

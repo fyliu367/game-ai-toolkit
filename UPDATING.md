@@ -10,7 +10,7 @@ The site is built from `src/toolkit.html`. Never edit `index.html` by hand.
    - tools on the site that were discontinued, acquired, renamed, or changed licence or pricing
    - new published efficiency figures for tools already listed
 3. Only make a change when it has a primary source (vendor announcement, docs, release notes or paper). For any claim beyond the vendor's own description, also find one independent source (established press, benchmark or study).
-4. Edit the `TABS` data in `src/toolkit.html`, following the format of existing cards.
+4. Edit the `TABS` data in `src/toolkit.html`, following the format of existing cards. Every card needs a `u` field with its official link(s), e.g. `u:[["Vendor","https://..."]]`. Open each link and confirm it loads the right product page before adding it.
 5. Run `python3 tools/build.py`. It checks the script and rebuilds `index.html`.
 6. Add a dated entry to `CHANGELOG.md` listing each change with its source URLs.
 7. Commit on a new branch `update/YYYY-MM-DD`, push it, and open a pull request for review. Never push to `main`.
