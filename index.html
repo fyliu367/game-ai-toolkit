@@ -10,30 +10,31 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: a tool catalogue like an engine's package manager. Discipline tabs on the left, tool cards on the right, each card ending in an efficiency readout tagged by source.
-   Palette follows BOSi Art Studios: black ground, lime green lead colour, magenta second accent, white bold headlines. Deliberately dark-only. */
+   Palette follows BOSi Art Studios: white ground, lime green lead colour (deeper green for text), magenta second accent, white bold headlines. Deliberately light-only on white. */
 :root{
-  --bg:#0B0B0B;
-  --surface:#161616;
-  --sunken:#1F1F1F;
-  --ink:#FFFFFF;
-  --muted:#A3A9B1;
-  --line:#2E2E2E;
+  --bg:#FFFFFF;
+  --surface:#FFFFFF;
+  --sunken:#F4F5F2;
+  --ink:#1A1A1A;
+  --muted:#5E6670;
+  --line:#E2E5DF;
   --accent:#86BC25;
+  --accent-text:#4E7D0F;
   --accent-ink:#0B0B0B;
-  --accent-soft:#1F2A10;
+  --accent-soft:#EEF6E0;
   --accent-2:#CC3366;
-  --g-measured:#86BC25; --g-measured-soft:#1F2A10;
-  --g-bench:#5AB4F0;    --g-bench-soft:#0F2433;
-  --g-vendor:#E8A64C;   --g-vendor-soft:#33240E;
-  --g-est:#A3A9B1;      --g-est-soft:#242424;
+  --g-measured:#4E7D0F; --g-measured-soft:#EEF6E0;
+  --g-bench:#1F6FB2;    --g-bench-soft:#E3F0FA;
+  --g-vendor:#9A5B06;   --g-vendor-soft:#FBEFDC;
+  --g-est:#5E6670;      --g-est-soft:#F0F1F2;
   --display:"Plus Jakarta Sans","SF Pro Display",-apple-system,"Helvetica Neue",Arial,sans-serif;
   --body:"Plus Jakarta Sans",-apple-system,"Helvetica Neue",Arial,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
-  color-scheme:dark;
+  color-scheme:light;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55}
-a{color:var(--accent);text-underline-offset:2px}
+a{color:var(--accent-text);text-underline-offset:2px}
 button{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 h1,h2,h3{font-family:var(--display);margin:0;line-height:1.1;text-wrap:balance}
@@ -45,11 +46,11 @@ p{margin:0}
 /* masthead */
 .mast{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 40px;align-items:end;padding-block:40px 28px;border-bottom:2px solid var(--accent)}
 .mast h1{font-size:clamp(2rem,4.6vw,3.4rem);font-weight:800;letter-spacing:-.025em}
-.mast h1 b{color:var(--accent);font-weight:800}
+.mast h1 b{color:var(--accent-text);font-weight:800}
 .mast .sub{color:var(--muted);max-width:70ch;margin-top:10px}
 .stats{display:flex;gap:28px}
 .stats div{display:grid}
-.stats strong{font-family:var(--display);font-size:1.8rem;font-weight:800;font-variant-numeric:tabular-nums;color:var(--accent)}
+.stats strong{font-family:var(--display);font-size:1.8rem;font-weight:800;font-variant-numeric:tabular-nums;color:var(--accent-text)}
 .stats span{font-family:var(--mono);font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
 @media (max-width:760px){.mast{grid-template-columns:1fr}}
 
@@ -85,7 +86,7 @@ p{margin:0}
 .summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .summary > div{background:var(--surface);padding:14px 16px;display:grid;gap:4px;align-content:start;min-width:0}
 .summary h4{margin:0;font-family:var(--mono);font-size:.66rem;font-weight:500;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
-.summary .big{font-family:var(--display);font-size:1.45rem;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+.summary .big{font-family:var(--display);font-size:1.45rem;font-weight:800;color:var(--accent-text);font-variant-numeric:tabular-nums}
 .summary p{font-size:.88rem}
 @media (max-width:760px){.summary{grid-template-columns:1fr}}
 
@@ -104,7 +105,7 @@ p{margin:0}
 .card h3{font-size:1.18rem;font-weight:700;letter-spacing:-.005em}
 .vendor{font-size:.82rem;color:var(--muted)}
 .links{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.84rem;font-weight:500}
-.links a{text-decoration:none;color:var(--accent)}
+.links a{text-decoration:none;color:var(--accent-text)}
 .links a:hover{text-decoration:underline}
 .deploy{display:flex;gap:5px;flex-wrap:wrap}
 .dep{font-family:var(--mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--line);border-radius:4px;padding:1px 6px;color:var(--muted)}
@@ -2192,7 +2193,7 @@ function card(x, showTab){
     <div class="card-top">
       <div class="card-title"><h3>${esc(x.n)}</h3><span class="vendor">${esc(x.v)}</span></div>
       ${x.u ? `<div class="links">${x.u.map(([t, h]) => `<a href="${esc(h)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`).join("")}</div>` : ""}
-      <div class="deploy">${showTab ? `<span class="dep" style="color:var(--accent);border-color:var(--accent)">${esc(x.tab.name)}</span>` : ""}${x.d.map(d => `<span class="dep">${esc(d)}</span>`).join("")}</div>
+      <div class="deploy">${showTab ? `<span class="dep" style="color:var(--accent-text);border-color:var(--accent)">${esc(x.tab.name)}</span>` : ""}${x.d.map(d => `<span class="dep">${esc(d)}</span>`).join("")}</div>
     </div>
     <p class="what">${esc(x.what)}</p>
     <div class="sw">
