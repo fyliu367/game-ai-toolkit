@@ -1076,14 +1076,14 @@ p{margin:0}
   </article></div></section>
 <section class="static-tab" id="static-render"><h2>Rendering &amp; Tech Art</h2><p class="intro">Neural upscaling, frame generation, neural texture compression and offline AI upscaling. On PC these are mainstream. On mobile, neural hardware only started arriving in late 2026.</p><p><strong>Typical gain:</strong> Up to 50% (GPU workload saved by rendering at lower resolution (Arm NSS, simulated); 85% less texture memory in NVIDIA's demo)</p><p><strong>Where AI fits best:</strong> Reaching frame-rate targets, mid-range phone budgets, VRAM limits, UI and texture upscaling for ports and remasters.</p><p><strong>Integration notes:</strong> Use the vendor SDK for each platform. Test temporal stability and input latency with frame generation. QA AI-upscaled textures for hallucinated detail.</p><div class="cards"><article class="card">
     <div class="card-top">
-      <div class="card-title"><h3>NVIDIA DLSS 4.5</h3><span class="vendor">NVIDIA</span></div>
-      <div class="links"><a href="https://www.nvidia.com/en-us/geforce/technologies/dlss/" target="_blank" rel="noopener">NVIDIA ↗</a></div>
+      <div class="card-title"><h3>NVIDIA DLSS 4.5 / DLSS 5</h3><span class="vendor">NVIDIA</span></div>
+      <div class="links"><a href="https://www.nvidia.com/en-us/geforce/technologies/dlss/" target="_blank" rel="noopener">NVIDIA ↗</a><a href="https://www.nvidia.com/en-us/geforce/news/dlss-5-3d-guided-neural-rendering/" target="_blank" rel="noopener">DLSS 5 launch ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
-    <p class="what">Second-generation transformer super resolution and dynamic multi frame generation up to 6× (five generated frames per rendered frame). Announced at CES 2026.</p>
+    <p class="what">DLSS 4.5 adds second-generation transformer super resolution and dynamic multi frame generation up to 6× (five generated frames per rendered frame), announced at CES 2026. DLSS 5 (3D-Guided Neural Rendering, launched 3 Sept 2026 in NBA 2K27) uses AI to enhance lighting and materials such as skin and hair, with per-object controls for developers.</p>
     <div class="sw">
-      <div class="pro"><h4>Strengths</h4><ul><li>Best image quality and stability</li><li>Unreal and Unity plugins</li></ul></div>
-      <div class="con"><h4>Weaknesses</h4><ul><li>RTX GPUs only</li><li>Frame generation adds latency</li></ul></div>
+      <div class="pro"><h4>Strengths</h4><ul><li>Best image quality and stability</li><li>Unreal and Unity plugins</li><li>NVIDIA says a 2× faster DLSS 5 model (16 Oct 2026) uses 20% less 4K VRAM and raises frame rates by up to 1.4× (vendor claim)</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>RTX GPUs only; DLSS 5 needs RTX 50 Series, RTX Spark laptops or GeForce NOW</li><li>Frame generation adds latency</li><li>DLSS 5 is in only a few games so far</li></ul></div>
     </div>
     <div class="eff">
       <span class="val">+128%</span>
@@ -1962,10 +1962,10 @@ const TABS = [
   fit:"Reaching frame-rate targets, mid-range phone budgets, VRAM limits, UI and texture upscaling for ports and remasters.",
   integrate:"Use the vendor SDK for each platform. Test temporal stability and input latency with frame generation. QA AI-upscaled textures for hallucinated detail.",
   tools:[
-  {n:"NVIDIA DLSS 4.5",u:[["NVIDIA", "https://www.nvidia.com/en-us/geforce/technologies/dlss/"]],v:"NVIDIA",d:["Plugin"],
-   what:"Second-generation transformer super resolution and dynamic multi frame generation up to 6× (five generated frames per rendered frame). Announced at CES 2026.",
-   pro:["Best image quality and stability","Unreal and Unity plugins"],
-   con:["RTX GPUs only","Frame generation adds latency"],
+  {n:"NVIDIA DLSS 4.5 / DLSS 5",u:[["NVIDIA", "https://www.nvidia.com/en-us/geforce/technologies/dlss/"], ["DLSS 5 launch", "https://www.nvidia.com/en-us/geforce/news/dlss-5-3d-guided-neural-rendering/"]],v:"NVIDIA",d:["Plugin"],
+   what:"DLSS 4.5 adds second-generation transformer super resolution and dynamic multi frame generation up to 6× (five generated frames per rendered frame), announced at CES 2026. DLSS 5 (3D-Guided Neural Rendering, launched 3 Sept 2026 in NBA 2K27) uses AI to enhance lighting and materials such as skin and hair, with per-object controls for developers.",
+   pro:["Best image quality and stability","Unreal and Unity plugins","NVIDIA says a 2× faster DLSS 5 model (16 Oct 2026) uses 20% less 4K VRAM and raises frame rates by up to 1.4× (vendor claim)"],
+   con:["RTX GPUs only; DLSS 5 needs RTX 50 Series, RTX Spark laptops or GeForce NOW","Frame generation adds latency","DLSS 5 is in only a few games so far"],
    e:{v:"+128%",l:"FPS vs native TAA, Cyberpunk 2077, 4K Quality (one test)",g:"bench",s:"Secondary benchmark"}},
   {n:"AMD FSR Redstone (FSR 4.1)",u:[["AMD", "https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html"], ["FidelityFX SDK", "https://gpuopen.com/amd-fidelityfx-sdk/"]],v:"AMD",d:["Plugin"],
    what:"AMD's first machine-learning upscaler, plus ML ray-tracing denoising, neural radiance caching and frame generation.",
