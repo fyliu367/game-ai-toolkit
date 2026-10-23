@@ -366,14 +366,14 @@ p{margin:0}
     </div>
   </article><article class="card">
     <div class="card-top">
-      <div class="card-title"><h3>Rodin Gen-2</h3><span class="vendor">Hyper3D (Deemos)</span></div>
-      <div class="links"><a href="https://hyper3d.ai" target="_blank" rel="noopener">Hyper3D ↗</a></div>
+      <div class="card-title"><h3>Rodin Gen-2.5</h3><span class="vendor">Hyper3D (Deemos)</span></div>
+      <div class="links"><a href="https://hyper3d.ai" target="_blank" rel="noopener">Hyper3D ↗</a><a href="https://docs.hyper3d.ai/en/api-specification/rodin-gen2-5" target="_blank" rel="noopener">Gen-2.5 API docs ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
-    <p class="what">10-billion-parameter 3D model that takes text or up to 5 images. Quad-dominant or raw mesh, PBR, T/A-pose control, bounding-box limits, GLB/FBX/USDZ export.</p>
+    <p class="what">3D model that takes text or up to 5 images. Gen-2.5 (19 May 2026) adds five quality tiers, meshes up to 10M faces at the top tier, textures up to 12K, and manual part splitting. Quad-dominant or raw mesh, PBR, T/A-pose control, GLB/FBX/USDZ export.</p>
     <div class="sw">
-      <div class="pro"><h4>Strengths</h4><ul><li>T/A-pose output ready for rigging</li><li>Polygon budget control</li><li>4× the geometry quality of Gen-1</li></ul></div>
-      <div class="con"><h4>Weaknesses</h4><ul><li>Paid per generation</li><li>Version naming (Gen-2 vs 2.5) is unclear</li></ul></div>
+      <div class="pro"><h4>Strengths</h4><ul><li>T/A-pose output ready for rigging</li><li>Polygon budget control</li><li>Five quality tiers from fast drafts to 10M-face meshes (vendor docs)</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>Paid per generation; full API on the Business plan</li><li>API calls without an explicit tier fall back to Gen-1/1.5</li></ul></div>
     </div>
     <div class="eff">
       <span class="val">—</span>
@@ -1093,13 +1093,13 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>AMD FSR Redstone (FSR 4.1)</h3><span class="vendor">AMD</span></div>
-      <div class="links"><a href="https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html" target="_blank" rel="noopener">AMD ↗</a><a href="https://gpuopen.com/amd-fidelityfx-sdk/" target="_blank" rel="noopener">FidelityFX SDK ↗</a></div>
+      <div class="links"><a href="https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html" target="_blank" rel="noopener">AMD ↗</a><a href="https://gpuopen.com/amd-fidelityfx-sdk/" target="_blank" rel="noopener">FidelityFX SDK ↗</a><a href="https://newsroom.amd.com/news/amd-fsr-upscaling-4-1-boosts-frames-image-quality/" target="_blank" rel="noopener">FSR 4.1 expansion ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
-    <p class="what">AMD's first machine-learning upscaler, plus ML ray-tracing denoising, neural radiance caching and frame generation.</p>
+    <p class="what">AMD's first machine-learning upscaler, plus ML ray-tracing denoising, neural radiance caching and frame generation. Since 20 Oct 2026 (Adrenalin 26.10.1), FSR 4.1 upscaling also runs on Radeon RX 6000 GPUs, Ryzen AI Max and Ryzen AI 9 laptops, and Ryzen Z2 handhelds. Xbox Series X|S support is &quot;coming soon&quot; with no date.</p>
     <div class="sw">
-      <div class="pro"><h4>Strengths</h4><ul><li>Strong uplift with frame generation</li><li>Ships in AMD's FidelityFX SDK</li></ul></div>
-      <div class="con"><h4>Weaknesses</h4><ul><li>ML features target recent Radeon GPUs</li><li>Naming varies between sources</li></ul></div>
+      <div class="pro"><h4>Strengths</h4><ul><li>Strong uplift with frame generation</li><li>Ships in AMD's FidelityFX SDK</li><li>FSR 4.1 now reaches RX 6000 cards and Ryzen handhelds</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>RX 6000 and handheld quality gains are AMD's claim; no independent tests yet</li><li>Handheld availability varies by device maker</li><li>Naming varies between sources</li></ul></div>
     </div>
     <div class="eff">
       <span class="val">+236%</span>
@@ -1694,10 +1694,10 @@ const TABS = [
    pro:["Cleanest rig-ready meshes in reviews","Local deployment for NDA work","Exports straight to Unity without Blender cleanup (one tester)"],
    con:["Narrower art-style range","Less depth in PBR texturing"],
    e:{v:"10–15%",l:"faster prop production in a studio pipeline that ran it locally (stage-level; tool not isolated)",g:"measured",s:"Studio case study"}},
-  {n:"Rodin Gen-2",u:[["Hyper3D", "https://hyper3d.ai"]],v:"Hyper3D (Deemos)",d:["Cloud","API"],
-   what:"10-billion-parameter 3D model that takes text or up to 5 images. Quad-dominant or raw mesh, PBR, T/A-pose control, bounding-box limits, GLB/FBX/USDZ export.",
-   pro:["T/A-pose output ready for rigging","Polygon budget control","4× the geometry quality of Gen-1"],
-   con:["Paid per generation","Version naming (Gen-2 vs 2.5) is unclear"],
+  {n:"Rodin Gen-2.5",u:[["Hyper3D", "https://hyper3d.ai"], ["Gen-2.5 API docs", "https://docs.hyper3d.ai/en/api-specification/rodin-gen2-5"]],v:"Hyper3D (Deemos)",d:["Cloud","API"],
+   what:"3D model that takes text or up to 5 images. Gen-2.5 (19 May 2026) adds five quality tiers, meshes up to 10M faces at the top tier, textures up to 12K, and manual part splitting. Quad-dominant or raw mesh, PBR, T/A-pose control, GLB/FBX/USDZ export.",
+   pro:["T/A-pose output ready for rigging","Polygon budget control","Five quality tiers from fast drafts to 10M-face meshes (vendor docs)"],
+   con:["Paid per generation; full API on the Business plan","API calls without an explicit tier fall back to Gen-1/1.5"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
   {n:"Meshy 6",u:[["Meshy", "https://www.meshy.ai"]],v:"Meshy",d:["Cloud","API","Plugin"],
    what:"Text and image to 3D with strong texturing, Low Poly mode, 5k–100k face budgets and one-step remesh plus UV. Generally available since January 2026.",
@@ -1967,10 +1967,10 @@ const TABS = [
    pro:["Best image quality and stability","Unreal and Unity plugins"],
    con:["RTX GPUs only","Frame generation adds latency"],
    e:{v:"+128%",l:"FPS vs native TAA, Cyberpunk 2077, 4K Quality (one test)",g:"bench",s:"Secondary benchmark"}},
-  {n:"AMD FSR Redstone (FSR 4.1)",u:[["AMD", "https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html"], ["FidelityFX SDK", "https://gpuopen.com/amd-fidelityfx-sdk/"]],v:"AMD",d:["Plugin"],
-   what:"AMD's first machine-learning upscaler, plus ML ray-tracing denoising, neural radiance caching and frame generation.",
-   pro:["Strong uplift with frame generation","Ships in AMD's FidelityFX SDK"],
-   con:["ML features target recent Radeon GPUs","Naming varies between sources"],
+  {n:"AMD FSR Redstone (FSR 4.1)",u:[["AMD", "https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html"], ["FidelityFX SDK", "https://gpuopen.com/amd-fidelityfx-sdk/"], ["FSR 4.1 expansion", "https://newsroom.amd.com/news/amd-fsr-upscaling-4-1-boosts-frames-image-quality/"]],v:"AMD",d:["Plugin"],
+   what:"AMD's first machine-learning upscaler, plus ML ray-tracing denoising, neural radiance caching and frame generation. Since 20 Oct 2026 (Adrenalin 26.10.1), FSR 4.1 upscaling also runs on Radeon RX 6000 GPUs, Ryzen AI Max and Ryzen AI 9 laptops, and Ryzen Z2 handhelds. Xbox Series X|S support is \"coming soon\" with no date.",
+   pro:["Strong uplift with frame generation","Ships in AMD's FidelityFX SDK","FSR 4.1 now reaches RX 6000 cards and Ryzen handhelds"],
+   con:["RX 6000 and handheld quality gains are AMD's claim; no independent tests yet","Handheld availability varies by device maker","Naming varies between sources"],
    e:{v:"+236%",l:"FPS with frame generation, Spider-Man 2, 1440p Performance (one test)",g:"bench",s:"Secondary benchmark"}},
   {n:"Intel XeSS 2 / 3",u:[["XeSS SDK", "https://github.com/intel/xess"]],v:"Intel",d:["Plugin"],
    what:"Upscaling and frame generation that run on NVIDIA, AMD and Qualcomm hardware as well as Intel.",
