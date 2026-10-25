@@ -898,13 +898,13 @@ p{margin:0}
     </div>
   </article><article class="card">
     <div class="card-top">
-      <div class="card-title"><h3>SideFX Houdini (ML toolset)</h3><span class="vendor">SideFX</span></div>
-      <div class="links"><a href="https://www.sidefx.com/products/houdini/" target="_blank" rel="noopener">SideFX ↗</a></div>
+      <div class="card-title"><h3>SideFX Houdini 22 (ML toolset)</h3><span class="vendor">SideFX</span></div>
+      <div class="links"><a href="https://www.sidefx.com/products/houdini/" target="_blank" rel="noopener">SideFX ↗</a><a href="https://www.sidefx.com/docs/houdini/ml/index.html" target="_blank" rel="noopener">Houdini 22 ML docs ↗</a></div>
       <div class="deploy"><span class="dep">Local</span></div>
     </div>
-    <p class="what">Procedural VFX standard. Its machine-learning nodes train models on simulation data, for example fast approximations of costly sims.</p>
+    <p class="what">Procedural VFX standard. Its machine-learning nodes train models on simulation data, for example fast approximations of costly sims. Houdini 22 (July 2026) adds TOP nodes to train computer-vision models (object detection, masking, keypoint tracking) and 3D Gaussian Splats from posed images, plus production-ready Gaussian Splat tools.</p>
     <div class="sw">
-      <div class="pro"><h4>Strengths</h4><ul><li>Production-proven</li><li>ML results stay inside procedural pipelines</li></ul></div>
+      <div class="pro"><h4>Strengths</h4><ul><li>Production-proven</li><li>ML results stay inside procedural pipelines</li><li>Synthetic data, training and deployment in one tool</li></ul></div>
       <div class="con"><h4>Weaknesses</h4><ul><li>Expert tool</li><li>ML features need technical directors</li></ul></div>
     </div>
     <div class="eff">
@@ -1379,6 +1379,22 @@ p{margin:0}
       <span class="val">Up to 50%</span>
       <span class="lbl">lower manual QA cost</span>
       <span class="meta"><span class="grade vendor">Vendor</span>nunu.ai via Google Cloud</span>
+    </div>
+  </article><article class="card">
+    <div class="card-top">
+      <div class="card-title"><h3>Razer QA Companion-AI</h3><span class="vendor">Razer</span></div>
+      <div class="links"><a href="https://www.razer.com/newsroom/company-news/razer-at-gdc-2026" target="_blank" rel="noopener">Razer (GDC 2026) ↗</a><a href="https://www.razer.com/newsroom/company-news/razer-qa-companion-available-on-aws-marketplace" target="_blank" rel="noopener">AWS Marketplace news ↗</a></div>
+      <div class="deploy"><span class="dep">Cloud</span></div>
+    </div>
+    <p class="what">Vision-based QA tool built on Amazon Bedrock. It reviews gameplay footage for physics, collision, rendering and animation bugs, writes bug reports with repro steps and video, and generates test cases from prompts or design documents. The March 2026 version needs no SDK, plugin or code changes, only a one-time bridge app.</p>
+    <div class="sw">
+      <div class="pro"><h4>Strengths</h4><ul><li>No engine integration needed (per Razer)</li><li>Bug reports push to Jira</li><li>Can be bought through existing AWS accounts</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>Gameplay agents that run the tests are still in development</li><li>No public pricing, and the March 2026 release gives no availability date</li></ul></div>
+    </div>
+    <div class="eff">
+      <span class="val">—</span>
+      <span class="lbl">No published figure yet</span>
+      <span class="meta"><span class="grade none">Not published</span></span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -1891,9 +1907,9 @@ const TABS = [
    pro:["Several VFX tasks in one upload","Exports to Unreal and USD"],
    con:["Built for live action, not real-time effects","Credit-based (about $10–95/mo per third-party listing)"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"SideFX Houdini (ML toolset)",u:[["SideFX", "https://www.sidefx.com/products/houdini/"]],v:"SideFX",d:["Local"],
-   what:"Procedural VFX standard. Its machine-learning nodes train models on simulation data, for example fast approximations of costly sims.",
-   pro:["Production-proven","ML results stay inside procedural pipelines"],
+  {n:"SideFX Houdini 22 (ML toolset)",u:[["SideFX", "https://www.sidefx.com/products/houdini/"], ["Houdini 22 ML docs", "https://www.sidefx.com/docs/houdini/ml/index.html"]],v:"SideFX",d:["Local"],
+   what:"Procedural VFX standard. Its machine-learning nodes train models on simulation data, for example fast approximations of costly sims. Houdini 22 (July 2026) adds TOP nodes to train computer-vision models (object detection, masking, keypoint tracking) and 3D Gaussian Splats from posed images, plus production-ready Gaussian Splat tools.",
+   pro:["Production-proven","ML results stay inside procedural pipelines","Synthetic data, training and deployment in one tool"],
    con:["Expert tool","ML features need technical directors"],
    e:{v:"—",l:"varies by setup",g:"none",s:""}}
   ]},
@@ -2073,6 +2089,11 @@ const TABS = [
    pro:["Engine-agnostic, works from the screen","Writes test cases in plain English"],
    con:["Vendor figures only","Cloud processing of builds"],
    e:{v:"Up to 50%",l:"lower manual QA cost",g:"vendor",s:"nunu.ai via Google Cloud"}},
+  {n:"Razer QA Companion-AI",u:[["Razer (GDC 2026)", "https://www.razer.com/newsroom/company-news/razer-at-gdc-2026"], ["AWS Marketplace news", "https://www.razer.com/newsroom/company-news/razer-qa-companion-available-on-aws-marketplace"]],v:"Razer",d:["Cloud"],
+   what:"Vision-based QA tool built on Amazon Bedrock. It reviews gameplay footage for physics, collision, rendering and animation bugs, writes bug reports with repro steps and video, and generates test cases from prompts or design documents. The March 2026 version needs no SDK, plugin or code changes, only a one-time bridge app.",
+   pro:["No engine integration needed (per Razer)","Bug reports push to Jira","Can be bought through existing AWS accounts"],
+   con:["Gameplay agents that run the tests are still in development","No public pricing, and the March 2026 release gives no availability date"],
+   e:{v:"—",l:"No published figure yet",g:"none",s:""}},
   {n:"LLM assistants for test engineers",u:[["ChatGPT", "https://chatgpt.com"], ["Claude", "https://claude.ai"], ["Gemini", "https://gemini.google.com"]],v:"ChatGPT · Claude · Gemini",d:["Cloud"],
    what:"Explain unfamiliar engine components, refine Jira and Slack updates, summarise action items and transcripts.",
    pro:["Closes knowledge gaps quickly","Helps juniors without using senior time"],
