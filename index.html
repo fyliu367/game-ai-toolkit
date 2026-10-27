@@ -331,6 +331,22 @@ p{margin:0}
       <span class="lbl">No published figure yet</span>
       <span class="meta"><span class="grade none">Not published</span></span>
     </div>
+  </article><article class="card">
+    <div class="card-top">
+      <div class="card-title"><h3>Ludo.ai (CLI)</h3><span class="vendor">Ludo.ai</span></div>
+      <div class="links"><a href="https://ludo.ai" target="_blank" rel="noopener">Ludo.ai ↗</a><a href="https://ludo.ai/developers/cli" target="_blank" rel="noopener">Ludo CLI ↗</a></div>
+      <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span><span class="dep">Plugin</span></div>
+    </div>
+    <p class="what">Game-asset generator for sprites, sprite sheets, animations, UI, tiles, textures and portraits in 30+ styles, with 3D, audio and video modes. The Ludo CLI (14 Oct 2026) generates assets from the terminal and saves them straight into the project, so coding agents such as Claude Code, Codex, Cursor and Copilot can call it; a REST API, MCP server and Unity plugin came earlier in 2026.</p>
+    <div class="sw">
+      <div class="pro"><h4>Strengths</h4><ul><li>Fits agent-driven workflows: agents call single commands instead of loading full MCP tool schemas</li><li>Batch and chained generation by script, with credit previews and spending limits</li><li>Free local Asset Toolbox (32 edit and export tools) works without an account</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>Generation needs the Pro plan ($35/month billed annually) or higher</li><li>Reviews say its 3D models need significant cleanup (per one comparison)</li><li>Breadth over depth: no custom style training like Scenario or Layer</li></ul></div>
+    </div>
+    <div class="eff">
+      <span class="val">—</span>
+      <span class="lbl">No published figure yet</span>
+      <span class="meta"><span class="grade none">Not published</span></span>
+    </div>
   </article></div></section>
 <section class="static-tab" id="static-3d"><h2>3D Modeling</h2><p class="intro">Image- and text-to-3D generators for blockouts, high-poly starting points and prop variations. Close to production for props and simple characters. Not ready for hero, modular or multi-material assets.</p><p><strong>Typical gain:</strong> 10–15% (faster prop production overall (studio-reported); blockout steps gain more)</p><p><strong>Where AI fits best:</strong> Blockouts from 2D concepts, high-poly hypotheses, prop and character variations, filling angles missing from concept art.</p><p><strong>Integration notes:</strong> Generate in Hunyuan3D, Tripo or Rodin, then retopologize, UV and texture. Check scale, pivots, LODs and collision in-engine. Tripo and TRELLIS can run locally for work under NDA.</p><div class="cards"><article class="card">
     <div class="card-top">
@@ -915,14 +931,14 @@ p{margin:0}
   </article></div></section>
 <section class="static-tab" id="static-engine"><h2>Engine Integration &amp; Code</h2><p class="intro">Coding agents and AI built into Unity and Unreal. Both engines adopted the Model Context Protocol (MCP) in 2026, so agents can now edit scenes, assets and Blueprints directly rather than only writing code.</p><p><strong>Typical gain:</strong> 15–20% (faster delivery on UI logic, refactoring and integration; 50–70% less boilerplate (studio-reported))</p><p><strong>Where AI fits best:</strong> UI logic, refactoring, scripting, API integration, getting up to speed on unfamiliar engines, scene setup, test boilerplate, commit and documentation work.</p><p><strong>Integration notes:</strong> Use private or local LLMs for client code. Require code review on everything AI writes. Keep architecture-level code human-written, a common studio QA policy.</p><div class="cards"><article class="card">
     <div class="card-top">
-      <div class="card-title"><h3>Unity AI (Assistant, Gateway, MCP)</h3><span class="vendor">Unity</span></div>
-      <div class="links"><a href="https://unity.com/products/ai" target="_blank" rel="noopener">Unity ↗</a></div>
+      <div class="card-title"><h3>Unity AI tools (Assistant, Gateway, CLI, agent plugin)</h3><span class="vendor">Unity</span></div>
+      <div class="links"><a href="https://unity.com/products/ai" target="_blank" rel="noopener">Unity ↗</a><a href="https://docs.unity.com/en-us/unity-cli" target="_blank" rel="noopener">Unity CLI docs ↗</a><a href="https://unity.com/blog/unity-plugin-for-claude-code" target="_blank" rel="noopener">Claude Code plugin ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span><span class="dep">Cloud</span></div>
     </div>
-    <p class="what">In-editor agent with Ask, Plan and Agent modes. The AI Gateway runs Claude Code, Codex, Gemini CLI or Cursor with your own keys. The MCP server lets outside agents control the editor. Open beta since May 2026.</p>
+    <p class="what">In-editor assistant with Ask, Plan and Agent modes, plus the AI Gateway for running Claude Code, Codex, Gemini CLI or Cursor with your own keys. Unity has deprecated the MCP server inside the assistant package; outside agents now drive the editor through the free, experimental Unity CLI (unity, unity eval or unity mcp), and Unity's official plugin for Claude Code, Codex and Grok (9 Sept 2026) adds 29 Unity skills on top of it. Unity says it is retiring the 'Unity AI' brand name.</p>
     <div class="sw">
-      <div class="pro"><h4>Strengths</h4><ul><li>Full access to scenes, Inspector values and serialized data</li><li>Choose your model</li><li>Includes sprite, texture and layout generators</li></ul></div>
-      <div class="con"><h4>Weaknesses</h4><ul><li>Beta</li><li>Personal tier uses credits</li></ul></div>
+      <div class="pro"><h4>Strengths</h4><ul><li>Full access to scenes, Inspector values and serialized data</li><li>Choose your model</li><li>CLI, MCP server and agent plugin are free and need no AI credits (per Unity)</li><li>Direct CLI commands are faster and use fewer tokens than MCP, per Unity's docs</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>CLI is experimental and still changing (1.0.0-beta.14, 21 Oct 2026); driving the editor needs Unity 6.0 LTS or later</li><li>Projects on the old in-editor MCP server must migrate to the CLI</li><li>In-editor assistant needs a paid tier or a $10/month Personal subscription after the trial, and uses credits</li></ul></div>
     </div>
     <div class="eff">
       <span class="val">—</span>
@@ -953,7 +969,7 @@ p{margin:0}
     </div>
     <p class="what">Terminal-based coding agent that reads the whole codebase, edits across files, runs builds and tests, and drives the engines through their MCP servers. Epic demoed Claude inside Unreal at State of Unreal 2026.</p>
     <div class="sw">
-      <div class="pro"><h4>Strengths</h4><ul><li>Strong on large, unfamiliar codebases</li><li>Works with Unity's Gateway and Unreal's MCP</li></ul></div>
+      <div class="pro"><h4>Strengths</h4><ul><li>Strong on large, unfamiliar codebases</li><li>Unity ships an official plugin for it (29 engine skills, 9 Sept 2026); also works with Unity's Gateway and Unreal's MCP plugin</li></ul></div>
       <div class="con"><h4>Weaknesses</h4><ul><li>Cloud model: check client permission</li><li>No controlled studies for Unreal C++</li></ul></div>
     </div>
     <div class="eff">
@@ -1675,6 +1691,11 @@ const TABS = [
    what:"Pixel-art models trained with pixel artists, including RD Animation for sprite sheets and RD Tile. Available as an Aseprite extension or through Scenario.",
    pro:["One-time price ($20 Lite / $65 full, per one comparison)","Fits Aseprite workflows","Limited, grid-aligned palettes"],
    con:["Small sprites only","Animations need palette locking and cleanup"],
+   e:{v:"—",l:"No published figure yet",g:"none",s:""}},
+  {n:"Ludo.ai (CLI)",u:[["Ludo.ai", "https://ludo.ai"], ["Ludo CLI", "https://ludo.ai/developers/cli"]],v:"Ludo.ai",d:["Cloud","API","Plugin"],
+   what:"Game-asset generator for sprites, sprite sheets, animations, UI, tiles, textures and portraits in 30+ styles, with 3D, audio and video modes. The Ludo CLI (14 Oct 2026) generates assets from the terminal and saves them straight into the project, so coding agents such as Claude Code, Codex, Cursor and Copilot can call it; a REST API, MCP server and Unity plugin came earlier in 2026.",
+   pro:["Fits agent-driven workflows: agents call single commands instead of loading full MCP tool schemas","Batch and chained generation by script, with credit previews and spending limits","Free local Asset Toolbox (32 edit and export tools) works without an account"],
+   con:["Generation needs the Pro plan ($35/month billed annually) or higher","Reviews say its 3D models need significant cleanup (per one comparison)","Breadth over depth: no custom style training like Scenario or Layer"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}}
   ]},
 
@@ -1904,10 +1925,10 @@ const TABS = [
   fit:"UI logic, refactoring, scripting, API integration, getting up to speed on unfamiliar engines, scene setup, test boilerplate, commit and documentation work.",
   integrate:"Use private or local LLMs for client code. Require code review on everything AI writes. Keep architecture-level code human-written, a common studio QA policy.",
   tools:[
-  {n:"Unity AI (Assistant, Gateway, MCP)",u:[["Unity", "https://unity.com/products/ai"]],v:"Unity",d:["Plugin","Cloud"],
-   what:"In-editor agent with Ask, Plan and Agent modes. The AI Gateway runs Claude Code, Codex, Gemini CLI or Cursor with your own keys. The MCP server lets outside agents control the editor. Open beta since May 2026.",
-   pro:["Full access to scenes, Inspector values and serialized data","Choose your model","Includes sprite, texture and layout generators"],
-   con:["Beta","Personal tier uses credits"],
+  {n:"Unity AI tools (Assistant, Gateway, CLI, agent plugin)",u:[["Unity", "https://unity.com/products/ai"], ["Unity CLI docs", "https://docs.unity.com/en-us/unity-cli"], ["Claude Code plugin", "https://unity.com/blog/unity-plugin-for-claude-code"]],v:"Unity",d:["Plugin","Cloud"],
+   what:"In-editor assistant with Ask, Plan and Agent modes, plus the AI Gateway for running Claude Code, Codex, Gemini CLI or Cursor with your own keys. Unity has deprecated the MCP server inside the assistant package; outside agents now drive the editor through the free, experimental Unity CLI (unity, unity eval or unity mcp), and Unity's official plugin for Claude Code, Codex and Grok (9 Sept 2026) adds 29 Unity skills on top of it. Unity says it is retiring the 'Unity AI' brand name.",
+   pro:["Full access to scenes, Inspector values and serialized data","Choose your model","CLI, MCP server and agent plugin are free and need no AI credits (per Unity)","Direct CLI commands are faster and use fewer tokens than MCP, per Unity's docs"],
+   con:["CLI is experimental and still changing (1.0.0-beta.14, 21 Oct 2026); driving the editor needs Unity 6.0 LTS or later","Projects on the old in-editor MCP server must migrate to the CLI","In-editor assistant needs a paid tier or a $10/month Personal subscription after the trial, and uses credits"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
   {n:"Unreal MCP plugin (UE 5.8) → UE6",u:[["UE 5.8 release notes", "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-release-notes"]],v:"Epic Games",d:["Plugin"],
    what:"Experimental MCP plugin that connects any LLM to Blueprints, assets, levels, materials and meshes. UE6 will build in Claude and Gemini, with early access around end of 2027.",
@@ -1916,7 +1937,7 @@ const TABS = [
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
   {n:"Claude Code",u:[["Anthropic", "https://www.claude.com/product/claude-code"]],v:"Anthropic",d:["Cloud","API"],
    what:"Terminal-based coding agent that reads the whole codebase, edits across files, runs builds and tests, and drives the engines through their MCP servers. Epic demoed Claude inside Unreal at State of Unreal 2026.",
-   pro:["Strong on large, unfamiliar codebases","Works with Unity's Gateway and Unreal's MCP"],
+   pro:["Strong on large, unfamiliar codebases","Unity ships an official plugin for it (29 engine skills, 9 Sept 2026); also works with Unity's Gateway and Unreal's MCP plugin"],
    con:["Cloud model: check client permission","No controlled studies for Unreal C++"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
   {n:"GitHub Copilot / JetBrains AI",u:[["GitHub Copilot", "https://github.com/features/copilot"], ["JetBrains AI", "https://www.jetbrains.com/ai/"]],v:"GitHub · JetBrains",d:["Plugin","Cloud"],
