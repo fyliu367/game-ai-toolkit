@@ -527,14 +527,14 @@ p{margin:0}
     </div>
   </article><article class="card">
     <div class="card-top">
-      <div class="card-title"><h3>NVIDIA RTX Remix</h3><span class="vendor">NVIDIA</span></div>
-      <div class="links"><a href="https://www.nvidia.com/en-us/geforce/rtx-remix/" target="_blank" rel="noopener">NVIDIA ↗</a></div>
+      <div class="card-title"><h3>NVIDIA RTX Remix (1.6)</h3><span class="vendor">NVIDIA</span></div>
+      <div class="links"><a href="https://www.nvidia.com/en-us/geforce/rtx-remix/" target="_blank" rel="noopener">NVIDIA ↗</a><a href="https://docs.omniverse.nvidia.com/kit/docs/rtx_remix/1.6.1-0/docs/changelog/remix-releasenotes.html" target="_blank" rel="noopener">Release notes ↗</a></div>
       <div class="deploy"><span class="dep">Local</span></div>
     </div>
-    <p class="what">Remastering platform that captures classic game assets and uses AI to upscale textures and generate PBR maps for path-traced rebuilds.</p>
+    <p class="what">Remastering platform that captures classic game assets and uses AI to upscale textures and generate PBR maps for path-traced rebuilds. Version 1.6 (23 Oct 2026) replaced the legacy AI tools with ComfyUI 2.0 workflows for texture and mesh output, added a headless Toolkit with an MCP server and a packaged modding-agent skill, DLSS 5 3D-Guided Neural Rendering with per-material controls, up to 6× frame generation and Windows on Arm.</p>
     <div class="sw">
-      <div class="pro"><h4>Strengths</h4><ul><li>Free</li><li>Batch AI texture upscaling with PBR generation</li></ul></div>
-      <div class="con"><h4>Weaknesses</h4><ul><li>Only works with supported DirectX 8/9 games</li><li>RTX GPU required</li></ul></div>
+      <div class="pro"><h4>Strengths</h4><ul><li>Free</li><li>ComfyUI-based AI texture and mesh workflows, with per-output replace or append</li><li>Coding agents can drive the Toolkit headlessly over MCP</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>Only works with supported DirectX 8/9 games (plus a Minecraft Java Edition beta)</li><li>RTX GPU and driver 616.92 or newer required; the DLSS 5 effect is RTX 50 Series only</li><li>The MCP endpoint changed in 1.6, so existing agent configs need updating</li></ul></div>
     </div>
     <div class="eff">
       <span class="val">—</span>
@@ -1043,6 +1043,22 @@ p{margin:0}
     </div>
   </article><article class="card">
     <div class="card-top">
+      <div class="card-title"><h3>SimplyStream Strata</h3><span class="vendor">Wonder Interactive</span></div>
+      <div class="links"><a href="https://simplystream.com" target="_blank" rel="noopener">SimplyStream ↗</a><a href="https://simplystream.com/docs" target="_blank" rel="noopener">Docs ↗</a></div>
+      <div class="deploy"><span class="dep">Cloud</span><span class="dep">Plugin</span></div>
+    </div>
+    <p class="what">Build agent that compiles Unreal 5.8 (and, per the vendor, UE6-line) projects to WebAssembly and WebGPU, plays each build in Chrome on a cloud GPU in desktop and mobile render modes, then publishes a browser play link. Driven from Claude Code, Codex or any agent that can run commands, from a CLI, or from a Fab plugin. Early Unity support. Announced 22 Oct 2026.</p>
+    <div class="sw">
+      <div class="pro"><h4>Strengths</h4><ul><li>No engine install or build machine; the agent packages, checks and deploys</li><li>Automated GPU check stops broken frames from reaching players</li><li>Free tier (2 runs a day), Indie $25/mo, Studio $250/mo</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>Unreal in practice; Unity support is early</li><li>The 15-minute code-to-verified-build median is the vendor's own game (vendor figure)</li><li>Players need a WebGPU browser; large worlds depend on streaming</li></ul></div>
+    </div>
+    <div class="eff">
+      <span class="val">—</span>
+      <span class="lbl">No published figure yet</span>
+      <span class="meta"><span class="grade none">Not published</span></span>
+    </div>
+  </article><article class="card">
+    <div class="card-top">
       <div class="card-title"><h3>Private / local LLMs (Qwen, Aya)</h3><span class="vendor">Open weights</span></div>
       <div class="links"><a href="https://huggingface.co/Qwen" target="_blank" rel="noopener">Qwen ↗</a><a href="https://cohere.com/research/aya" target="_blank" rel="noopener">Aya ↗</a></div>
       <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span></div>
@@ -1269,6 +1285,22 @@ p{margin:0}
     </div>
   </article><article class="card">
     <div class="card-top">
+      <div class="card-title"><h3>Fish Audio Drama 3</h3><span class="vendor">Fish Audio</span></div>
+      <div class="links"><a href="https://fish.audio/blog/fish-audio-drama-3/" target="_blank" rel="noopener">Fish Audio ↗</a><a href="https://huggingface.co/fishaudio/drama-3" target="_blank" rel="noopener">Hugging Face ↗</a></div>
+      <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span><span class="dep">Open</span></div>
+    </div>
+    <p class="what">Text-to-speech model released 13 Oct 2026 for multi-character scenes. Stage directions go in square brackets ([whispering], [through gritted teeth]), paired tags direct single words, one script can carry up to 16 speaker tags, and it clones voices in 83 languages. Open weights: a 35B mixture-of-experts with about 3B active per token.</p>
+    <div class="sw">
+      <div class="pro"><h4>Strengths</h4><ul><li>Direction written like notes to an actor, per line or per word</li><li>Open weights, free for commercial use under US$500k annual revenue (Fish Audio Community License v1.0)</li><li>Top of Artificial Analysis' independent Pronunciation Robustness test (93.2% vs 88.1% for S2.1 Pro)</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>Above the revenue threshold, or to host it as a service, you need a licence from Fish Audio</li><li>Self-hosting needs a large GPU and SGLang-Omni or vLLM-Omni serving</li><li>API list price $50 per million characters once the launch discount ends on 12 Nov; takes vary between runs (per one review)</li></ul></div>
+    </div>
+    <div class="eff">
+      <span class="val">—</span>
+      <span class="lbl">No published figure yet</span>
+      <span class="meta"><span class="grade none">Not published</span></span>
+    </div>
+  </article><article class="card">
+    <div class="card-top">
       <div class="card-title"><h3>Inworld TTS-1.5</h3><span class="vendor">Inworld AI</span></div>
       <div class="links"><a href="https://inworld.ai/tts" target="_blank" rel="noopener">Inworld ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
@@ -1379,6 +1411,22 @@ p{margin:0}
       <span class="val">Up to 50%</span>
       <span class="lbl">lower manual QA cost</span>
       <span class="meta"><span class="grade vendor">Vendor</span>nunu.ai via Google Cloud</span>
+    </div>
+  </article><article class="card">
+    <div class="card-top">
+      <div class="card-title"><h3>Aura Autopilot</h3><span class="vendor">Ramen</span></div>
+      <div class="links"><a href="https://www.tryaura.dev/autopilot/" target="_blank" rel="noopener">Aura ↗</a><a href="https://github.com/ramenvr/autopilot" target="_blank" rel="noopener">GitHub ↗</a></div>
+      <div class="deploy"><span class="dep">Plugin</span><span class="dep">Open</span></div>
+    </div>
+    <p class="what">Open-source (Apache 2.0) playtesting agent released 30 Oct 2026. An editor plugin for Unreal 5.4–5.8, Unity 6 and Godot 4.7 on Windows and macOS that launches Play-In-Editor, reads the project's source, plays to a prompt (explore, test, verify, reach a goal) and writes a report. It keeps a per-project memory so later runs get faster. Also drivable from Claude Code or Codex through its MCP server.</p>
+    <div class="sw">
+      <div class="pro"><h4>Strengths</h4><ul><li>Free and open source; runs on a Claude Code or Codex subscription or your own API key</li><li>Steerable: point it at one system or a stated pass condition</li><li>Also bundled with Ramen's paid Aura assistant</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>Only the vendor's own benchmark so far (1.7× faster than Claude Code, 7 of 7 tasks in one UE 5.8 game); no independent test yet</li><li>Runs adapt between attempts, so keep build, model config and prompt with each report to reproduce results</li><li>Source-build install is Unreal and Windows only; an Aura account is needed unless you bring your own key</li></ul></div>
+    </div>
+    <div class="eff">
+      <span class="val">—</span>
+      <span class="lbl">No published figure yet</span>
+      <span class="meta"><span class="grade none">Not published</span></span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -1752,10 +1800,10 @@ const TABS = [
    pro:["Industry-standard material pipeline","Tileable, correct-perspective output","Firefly's licensed training data"],
    con:["Text to Texture launched in beta in 2024 with no confirmed 2026 upgrade","Subscription only"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"NVIDIA RTX Remix",u:[["NVIDIA", "https://www.nvidia.com/en-us/geforce/rtx-remix/"]],v:"NVIDIA",d:["Local"],
-   what:"Remastering platform that captures classic game assets and uses AI to upscale textures and generate PBR maps for path-traced rebuilds.",
-   pro:["Free","Batch AI texture upscaling with PBR generation"],
-   con:["Only works with supported DirectX 8/9 games","RTX GPU required"],
+  {n:"NVIDIA RTX Remix (1.6)",u:[["NVIDIA", "https://www.nvidia.com/en-us/geforce/rtx-remix/"], ["Release notes", "https://docs.omniverse.nvidia.com/kit/docs/rtx_remix/1.6.1-0/docs/changelog/remix-releasenotes.html"]],v:"NVIDIA",d:["Local"],
+   what:"Remastering platform that captures classic game assets and uses AI to upscale textures and generate PBR maps for path-traced rebuilds. Version 1.6 (23 Oct 2026) replaced the legacy AI tools with ComfyUI 2.0 workflows for texture and mesh output, added a headless Toolkit with an MCP server and a packaged modding-agent skill, DLSS 5 3D-Guided Neural Rendering with per-material controls, up to 6× frame generation and Windows on Arm.",
+   pro:["Free","ComfyUI-based AI texture and mesh workflows, with per-output replace or append","Coding agents can drive the Toolkit headlessly over MCP"],
+   con:["Only works with supported DirectX 8/9 games (plus a Minecraft Java Edition beta)","RTX GPU and driver 616.92 or newer required; the DLSS 5 effect is RTX 50 Series only","The MCP endpoint changed in 1.6, so existing agent configs need updating"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}}
   ]},
 
@@ -1944,6 +1992,11 @@ const TABS = [
    pro:["Simple setup","Tiered pricing ($20 / $60 / $200 per month)"],
    con:["Less scene awareness than Unity's built-in AI","MCP support still on the roadmap"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
+  {n:"SimplyStream Strata",u:[["SimplyStream", "https://simplystream.com"], ["Docs", "https://simplystream.com/docs"]],v:"Wonder Interactive",d:["Cloud","Plugin"],
+   what:"Build agent that compiles Unreal 5.8 (and, per the vendor, UE6-line) projects to WebAssembly and WebGPU, plays each build in Chrome on a cloud GPU in desktop and mobile render modes, then publishes a browser play link. Driven from Claude Code, Codex or any agent that can run commands, from a CLI, or from a Fab plugin. Early Unity support. Announced 22 Oct 2026.",
+   pro:["No engine install or build machine; the agent packages, checks and deploys","Automated GPU check stops broken frames from reaching players","Free tier (2 runs a day), Indie $25/mo, Studio $250/mo"],
+   con:["Unreal in practice; Unity support is early","The 15-minute code-to-verified-build median is the vendor's own game (vendor figure)","Players need a WebGPU browser; large worlds depend on streaming"],
+   e:{v:"—",l:"No published figure yet",g:"none",s:""}},
   {n:"Private / local LLMs (Qwen, Aya)",u:[["Qwen", "https://huggingface.co/Qwen"], ["Aya", "https://cohere.com/research/aya"]],v:"Open weights",d:["Local","Open"],
    what:"Self-hosted models for reasoning over the whole project, analysing architecture and assisting with code, without client code leaving the network.",
    pro:["Strongest IP protection","Meets client NDA requirements"],
@@ -2030,6 +2083,11 @@ const TABS = [
    pro:["Self-hosted, so voices stay private","Free (MIT)"],
    con:["Research-oriented and no longer actively distributed as code","Model card bans voice impersonation without recorded consent"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
+  {n:"Fish Audio Drama 3",u:[["Fish Audio", "https://fish.audio/blog/fish-audio-drama-3/"], ["Hugging Face", "https://huggingface.co/fishaudio/drama-3"]],v:"Fish Audio",d:["Cloud","API","Open"],
+   what:"Text-to-speech model released 13 Oct 2026 for multi-character scenes. Stage directions go in square brackets ([whispering], [through gritted teeth]), paired tags direct single words, one script can carry up to 16 speaker tags, and it clones voices in 83 languages. Open weights: a 35B mixture-of-experts with about 3B active per token.",
+   pro:["Direction written like notes to an actor, per line or per word","Open weights, free for commercial use under US$500k annual revenue (Fish Audio Community License v1.0)","Top of Artificial Analysis' independent Pronunciation Robustness test (93.2% vs 88.1% for S2.1 Pro)"],
+   con:["Above the revenue threshold, or to host it as a service, you need a licence from Fish Audio","Self-hosting needs a large GPU and SGLang-Omni or vLLM-Omni serving","API list price $50 per million characters once the launch discount ends on 12 Nov; takes vary between runs (per one review)"],
+   e:{v:"—",l:"No published figure yet",g:"none",s:""}},
   {n:"Inworld TTS-1.5",u:[["Inworld", "https://inworld.ai/tts"]],v:"Inworld AI",d:["Cloud","API"],
    what:"Low-latency text-to-speech for runtime game characters. Inworld has repositioned as AI infrastructure with voice and an agent runtime.",
    pro:["$5–10 per million characters","P90 latency 130 ms (Mini) / 250 ms (Max)"],
@@ -2073,6 +2131,11 @@ const TABS = [
    pro:["Engine-agnostic, works from the screen","Writes test cases in plain English"],
    con:["Vendor figures only","Cloud processing of builds"],
    e:{v:"Up to 50%",l:"lower manual QA cost",g:"vendor",s:"nunu.ai via Google Cloud"}},
+  {n:"Aura Autopilot",u:[["Aura", "https://www.tryaura.dev/autopilot/"], ["GitHub", "https://github.com/ramenvr/autopilot"]],v:"Ramen",d:["Plugin","Open"],
+   what:"Open-source (Apache 2.0) playtesting agent released 30 Oct 2026. An editor plugin for Unreal 5.4–5.8, Unity 6 and Godot 4.7 on Windows and macOS that launches Play-In-Editor, reads the project's source, plays to a prompt (explore, test, verify, reach a goal) and writes a report. It keeps a per-project memory so later runs get faster. Also drivable from Claude Code or Codex through its MCP server.",
+   pro:["Free and open source; runs on a Claude Code or Codex subscription or your own API key","Steerable: point it at one system or a stated pass condition","Also bundled with Ramen's paid Aura assistant"],
+   con:["Only the vendor's own benchmark so far (1.7× faster than Claude Code, 7 of 7 tasks in one UE 5.8 game); no independent test yet","Runs adapt between attempts, so keep build, model config and prompt with each report to reproduce results","Source-build install is Unreal and Windows only; an Aura account is needed unless you bring your own key"],
+   e:{v:"—",l:"No published figure yet",g:"none",s:""}},
   {n:"LLM assistants for test engineers",u:[["ChatGPT", "https://chatgpt.com"], ["Claude", "https://claude.ai"], ["Gemini", "https://gemini.google.com"]],v:"ChatGPT · Claude · Gemini",d:["Cloud"],
    what:"Explain unfamiliar engine components, refine Jira and Slack updates, summarise action items and transcripts.",
    pro:["Closes knowledge gaps quickly","Helps juniors without using senior time"],
