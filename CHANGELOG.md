@@ -1,5 +1,30 @@
 # Changelog
 
+## 2026-11-04
+Catalogue now 99 tools (1 added). Window covered: 3 to 4 November 2026, plus stale-card corrections found while checking. This branch builds on update/2026-11-03 (unmerged), so the pull request carries both entries.
+
+### Added
+- **Pika H3 Flex (open weights)** (Trailers & UA): open-weight video-with-audio adapters on MiniMax H3, 29 Oct. Sources: https://huggingface.co/Pika-Labs/Pika-H3-Flex ; https://github.com/Pika-Labs/Pika-H3-Flex ; licence text https://huggingface.co/MiniMaxAI/MiniMax-H3/raw/main/LICENSE ; https://docs.comfy.org/tutorials/video/pika/pika-h3-flex ; independent on the licence https://www.deeplearning.ai/the-batch/minimaxs-state-of-the-art-video-model-is-only-minimally-open/ ; launch coverage https://digg.com/ai/aa83tsqk . Speed and leaderboard figures are Pika's own (vendor). Resolves the 3 Nov watch-list item (licence now confirmed from the model card and LICENSE file).
+
+### Changed
+- **Meshy 6 → Meshy 7.1 / 7** (3D): stale-card correction. Meshy 7 launched 10 Aug 2026 and Meshy 7.1 in Sep 2026 (both pre-window); added the 3 Nov API change (texture_model on Image to 3D and Multi-Image to 3D, Meshy N1 in Text to 3D refine) and Meshy's own geometry benchmark figures, graded vendor. Sources: https://www.meshy.ai/blog/meshy-7-image-to-3d-geometry-alignment ; https://docs.meshy.ai/en/webapp/changelog ; https://docs.meshy.ai/en/api/changelog ; independent caveat https://www.unite.ai/meshy-7-puts-a-number-on-image-to-3d-alignment/
+- **Tripo 3D** and **Tripo Auto-Rig**: Retopology v3.0, Smart UV endpoint and Rigging v3.0 (October 2026, month-dated), usage-history endpoint and FBX separate textures (November 2026). Source: https://developers.tripo3d.com/en/docs/changelog (single-source, vendor description only)
+- **ElevenLabs**: SFX v3 sound-effects model, 29 Oct. Source: https://elevenlabs.io/blog/sound-effects-v3 (vendor description; no published benchmark scores)
+- **Layer AI**: Motion Designer, file statuses, private projects and video style training on LTX-2.3 / MiniMax H3 / FLUX.3 Klein Base, 2 Nov. Source: https://layer.ai/changelog (single-source)
+- **nunu.ai**: Minion self-hosted runner for Windows PCs and Android phones, 29 Oct; deployment tag now Cloud + Local. Source: https://nunu.ai/blog/minion-ai-game-testing-on-your-own-device (single-source)
+- **Inworld Realtime TTS-2**: 28 Oct update (opt-in reasoning, Stable mode, 13%/9% speed-up graded vendor); Cekura's 26-model latency test (19 Oct) cited as independent. Sources: https://inworld.ai/blog/realtime-tts-2-reasoning-speed-consistency ; independent https://runtimewire.com/article/cekura-text-to-speech-benchmark-26-models
+- **NVIDIA DLSS 5 / DLSS 4.5**: corrected the claim that DLSS 5 had already shipped in Hogwarts Legacy; it arrives 5 Nov, with War Thunder and Where Winds Meet later in November and a Game Ready driver on 4 Nov. Sources: https://www.nvidia.com/en-us/geforce/news/hogwarts-legacy-war-thunder-dlss-5-3d-guided-neural-rendering/ ; https://www.nvidia.com/en-us/geforce/news/world-of-warcraft-forever-geforce-rtx-spark-game-ready-driver/
+- **GitHub Copilot / JetBrains AI**: Copilot selectable as an agent in JetBrains Air, 3 Nov. Source: https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/
+- **Krea 3**: technical report latency and leaderboard comparison, 3 Nov, graded vendor. Source: https://www.krea.ai/blog/krea-3-technical-report
+- **Rokoko Vision → Rokoko Vision 3.0**: stale-card correction (16 Jul 2026, pre-window): single-video capture inside Rokoko Create, no finger tracking, Starter free / Basic $10 per month. Sources: https://www.rokoko.com/insights/introducing-rokoko-vision-3-0 ; https://www.rokoko.com/products/vision
+- **Aura (incl. Coplay)**: stale-card correction (26 Jun 2026, pre-window): Aura 15.0 features, Indie/Pro/Ultimate pricing, Flopperam acquisition; link now points to tryaura.dev. Source: https://www.gamedeveloper.com/press-release/aura-15-0-releases-with-new-features-and-unlimited-usage-for-unreal-engine-and-unity (vendor press release; 2× claim marked as such)
+
+### Checked, no change
+Hyper3D Rodin (3 Nov rigging entry already covered), Arm NSS (v1.1.1 already covered), Suno (29 Oct Studio UI update only), Cursor (newest 20 Oct), RTX Remix (newest 1.6.1), Black Forest Labs, fal (3 Nov funding post only), Fish Audio, Stability AI, Anthropic, Unity AI (package changelog newest July), Midjourney (newest 8 Oct), Intel XeSS, Gridly (26 Oct blog only), Gemini LQA (2 Nov deprecation entry matches card), Houdini, Cascadeur, Kling, Veo, Wan, LTX.
+
+### Watch list (not added or changed)
+Autodesk Flow Studio 4 Nov release (Canvas character library and frames: minor UI, not a material change); Scenario November model additions (ElevenLabs SFX v3, Meshy N1, P-Video Upscale; month-dated only); Gemini 3.8 TTS voice remixing 4 Nov (not a catalogued tool); Crowdin 4 Nov Headway case study (app, not game; no baseline figure); Unreal Engine 5.9 preview (no primary source); Gemini 4 Carbon (gated); Unity Spark (no release date or pricing); Adobe MAX 10–12 Nov; Tractive AI retopology (waitlist only).
+
 ## 2026-11-03
 Catalogue now 98 tools (9 added). Window covered: 13 October to 3 November 2026.
 
