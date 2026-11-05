@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-11-05
+Catalogue now 100 tools (1 added). Window covered: 4 to 5 November 2026, plus two items the earlier passes missed. This branch builds on update/2026-11-04 (unmerged, itself on update/2026-11-03), so the pull request carries all three entries.
+
+### Added
+- **GPT Image 2.6 (Flare / Sunburst)** (2D): OpenAI's Images 2.6 API models, 4 Nov, with animated GIF output, SVG output, markup-guided edits and a complexity setting. Sources: https://openai.com/index/introducing-images-2-6/ ; https://developers.openai.com/api/docs/models/gpt-image-2.6-flare ; https://developers.openai.com/api/docs/models/gpt-image-2.6-sunburst ; edit limits from https://developers.openai.com/api/docs/guides/image-generation ; coverage https://www.testingcatalog.com/openai-launches-images-2-6-with-gifs-and-image-reference/ (relays OpenAI's figures). The 50% faster and six-second claims are OpenAI's own, graded vendor in the card text; no efficiency figure set.
+
+### Changed
+- **NVIDIA DLSS 5 / DLSS 4.5**: Hogwarts Legacy DLSS 5 update is live as of 5 Nov (was "arrives 5 Nov"); added that the studio tuned it through DLSS 5's model controls, and that NVIDIA's up to 300 fps at 4K figure is an RTX 5090 with 6× Multi Frame Generation (vendor) with no independent benchmark yet. Sources: https://www.nvidia.com/en-us/geforce/news/hogwarts-legacy-war-thunder-dlss-5-3d-guided-neural-rendering/ ; https://blogs.nvidia.com/blog/geforce-now-thursday-hogwarts-legacy-dlss-5/ ; independent https://www.notebookcheck.net/Hogwarts-Legacy-gets-major-Nvidia-DLSS-5-graphics-upgrade-on-PC.1443183.0.html
+- **Unity AI (Assistant, Gateway, MCP) → Unity AI (Assistant, Gateway, CLI / MCP)**: stale-card correction plus a 3 Nov release. Unity's docs mark the MCP server in the Assistant package as deprecated in favour of the Unity CLI (deprecation date not published; it predates this window). Unity CLI 1.0.0-beta.16 (3 Nov) adds `unity skill sync`, modal-dialog commands for agents, and stops registering the MCP server for shell-capable agents; the CLI is labelled experimental. Sources: https://docs.unity.com/en-us/unity-cli/release-notes ; https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.20/manual/integration/unity-mcp-overview.html ; https://docs.unity.com/en-us/unity-cli ; third-party explainer https://www.strayspark.studio/blog/unity-mcp-vs-unity-cli-2026
+- **ElevenLabs**: 2 Nov changelog. SFX v3 is the default for every workspace and `eleven_text_to_sound_v2` is removed on 1 Mar 2027; first Unity SDK for voice agents (v0.1.0, Unity 6.3 LTS or later). Sources: https://elevenlabs.io/docs/changelog/2026/11/2 ; https://github.com/elevenlabs/unity/releases/tag/v0.1.0 (single-source, vendor description only)
+
+### Checked, no change
+Meshy (newest API entry 3 Nov, covered), Hyper3D Rodin (3 Nov, covered), Tripo (November entries covered), Layer AI (2 Nov, covered), Suno (newest 29 Oct), Cursor (newest 20 Oct), Black Forest Labs (newest 15 Oct), Krea, Midjourney, Scenario, Adobe Firefly, Stability AI, Kling, Runway, Veo / Gemini Omni, Pika, Luma, Cascadeur, Rokoko, Uthana, Motorica, AMD FSR, Intel XeSS, Arm NSS, Qualcomm GSR, modl.ai, nunu.ai, Gridly, Crowdin, Lionbridge, Inworld, Fish Audio (searches and changelogs showed nothing new dated 4 to 5 Nov).
+
+### Watch list (not added or changed)
+Unreal Engine 5.9 Preview (Epic says the week of 9 Nov; not yet released, feature list unconfirmed); GitHub Copilot in Xcode's coding assistant, 4 Nov (public preview on Xcode 27.3 beta; revisit at general availability) https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant ; Moonshot AI Kimi game development suite for Unity, Unreal and Blender (2 to 3 Nov per secondary reports only; no primary source found); Roblox Build prompt-to-game tool (Roblox-only, four-country rollout); Autodesk Flow Studio 4 Nov release (Canvas character library and frames: minor); Eleven v4 voice model (pre-window; card does not yet describe it, needs its own sourced pass); Gridly localization agent ("Fall 2026", no release date); Foxalize (launch announced for 24 Nov); Adobe MAX 10–12 Nov; Gemini 4 Carbon (gated); Unity Spark (no release date or pricing).
+
 ## 2026-11-04
 Catalogue now 99 tools (1 added). Window covered: 3 to 4 November 2026, plus stale-card corrections found while checking. This branch builds on update/2026-11-03 (unmerged), so the pull request carries both entries.
 
