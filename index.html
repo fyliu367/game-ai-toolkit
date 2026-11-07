@@ -1169,6 +1169,22 @@ p{margin:0}
       <span class="lbl">No published figure yet</span>
       <span class="meta"><span class="grade none">Not published</span></span>
     </div>
+  </article><article class="card">
+    <div class="card-top">
+      <div class="card-title"><h3>Tencent Hy4 (game-tuned LLM)</h3><span class="vendor">Tencent (Hunyuan)</span></div>
+      <div class="links"><a href="https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/" target="_blank" rel="noopener">Tencent announcement ↗</a><a href="https://github.com/Tencent-Hunyuan/Hy4-preview" target="_blank" rel="noopener">Hy4 preview (GitHub) ↗</a></div>
+      <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
+    </div>
+    <p class="what">Released 4 November 2026: Tencent's frontier LLM with vision and computer use, trained with developers from Tencent's games division for Unreal Engine, Unity and Godot work, including game logic and multiplayer code. Served through Tencent Cloud, CodeBuddy, WorkBuddy and OpenRouter at about $0.90 per million input and $2.70 per million output tokens. Tencent says the weights and system card follow &quot;in the coming days&quot;; the August Hy4 preview (770B Mixture-of-Experts, 49B active, 1M-token context) is already on Hugging Face under Apache 2.0.</p>
+    <div class="sw">
+      <div class="pro"><h4>Strengths</h4><ul><li>Tencent reports a 19.1% gain on its GameDev and 9.8% on its GameLogic benchmarks over the August preview (vendor; baseline scores not published)</li><li>Apache-2.0 preview weights give studios with the hardware a self-hosted path</li><li>Free use inside CodeBuddy and WorkBuddy from 4 to 15 November 2026 (reported)</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>Final-model weights, licence and parameter count are not yet published; API only for now</li><li>All figures are Tencent's own; no independent test or studio report</li><li>Engine support is described as trained workflows, not a documented plugin or MCP server</li><li>China-based provider, so check data policy</li></ul></div>
+    </div>
+    <div class="eff">
+      <span class="val">—</span>
+      <span class="lbl">No published figure yet</span>
+      <span class="meta"><span class="grade none">Not published</span></span>
+    </div>
   </article></div></section>
 <section class="static-tab" id="static-render"><h2>Rendering &amp; Tech Art</h2><p class="intro">Neural upscaling, frame generation, neural texture compression and offline AI upscaling. On PC these are mainstream. On mobile, neural hardware only started arriving in late 2026.</p><p><strong>Typical gain:</strong> Up to 50% (GPU workload saved by rendering at lower resolution (Arm NSS, simulated); 85% less texture memory in NVIDIA's demo)</p><p><strong>Where AI fits best:</strong> Reaching frame-rate targets, mid-range phone budgets, VRAM limits, UI and texture upscaling for ports and remasters.</p><p><strong>Integration notes:</strong> Use the vendor SDK for each platform. Test temporal stability and input latency with frame generation. QA AI-upscaled textures for hallucinated detail.</p><div class="cards"><article class="card">
     <div class="card-top">
@@ -1205,18 +1221,18 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Intel XeSS 2 / 3</h3><span class="vendor">Intel</span></div>
-      <div class="links"><a href="https://github.com/intel/xess" target="_blank" rel="noopener">XeSS SDK ↗</a></div>
+      <div class="links"><a href="https://github.com/intel/xess" target="_blank" rel="noopener">XeSS SDK ↗</a><a href="https://github.com/intel/xess/releases" target="_blank" rel="noopener">SDK releases ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
-    <p class="what">Upscaling and frame generation that run on NVIDIA, AMD and Qualcomm hardware as well as Intel.</p>
+    <p class="what">Super resolution (XeSS-SR), frame generation (XeSS-FG) and the XeLL low-latency library. XeSS SDK 3.0 (March 2026) added 3× and 4× multi-frame generation on Intel Arc GPUs, including the Arc graphics in Core Ultra laptops; the newest SDK is 3.0.2 (July 2026). Super resolution and 2× frame generation also run on NVIDIA, AMD and Qualcomm hardware. Hogwarts Legacy added XeSS Multi-Frame Generation in its 5 November 2026 PC patch.</p>
     <div class="sw">
-      <div class="pro"><h4>Strengths</h4><ul><li>Broadest hardware support</li><li>Includes Qualcomm PCs</li></ul></div>
-      <div class="con"><h4>Weaknesses</h4><ul><li>Best quality only on Arc (XMX)</li><li>Few reliable XeSS 3 benchmarks</li></ul></div>
+      <div class="pro"><h4>Strengths</h4><ul><li>Broadest hardware support for the upscaler, including Qualcomm PCs</li><li>Multi-frame generation reaches older Arc A-series cards as well as B-series</li><li>One independent test measured +183% to +219% displayed fps at 4× multi-frame generation on an Arc A770 across seven games at 1440p</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>Best quality only on Arc (XMX); multi-frame generation is Arc-only</li><li>Generated frames add latency, need a 60 fps base and require XeLL support in the game</li><li>Few independent XeSS 3 image-quality comparisons yet</li></ul></div>
     </div>
     <div class="eff">
-      <span class="val">—</span>
-      <span class="lbl">No published figure yet</span>
-      <span class="meta"><span class="grade none">Not published</span></span>
+      <span class="val">+204%</span>
+      <span class="lbl">displayed fps at 4× multi-frame generation vs native, Hogwarts Legacy, Arc A770, 1440p (one test; generated frames, not render time)</span>
+      <span class="meta"><span class="grade bench">Benchmark</span>Secondary benchmark</span>
     </div>
   </article><article class="card">
     <div class="card-top">
@@ -2175,6 +2191,11 @@ const TABS = [
    what:"Announced in early November 2026 (reported as 2–3 November; Moonshot's page is undated): the Kimi K3.1 models with two agents, Kimi Code for editing scripts in an existing repository and Kimi Work for multi-file, multi-step production tasks, plus plugins that let them inspect and edit projects in Unreal Engine and Blender. Unity support is described only through Unity China's Tuanjie Engine and its Tuanjie Codely Agent. The K3.1 Pro weights are on Hugging Face under Moonshot's own licence.",
    pro:["One vendor stack aimed at prototyping, asset preparation, production and live-ops feedback","Agents edit Unreal and Blender projects through plugins rather than only writing code","Moonshot shows a 20-hour unattended run that recreated an existing game as a native engine project (vendor demo, not independently verified)"],
    con:["All demos and figures are Moonshot's own; no independent test or studio report yet","The announcement gives no pricing, plugin download links or supported engine versions","China-based provider, so check data policy","One report notes Moonshot recently cut K3.1 Pro quotas after rate-limit bottlenecks"],
+   e:{v:"—",l:"No published figure yet",g:"none",s:""}},
+  {n:"Tencent Hy4 (game-tuned LLM)",u:[["Tencent announcement", "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/"], ["Hy4 preview (GitHub)", "https://github.com/Tencent-Hunyuan/Hy4-preview"]],v:"Tencent (Hunyuan)",d:["Cloud","API"],
+   what:"Released 4 November 2026: Tencent's frontier LLM with vision and computer use, trained with developers from Tencent's games division for Unreal Engine, Unity and Godot work, including game logic and multiplayer code. Served through Tencent Cloud, CodeBuddy, WorkBuddy and OpenRouter at about $0.90 per million input and $2.70 per million output tokens. Tencent says the weights and system card follow \"in the coming days\"; the August Hy4 preview (770B Mixture-of-Experts, 49B active, 1M-token context) is already on Hugging Face under Apache 2.0.",
+   pro:["Tencent reports a 19.1% gain on its GameDev and 9.8% on its GameLogic benchmarks over the August preview (vendor; baseline scores not published)","Apache-2.0 preview weights give studios with the hardware a self-hosted path","Free use inside CodeBuddy and WorkBuddy from 4 to 15 November 2026 (reported)"],
+   con:["Final-model weights, licence and parameter count are not yet published; API only for now","All figures are Tencent's own; no independent test or studio report","Engine support is described as trained workflows, not a documented plugin or MCP server","China-based provider, so check data policy"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}}
   ]},
 
@@ -2194,11 +2215,11 @@ const TABS = [
    pro:["Strong uplift with frame generation","Now reaches RDNA 2 desktop cards and Ryzen AI handhelds","Vulkan and DirectX 12 parity for upscaling and frame generation","ML upscaling open to Xbox Series X|S developers: the Lite model costs 2.75 ms per frame at 4K on Series X and 3.4 ms at 1440p on Series S in Microsoft's own sample"],
    con:["No shipped Xbox game or independent console measurement yet","Frame Generation 4.0.2 still needs an RX 9000 GPU and Windows 11","Vulkan games on FSR 3.1 are not auto-upgraded by the driver","Naming varies between sources"],
    e:{v:"+236%",l:"FPS with frame generation, Spider-Man 2, 1440p Performance (one test)",g:"bench",s:"Secondary benchmark"}},
-  {n:"Intel XeSS 2 / 3",u:[["XeSS SDK", "https://github.com/intel/xess"]],v:"Intel",d:["Plugin"],
-   what:"Upscaling and frame generation that run on NVIDIA, AMD and Qualcomm hardware as well as Intel.",
-   pro:["Broadest hardware support","Includes Qualcomm PCs"],
-   con:["Best quality only on Arc (XMX)","Few reliable XeSS 3 benchmarks"],
-   e:{v:"—",l:"No published figure yet",g:"none",s:""}},
+  {n:"Intel XeSS 2 / 3",u:[["XeSS SDK", "https://github.com/intel/xess"], ["SDK releases", "https://github.com/intel/xess/releases"]],v:"Intel",d:["Plugin"],
+   what:"Super resolution (XeSS-SR), frame generation (XeSS-FG) and the XeLL low-latency library. XeSS SDK 3.0 (March 2026) added 3× and 4× multi-frame generation on Intel Arc GPUs, including the Arc graphics in Core Ultra laptops; the newest SDK is 3.0.2 (July 2026). Super resolution and 2× frame generation also run on NVIDIA, AMD and Qualcomm hardware. Hogwarts Legacy added XeSS Multi-Frame Generation in its 5 November 2026 PC patch.",
+   pro:["Broadest hardware support for the upscaler, including Qualcomm PCs","Multi-frame generation reaches older Arc A-series cards as well as B-series","One independent test measured +183% to +219% displayed fps at 4× multi-frame generation on an Arc A770 across seven games at 1440p"],
+   con:["Best quality only on Arc (XMX); multi-frame generation is Arc-only","Generated frames add latency, need a 60 fps base and require XeLL support in the game","Few independent XeSS 3 image-quality comparisons yet"],
+   e:{v:"+204%",l:"displayed fps at 4× multi-frame generation vs native, Hogwarts Legacy, Arc A770, 1440p (one test; generated frames, not render time)",g:"bench",s:"Secondary benchmark"}},
   {n:"Arm Neural Super Sampling",u:[["Arm", "https://www.arm.com/technologies/neural-technology"]],v:"Arm",d:["Plugin"],
    what:"Neural upscaling for mobile GPUs: 540p to 1080p in about 4 ms. Unreal plugin available (v1.1.1 unifies UE 5.4 and 5.6 support). On 29 October 2026 Arm's Neural Dawn demo, using NSS, neural frame-rate upscaling and neural denoising, became downloadable on the first five Mali G2-Ultra NX phones and tablets.",
    pro:["The first DLSS-class upscaler for phones","Unreal plugin out now","Now running on shipping consumer devices"],
