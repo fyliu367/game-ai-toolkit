@@ -173,14 +173,14 @@ p{margin:0}
       </div>
       <div class="cards" id="cards"><section class="static-tab" id="static-2d"><h2>2D Art &amp; Concept</h2><p class="intro">Image models for concept exploration, key art, paintovers, UI and LiveOps art. 2D is the most mature AI discipline, but many client contracts still limit AI to exploration and keep it out of final assets.</p><p><strong>Typical gain:</strong> 40–60% (render-stage time; 10–20% across a whole project (studio-reported))</p><p><strong>Where AI fits best:</strong> Exploring many concept options, combining multiple references, unifying artist-made pieces, style-locked LiveOps and UA art volume.</p><p><strong>Integration notes:</strong> Train a style model or LoRA per client or IP. Run open models (Qwen, FLUX, SDXL) locally through ComfyUI for work under NDA. Keep artist overpaint as the final step for quality and copyright.</p><div class="cards"><article class="card">
     <div class="card-top">
-      <div class="card-title"><h3>Qwen Image / Qwen Image Edit 2509</h3><span class="vendor">Alibaba</span></div>
-      <div class="links"><a href="https://huggingface.co/Qwen/Qwen-Image-Edit-2509" target="_blank" rel="noopener">Hugging Face ↗</a></div>
-      <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span></div>
+      <div class="card-title"><h3>Qwen Image / Edit 2509 / Qwen-Image-2.1</h3><span class="vendor">Alibaba</span></div>
+      <div class="links"><a href="https://huggingface.co/Qwen/Qwen-Image-Edit-2509" target="_blank" rel="noopener">Hugging Face ↗</a><a href="https://huggingface.co/Qwen/Qwen-Image-2.1" target="_blank" rel="noopener">Qwen-Image-2.1 ↗</a><a href="https://www.alibabacloud.com/blog/qwen-image-2-1-pro-and-turbo-apis-are-live-one-7b-model-to-generate-edit-and-cut-out_603679" target="_blank" rel="noopener">Alibaba Cloud post ↗</a></div>
+      <div class="deploy"><span class="dep">Local</span><span class="dep">Open</span><span class="dep">API</span></div>
     </div>
-    <p class="what">Open-weight image generation and instruction-based editing that takes 1–3 reference images, which suits multi-reference concepts. Community LoRAs add multi-angle turnarounds.</p>
+    <p class="what">Open-weight image generation and instruction-based editing that takes 1–3 reference images, which suits multi-reference concepts. Community LoRAs add multi-angle turnarounds. Qwen-Image-2.1 (weights 20 September 2026, 8-step Turbo checkpoint 9 October) is a newer 7B model that generates and edits in one model, takes up to 10 reference images, works at native 2K and outputs real transparency (RGBA). Its weights are licensed for research and evaluation only; commercial use goes through Alibaba Cloud Model Studio ($0.016 per image for Turbo, $0.04 for Pro, Singapore list price) or a separate licence.</p>
     <div class="sw">
-      <div class="pro"><h4>Strengths</h4><ul><li>Strong multi-reference editing</li><li>Runs locally, so client IP never leaves the studio</li><li>Fine-tunable with LoRAs</li></ul></div>
-      <div class="con"><h4>Weaknesses</h4><ul><li>Needs a high-VRAM GPU and ComfyUI skills</li><li>Newer editing versions (2511) keep changing workflows</li></ul></div>
+      <div class="pro"><h4>Strengths</h4><ul><li>Strong multi-reference editing</li><li>Runs locally, so client IP never leaves the studio</li><li>Fine-tunable with LoRAs</li><li>Qwen-Image-2.1 generates and cuts out assets with a real alpha channel, which suits sprites and UI (vendor description; no independent test found)</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>Needs a high-VRAM GPU and ComfyUI skills</li><li>Newer editing versions (2511) keep changing workflows</li><li>Qwen-Image-2.1 and its Turbo checkpoint are under the Qwen Research License, not Apache 2.0 like Qwen-Image and Edit 2509: no commercial use of the downloaded weights without a separate licence</li></ul></div>
     </div>
     <div class="eff">
       <span class="val">40–60%</span>
@@ -237,14 +237,14 @@ p{margin:0}
     </div>
   </article><article class="card">
     <div class="card-top">
-      <div class="card-title"><h3>Nano Banana Pro (Gemini 3 Pro Image)</h3><span class="vendor">Google</span></div>
-      <div class="links"><a href="https://deepmind.google/models/gemini-image/pro/" target="_blank" rel="noopener">Google DeepMind ↗</a></div>
+      <div class="card-title"><h3>Nano Banana Pro / Nano Banana 2.1</h3><span class="vendor">Google</span></div>
+      <div class="links"><a href="https://deepmind.google/models/gemini-image/pro/" target="_blank" rel="noopener">Google DeepMind ↗</a><a href="https://aistudio.google.com/docs/changelog" target="_blank" rel="noopener">Gemini API changelog ↗</a><a href="https://aistudio.google.com/docs/pricing" target="_blank" rel="noopener">Gemini API pricing ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
-    <p class="what">Image model that edits from instructions while keeping characters consistent across images, and renders text accurately.</p>
+    <p class="what">Image model that edits from instructions while keeping characters consistent across images, and renders text accurately. Nano Banana Pro (Gemini 3 Pro Image) is the premium tier. Nano Banana 2.1 (generally available 6 October 2026) is the cheaper Flash-tier model: up to 14 reference images, mask-based edits of a marked region, and 1K, 2K or 4K output in wide and panoramic aspect ratios (Google's description). It replaces Nano Banana 2 (gemini-3.1-flash-image), which is deprecated with no shutdown date announced.</p>
     <div class="sw">
-      <div class="pro"><h4>Strengths</h4><ul><li>Scored 9.50 vs Midjourney V7's 8.62 in one blog's 29-prompt blind test</li><li>Best text rendering, useful for UI mock-ups and key art</li><li>API priced per resolution</li></ul></div>
-      <div class="con"><h4>Weaknesses</h4><ul><li>Less painterly than Midjourney</li><li>Google cloud only</li></ul></div>
+      <div class="pro"><h4>Strengths</h4><ul><li>Scored 9.50 vs Midjourney V7's 8.62 in one blog's 29-prompt blind test (Nano Banana Pro)</li><li>Best text rendering, useful for UI mock-ups and key art</li><li>API priced per resolution</li><li>Nano Banana 2.1 lists at $0.0336 per 1K image against $0.134 for Pro, and half that again for batch jobs (Google's listed prices)</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>Less painterly than Midjourney</li><li>Google cloud only</li><li>Nano Banana 2.1's quality gains are Google's own figures; one outlet noted no independent testing at launch</li><li>Pipelines on Nano Banana 2 need to move to the 2.1 model ID</li></ul></div>
     </div>
     <div class="eff">
       <span class="val">—</span>
@@ -673,13 +673,13 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Mesh to MetaHuman (UE 5.8)</h3><span class="vendor">Epic Games</span></div>
-      <div class="links"><a href="https://www.metahuman.com" target="_blank" rel="noopener">MetaHuman ↗</a></div>
+      <div class="links"><a href="https://www.metahuman.com" target="_blank" rel="noopener">MetaHuman ↗</a><a href="https://forums.unrealengine.com/t/metahuman-creator-web-application-is-being-discontinued/2695297" target="_blank" rel="noopener">Web app discontinuation notice ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
-    <p class="what">Turns any human mesh of any topology into a fully rigged MetaHuman in one workflow. Epic open-sourced RigLogic/DNA under MIT.</p>
+    <p class="what">Turns any human mesh of any topology into a fully rigged MetaHuman in one workflow. Epic open-sourced RigLogic/DNA under MIT. MetaHuman creation now lives in the engine (UE 5.6 and later): Epic's notice set the separate MetaHuman Creator web app to close on 5 November 2026, with 90 days after that to retrieve characters from the web gallery.</p>
     <div class="sw">
       <div class="pro"><h4>Strengths</h4><ul><li>Film-quality facial rig</li><li>Free with Unreal</li><li>Open rig logic</li></ul></div>
-      <div class="con"><h4>Weaknesses</h4><ul><li>Realistic humans only</li><li>Ties you to Unreal</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>Realistic humans only</li><li>Ties you to Unreal</li><li>Projects still on UE 5.2–5.5 lose the full Mesh to MetaHuman auto-rig once the web app closes; only the skeletal-mesh-only option keeps working (per Epic's notice)</li></ul></div>
     </div>
     <div class="eff">
       <span class="val">—</span>
@@ -1011,14 +1011,14 @@ p{margin:0}
     </div>
   </article><article class="card">
     <div class="card-top">
-      <div class="card-title"><h3>Unreal MCP plugin (UE 5.8) → UE6</h3><span class="vendor">Epic Games</span></div>
-      <div class="links"><a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-release-notes" target="_blank" rel="noopener">UE 5.8 release notes ↗</a></div>
+      <div class="card-title"><h3>Unreal MCP &amp; Unreal Assistant (UE 5.8, 5.9 Preview) → UE6</h3><span class="vendor">Epic Games</span></div>
+      <div class="links"><a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-release-notes" target="_blank" rel="noopener">UE 5.8 release notes ↗</a><a href="https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840" target="_blank" rel="noopener">UE 5.9 MegaJam Preview ↗</a><a href="https://dev.epicgames.com/documentation/unreal-engine/unreal-engine-5-9-release-notes?lang=en-US" target="_blank" rel="noopener">UE 5.9 release notes ↗</a><a href="https://dev.epicgames.com/documentation/unreal-engine/unreal-canvas-in-unreal-engine?lang=en-US" target="_blank" rel="noopener">Unreal Canvas docs ↗</a></div>
       <div class="deploy"><span class="dep">Plugin</span></div>
     </div>
-    <p class="what">Experimental MCP plugin that connects any LLM to Blueprints, assets, levels, materials and meshes. UE6 will build in Claude and Gemini, with early access around end of 2027.</p>
+    <p class="what">Experimental MCP plugin that connects any LLM to Blueprints, assets, levels, materials and meshes. The UE 5.9 MegaJam Preview (9 November 2026) starts the MCP server with the editor and adds toolsets for rendering, source control, profiling, debugging, gameplay testing, geometry, audio, UI, level creation and Fab asset search, a Toolset Registry that controls which toolsets agents may use, and an MCP Client toolset for external servers. The Preview also includes Unreal Assistant, an in-editor panel that runs Claude Code, Codex, Cursor or OpenCode against Unreal MCP with tool-access levels from Ask to Full, wider Python APIs that agents can call, and Unreal Canvas, a workspace that generates images, video and 3D content with your own provider keys and brings results into the level. All of these are Experimental (Epic's description). UE6 will build in Claude and Gemini, with early access around end of 2027.</p>
     <div class="sw">
-      <div class="pro"><h4>Strengths</h4><ul><li>Official engine-level access</li><li>Bring your own model</li></ul></div>
-      <div class="con"><h4>Weaknesses</h4><ul><li>Experimental</li><li>UE6 is more than a year away</li></ul></div>
+      <div class="pro"><h4>Strengths</h4><ul><li>Official engine-level access</li><li>Bring your own model</li><li>5.9 Preview: the coding agent you already use works from a panel inside the editor</li><li>Toolset Registry lets a project limit what agents can touch</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>Experimental</li><li>The 5.9 Preview had about a week of development and a shorter QA pass than usual; Epic says to expect breakage and to test on a copy of the project</li><li>In new 5.9 Preview projects the toolset plugins are off by default, so agents cannot edit levels until All Toolsets is enabled (known issue UE-412135)</li><li>Unreal Canvas needs an NVIDIA GPU with at least 8 GB of VRAM and your own API keys</li><li>UE6 is more than a year away</li></ul></div>
     </div>
     <div class="eff">
       <span class="val">—</span>
@@ -1028,13 +1028,13 @@ p{margin:0}
   </article><article class="card">
     <div class="card-top">
       <div class="card-title"><h3>Claude Code</h3><span class="vendor">Anthropic</span></div>
-      <div class="links"><a href="https://www.claude.com/product/claude-code" target="_blank" rel="noopener">Anthropic ↗</a></div>
+      <div class="links"><a href="https://www.claude.com/product/claude-code" target="_blank" rel="noopener">Anthropic ↗</a><a href="https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games" target="_blank" rel="noopener">Game Developer report ↗</a></div>
       <div class="deploy"><span class="dep">Cloud</span><span class="dep">API</span></div>
     </div>
-    <p class="what">Terminal-based coding agent that reads the whole codebase, edits across files, runs builds and tests, and drives the engines through their MCP servers. Epic demoed Claude inside Unreal at State of Unreal 2026.</p>
+    <p class="what">Terminal-based coding agent that reads the whole codebase, edits across files, runs builds and tests, and drives the engines through their MCP servers. Epic demoed Claude inside Unreal at State of Unreal 2026. Since late October 2026 its prompt on Opus 5.5 steers it away from recreating a specific existing game; original games, games in a genre and games built from your own designs and assets are meant to keep working (Anthropic staff statement).</p>
     <div class="sw">
-      <div class="pro"><h4>Strengths</h4><ul><li>Strong on large, unfamiliar codebases</li><li>Works with Unity's Gateway and Unreal's MCP</li></ul></div>
-      <div class="con"><h4>Weaknesses</h4><ul><li>Cloud model: check client permission</li><li>No controlled studies for Unreal C++</li></ul></div>
+      <div class="pro"><h4>Strengths</h4><ul><li>Strong on large, unfamiliar codebases</li><li>Works with Unity's Gateway and Unreal's MCP</li><li>Selectable in Unreal's in-editor Assistant panel (UE 5.9 Preview)</li></ul></div>
+      <div class="con"><h4>Weaknesses</h4><ul><li>Cloud model: check client permission</li><li>No controlled studies for Unreal C++</li><li>On Opus 5.5 it declines to rebuild a specific existing game, which affects remakes, ports and decompilation work; the first wording (around 27 October) also blocked some developers' own projects and generic reverse-engineering tasks (developer reports). Anthropic staff say version 2.1.317 fixed refusals triggered by naming a game only to describe mechanics; the rule cannot be switched off (reported)</li></ul></div>
     </div>
     <div class="eff">
       <span class="val">—</span>
@@ -1850,10 +1850,10 @@ const TABS = [
   fit:"Exploring many concept options, combining multiple references, unifying artist-made pieces, style-locked LiveOps and UA art volume.",
   integrate:"Train a style model or LoRA per client or IP. Run open models (Qwen, FLUX, SDXL) locally through ComfyUI for work under NDA. Keep artist overpaint as the final step for quality and copyright.",
   tools:[
-  {n:"Qwen Image / Qwen Image Edit 2509",u:[["Hugging Face", "https://huggingface.co/Qwen/Qwen-Image-Edit-2509"]],v:"Alibaba",d:["Local","Open"],
-   what:"Open-weight image generation and instruction-based editing that takes 1–3 reference images, which suits multi-reference concepts. Community LoRAs add multi-angle turnarounds.",
-   pro:["Strong multi-reference editing","Runs locally, so client IP never leaves the studio","Fine-tunable with LoRAs"],
-   con:["Needs a high-VRAM GPU and ComfyUI skills","Newer editing versions (2511) keep changing workflows"],
+  {n:"Qwen Image / Edit 2509 / Qwen-Image-2.1",u:[["Hugging Face", "https://huggingface.co/Qwen/Qwen-Image-Edit-2509"], ["Qwen-Image-2.1", "https://huggingface.co/Qwen/Qwen-Image-2.1"], ["Alibaba Cloud post", "https://www.alibabacloud.com/blog/qwen-image-2-1-pro-and-turbo-apis-are-live-one-7b-model-to-generate-edit-and-cut-out_603679"]],v:"Alibaba",d:["Local","Open","API"],
+   what:"Open-weight image generation and instruction-based editing that takes 1–3 reference images, which suits multi-reference concepts. Community LoRAs add multi-angle turnarounds. Qwen-Image-2.1 (weights 20 September 2026, 8-step Turbo checkpoint 9 October) is a newer 7B model that generates and edits in one model, takes up to 10 reference images, works at native 2K and outputs real transparency (RGBA). Its weights are licensed for research and evaluation only; commercial use goes through Alibaba Cloud Model Studio ($0.016 per image for Turbo, $0.04 for Pro, Singapore list price) or a separate licence.",
+   pro:["Strong multi-reference editing","Runs locally, so client IP never leaves the studio","Fine-tunable with LoRAs","Qwen-Image-2.1 generates and cuts out assets with a real alpha channel, which suits sprites and UI (vendor description; no independent test found)"],
+   con:["Needs a high-VRAM GPU and ComfyUI skills","Newer editing versions (2511) keep changing workflows","Qwen-Image-2.1 and its Turbo checkpoint are under the Qwen Research License, not Apache 2.0 like Qwen-Image and Edit 2509: no commercial use of the downloaded weights without a separate licence"],
    e:{v:"40–60%",l:"render-stage time in a studio's AI-assisted 2D pipeline (stage-level; tool not isolated)",g:"measured",s:"Studio case study"}},
   {n:"FLUX 3 Image Klein / FLUX.2 / Kontext",u:[["Black Forest Labs", "https://bfl.ai/models/flux-3-image"], ["Release post", "https://bfl.ai/blog/flux-3-image-klein"]],v:"Black Forest Labs",d:["Local","Open","API"],
    what:"Image model family. FLUX 3 Image Klein (October 2026) is a 5.6B open-weight model that generates, edits and takes up to 10 reference images at native 4K, with bounding boxes to place elements or confine edits. Kontext and FLUX.2 remain for existing pipelines.",
@@ -1870,10 +1870,10 @@ const TABS = [
    pro:["Best-looking images out of the box","Fast exploration of many directions","Style and character reference controls"],
    con:["Companies with over $1M annual revenue need the Pro or Mega plan","No IP indemnity; cloud only","Weaker at precise edits"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Nano Banana Pro (Gemini 3 Pro Image)",u:[["Google DeepMind", "https://deepmind.google/models/gemini-image/pro/"]],v:"Google",d:["Cloud","API"],
-   what:"Image model that edits from instructions while keeping characters consistent across images, and renders text accurately.",
-   pro:["Scored 9.50 vs Midjourney V7's 8.62 in one blog's 29-prompt blind test","Best text rendering, useful for UI mock-ups and key art","API priced per resolution"],
-   con:["Less painterly than Midjourney","Google cloud only"],
+  {n:"Nano Banana Pro / Nano Banana 2.1",u:[["Google DeepMind", "https://deepmind.google/models/gemini-image/pro/"], ["Gemini API changelog", "https://aistudio.google.com/docs/changelog"], ["Gemini API pricing", "https://aistudio.google.com/docs/pricing"]],v:"Google",d:["Cloud","API"],
+   what:"Image model that edits from instructions while keeping characters consistent across images, and renders text accurately. Nano Banana Pro (Gemini 3 Pro Image) is the premium tier. Nano Banana 2.1 (generally available 6 October 2026) is the cheaper Flash-tier model: up to 14 reference images, mask-based edits of a marked region, and 1K, 2K or 4K output in wide and panoramic aspect ratios (Google's description). It replaces Nano Banana 2 (gemini-3.1-flash-image), which is deprecated with no shutdown date announced.",
+   pro:["Scored 9.50 vs Midjourney V7's 8.62 in one blog's 29-prompt blind test (Nano Banana Pro)","Best text rendering, useful for UI mock-ups and key art","API priced per resolution","Nano Banana 2.1 lists at $0.0336 per 1K image against $0.134 for Pro, and half that again for batch jobs (Google's listed prices)"],
+   con:["Less painterly than Midjourney","Google cloud only","Nano Banana 2.1's quality gains are Google's own figures; one outlet noted no independent testing at launch","Pipelines on Nano Banana 2 need to move to the 2.1 model ID"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
   {n:"Adobe Firefly / Photoshop Generative Fill",u:[["Adobe Firefly", "https://www.adobe.com/products/firefly.html"]],v:"Adobe",d:["Cloud","Plugin"],
    what:"Generative fill, extension and reference-based generation inside Photoshop, from a model trained on licensed content.",
@@ -2029,10 +2029,10 @@ const TABS = [
    pro:["Free, with a huge animation library","Widely supported skeleton"],
    con:["In maintenance mode","Humanoid T-pose only"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Mesh to MetaHuman (UE 5.8)",u:[["MetaHuman", "https://www.metahuman.com"]],v:"Epic Games",d:["Plugin"],
-   what:"Turns any human mesh of any topology into a fully rigged MetaHuman in one workflow. Epic open-sourced RigLogic/DNA under MIT.",
+  {n:"Mesh to MetaHuman (UE 5.8)",u:[["MetaHuman", "https://www.metahuman.com"], ["Web app discontinuation notice", "https://forums.unrealengine.com/t/metahuman-creator-web-application-is-being-discontinued/2695297"]],v:"Epic Games",d:["Plugin"],
+   what:"Turns any human mesh of any topology into a fully rigged MetaHuman in one workflow. Epic open-sourced RigLogic/DNA under MIT. MetaHuman creation now lives in the engine (UE 5.6 and later): Epic's notice set the separate MetaHuman Creator web app to close on 5 November 2026, with 90 days after that to retrieve characters from the web gallery.",
    pro:["Film-quality facial rig","Free with Unreal","Open rig logic"],
-   con:["Realistic humans only","Ties you to Unreal"],
+   con:["Realistic humans only","Ties you to Unreal","Projects still on UE 5.2–5.5 lose the full Mesh to MetaHuman auto-rig once the web app closes; only the skeletal-mesh-only option keeps working (per Epic's notice)"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
   {n:"Unreal ML Deformer",u:[["Epic docs", "https://dev.epicgames.com/documentation/en-us/unreal-engine/ml-deformer-framework-in-unreal-engine"]],v:"Epic Games",d:["Plugin"],
    what:"Trains a model on offline muscle and cloth simulation so high-quality deformation runs in real time.",
@@ -2158,15 +2158,15 @@ const TABS = [
    pro:["Full access to scenes, Inspector values and serialized data","Choose your model","Includes sprite, texture and layout generators"],
    con:["Assistant is in beta and the CLI is labelled experimental","Setups built on the Assistant package's MCP server need migrating to the CLI","Personal tier uses credits"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Unreal MCP plugin (UE 5.8) → UE6",u:[["UE 5.8 release notes", "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-release-notes"]],v:"Epic Games",d:["Plugin"],
-   what:"Experimental MCP plugin that connects any LLM to Blueprints, assets, levels, materials and meshes. UE6 will build in Claude and Gemini, with early access around end of 2027.",
-   pro:["Official engine-level access","Bring your own model"],
-   con:["Experimental","UE6 is more than a year away"],
+  {n:"Unreal MCP & Unreal Assistant (UE 5.8, 5.9 Preview) → UE6",u:[["UE 5.8 release notes", "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-release-notes"], ["UE 5.9 MegaJam Preview", "https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840"], ["UE 5.9 release notes", "https://dev.epicgames.com/documentation/unreal-engine/unreal-engine-5-9-release-notes?lang=en-US"], ["Unreal Canvas docs", "https://dev.epicgames.com/documentation/unreal-engine/unreal-canvas-in-unreal-engine?lang=en-US"]],v:"Epic Games",d:["Plugin"],
+   what:"Experimental MCP plugin that connects any LLM to Blueprints, assets, levels, materials and meshes. The UE 5.9 MegaJam Preview (9 November 2026) starts the MCP server with the editor and adds toolsets for rendering, source control, profiling, debugging, gameplay testing, geometry, audio, UI, level creation and Fab asset search, a Toolset Registry that controls which toolsets agents may use, and an MCP Client toolset for external servers. The Preview also includes Unreal Assistant, an in-editor panel that runs Claude Code, Codex, Cursor or OpenCode against Unreal MCP with tool-access levels from Ask to Full, wider Python APIs that agents can call, and Unreal Canvas, a workspace that generates images, video and 3D content with your own provider keys and brings results into the level. All of these are Experimental (Epic's description). UE6 will build in Claude and Gemini, with early access around end of 2027.",
+   pro:["Official engine-level access","Bring your own model","5.9 Preview: the coding agent you already use works from a panel inside the editor","Toolset Registry lets a project limit what agents can touch"],
+   con:["Experimental","The 5.9 Preview had about a week of development and a shorter QA pass than usual; Epic says to expect breakage and to test on a copy of the project","In new 5.9 Preview projects the toolset plugins are off by default, so agents cannot edit levels until All Toolsets is enabled (known issue UE-412135)","Unreal Canvas needs an NVIDIA GPU with at least 8 GB of VRAM and your own API keys","UE6 is more than a year away"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
-  {n:"Claude Code",u:[["Anthropic", "https://www.claude.com/product/claude-code"]],v:"Anthropic",d:["Cloud","API"],
-   what:"Terminal-based coding agent that reads the whole codebase, edits across files, runs builds and tests, and drives the engines through their MCP servers. Epic demoed Claude inside Unreal at State of Unreal 2026.",
-   pro:["Strong on large, unfamiliar codebases","Works with Unity's Gateway and Unreal's MCP"],
-   con:["Cloud model: check client permission","No controlled studies for Unreal C++"],
+  {n:"Claude Code",u:[["Anthropic", "https://www.claude.com/product/claude-code"], ["Game Developer report", "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games"]],v:"Anthropic",d:["Cloud","API"],
+   what:"Terminal-based coding agent that reads the whole codebase, edits across files, runs builds and tests, and drives the engines through their MCP servers. Epic demoed Claude inside Unreal at State of Unreal 2026. Since late October 2026 its prompt on Opus 5.5 steers it away from recreating a specific existing game; original games, games in a genre and games built from your own designs and assets are meant to keep working (Anthropic staff statement).",
+   pro:["Strong on large, unfamiliar codebases","Works with Unity's Gateway and Unreal's MCP","Selectable in Unreal's in-editor Assistant panel (UE 5.9 Preview)"],
+   con:["Cloud model: check client permission","No controlled studies for Unreal C++","On Opus 5.5 it declines to rebuild a specific existing game, which affects remakes, ports and decompilation work; the first wording (around 27 October) also blocked some developers' own projects and generic reverse-engineering tasks (developer reports). Anthropic staff say version 2.1.317 fixed refusals triggered by naming a game only to describe mechanics; the rule cannot be switched off (reported)"],
    e:{v:"—",l:"No published figure yet",g:"none",s:""}},
   {n:"GitHub Copilot / JetBrains AI",u:[["GitHub Copilot", "https://github.com/features/copilot"], ["Copilot Fusion", "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion"], ["JetBrains AI", "https://www.jetbrains.com/ai/"], ["Copilot in JetBrains Air", "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/"]],v:"GitHub · JetBrains",d:["Plugin","Cloud"],
    what:"Code completion, agents, documentation and commit messages inside the IDE (VS Code, Visual Studio, Rider). Copilot Fusion (28 October 2026) replaces model picking with a router: Standard, High or Max effort and Single, Cascade or Critique execution patterns, on all plans in VS Code, the Copilot app, CLI and JetBrains IDEs. On 3 November 2026 Copilot also became a selectable agent in JetBrains Air, including isolated cloud tasks on Air Teams billed to the Copilot plan rather than JetBrains AI credits.",
