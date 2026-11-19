@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-11-19
+Catalogue now 114 tools (1 added, 2 cards revised). Window covered: 19 November 2026, plus Autodesk's 18 November announcement, which CG Channel covered on 19 November. This branch builds on update/2026-11-18 (unmerged, itself on update/2026-11-16 back to update/2026-11-03), so the pull request carries all sixteen entries. Pages were read through curl, the GitHub and npm APIs and one WebFetch (the Autodesk blog blocks curl).
+
+### Added
+- **Autodesk Assistant + Maya / 3ds Max MCP Server (tech preview)** (3D Modeling): Maya 2027.3 and 3ds Max 2027.3 add a third Autodesk Assistant level, Do work for me, that writes and runs MEL/Python or MAXScript to change the scene, and new Maya and 3ds Max MCP servers that let an external agent (Autodesk names Claude) do the same. Write access is off by default, scripts need an Allow click, each action is one undo step, and Safe Mode is on by default. Both are included with a Maya or 3ds Max subscription, and the external agent is paid for separately (vendor). Prompts are stored for 45 days and are not shared with third-party model providers for training. No efficiency figure set. Sources: https://blogs.autodesk.com/media-and-entertainment/2026/11/18/whats-new-in-ai-more-of-what-energizes-you-less-of-what-drains-you-with-autodesk-assistant-and-mcp-servers/ (announcement, 18 Nov; comparison table and safeguards) ; https://help.autodesk.com/view/MAYAUL/2027/ENU/?guid=MAYA_ASSISTANT ; https://damassets.autodesk.net/content/dam/autodesk/www/pdfs/autodesk-assistant-tech-preview.pdf (AI transparency card) ; independent: https://www.cgchannel.com/2026/11/autodesk-releases-maya-2027-3-with-new-agentic-ai-features/ and https://www.cgchannel.com/2026/11/autodesk-releases-3ds-max-2027-3/ (19 Nov; confirms the features and safeguards). Only CG Channel says the MCP server is interactive-only (not batch or headless), so the card marks it as reported.
+
+### Changed
+- **Apex Neural Rendering (ANR FG beta)** (Rendering): FG V.B20 (19 November 2026, 12:40 UTC) adds frame generation in HDR games with an FP16 scRGB back buffer and interpolates out-of-Rec. 709 colours under the game's UI. The test kits are V.B19's, unchanged. Efficiency figure unchanged. Source: https://github.com/apex-compute/ANR/releases/tag/FG-V.B20. Vendor release notes, single source.
+- **AI Game Developer / Unity-MCP** (Engine): plugin 1.13.0 (19 November 2026) skips the Editor main-thread work of an MCP tool call the client has cancelled, and starts quietly when the desktop app launches the Editor. The release-cadence con now reads 1.11.1 to 1.13.0. Source: https://github.com/IvanMurzak/Unity-MCP/releases/tag/1.13.0. Vendor release notes, single source.
+
+### Checked, no change
+Claude Code 2.1.328 (CLI, hook, self-hosted runner and Code Mode fixes; nothing game-specific) and 2.1.329 (npm 19 Nov; no changelog entry yet) ; Genex Desktop (0.2.1 still newest) ; Aura Autopilot (16 Nov build still newest) ; meshy-cli (0.8.7 still newest, no notes) ; Summer Engine (4.9.2 still newest) ; HY-Motion (no releases) ; CG Channel to 19 Nov (Maya 2027.3 Arnold Accelerated Viewport uses DLSS for viewport rendering, an offline look-dev feature already implied by the DLSS card; After Effects 27.0 and Photoshop 28 AI features still lack a primary Adobe page read for this run).
+
+### Watch list (not added or changed)
+Autodesk Assistant / MCP independent hands-on, pricing changes after the tech preview, and the MCP interactive-only limitation in Autodesk's docs ; Flow Production Tracking Assistant production-data questions (tech preview) ; Claude Code 2.1.329 changelog ; plus every open item from the 18 November list.
+
 ## 2026-11-18
 Catalogue now 113 tools (1 added, 3 cards revised). Window covered: 17 to 18 November 2026 (no run on 17 November), plus one item earlier passes missed (Nevercenter's Silo 2027.0 post of 10 November, covered by CG Channel on 17 November). This branch builds on update/2026-11-16 (unmerged, itself on update/2026-11-15 back to update/2026-11-03), so the pull request carries all fifteen entries. Pages were read through curl and the GitHub and npm APIs; web search worked in single calls.
 
