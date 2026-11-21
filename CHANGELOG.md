@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-11-21
+Catalogue still 114 tools (0 added, 3 cards revised). Window covered: 20 and 21 November 2026 (the 20 November run found nothing qualifying and made no branch), plus RGB MoCap's 19 November Unreal plugin, which that run missed. This branch builds on update/2026-11-19 (unmerged, itself stacked back to update/2026-11-03), so the pull request carries all seventeen entries. Pages were read through curl and the GitHub and npm APIs.
+
+### Changed
+- **Genex Desktop** (Engine): 0.2.3 (20 November 2026) adds Pi as a model provider on Mac, Linux and Windows, supports Unreal 5.9 Preview 2 (web builds on a Mac and of Blueprint-only games, Windows packages that finish), and moves Unity projects to Unity 6.6 (Pipeline 1.0.0) with WebGPU web builds, installing Unity 6.6 for people with no Unity and keeping older projects working. Source: https://github.com/genex-games/genex-desktop/releases/tag/v0.2.3. Vendor release notes, single source.
+- **Aura Autopilot** (QA): the 21 November 2026 build (1.0.0-c84203c) replays and tests packaged game builds without the editor, runs parallel play-in-editor windows, refuses to start a game whose code does not compile and says why, and adds MCP options for several verifications in one open game (keep_game_open) and headless runs. Efficiency figure unchanged. Source: https://github.com/ramenvr/autopilot/releases/tag/v1.0.0-c84203c. Vendor release notes, single source.
+- **RGB MoCap (toyxyz)** (Animation): prebuilt Unreal Engine 5.7.4 Win64 plugins now stream live capture into Unreal. MetaHuman Connect 0.4.0 (19 November 2026) drives MetaHuman bodies with optional face streaming and no IK Retargeter set-up, and RGB MoCap Connect 0.5.0 (20 November) adds the stock Manny and Quinn meshes. An experimental Linux AppImage preview (20 November) needs an NVIDIA CUDA driver. The "Windows only" con now notes the Linux preview and the UE 5.7.4-only prebuilt plugins. Sources: https://github.com/toyxyz/toyxyz_RGBMocap/releases/tag/unreal-metahuman-connect-v0.4.0 ; https://github.com/toyxyz/toyxyz_RGBMocap/releases/tag/unreal-rgbmocap-connect-v0.5.0 ; https://github.com/toyxyz/toyxyz_RGBMocap/releases/tag/linux-appimage-0dc69476. Maker's release notes, single source.
+
+### Checked, no change
+Claude Code 2.1.330 (20 Nov; enterprise sign-in, self-hosted runner, chart mod and fixes; nothing game-specific) ; Unity-MCP (1.13.0 still newest) ; ANR (FG-V.B20 still newest) ; Summer Engine (4.9.2) ; meshy-cli (0.8.6 on GitHub) ; Ludo CLI (0.2.2) ; RTXNTC (0.10.1-beta) ; Hi3D (v1.0) ; CG Channel to 21 Nov (Blender 5.3 and Sapphire 2027 have no new AI features; Megascans free again is not an AI tool) ; WebSearch sweep (Ubisoft Motherbrain is a studio, not a tool; already set aside on 20 Nov).
+
+### Watch list (not added or changed)
+Every open item from the 19 November list.
+
 ## 2026-11-19
 Catalogue now 114 tools (1 added, 2 cards revised). Window covered: 19 November 2026, plus Autodesk's 18 November announcement, which CG Channel covered on 19 November. This branch builds on update/2026-11-18 (unmerged, itself on update/2026-11-16 back to update/2026-11-03), so the pull request carries all sixteen entries. Pages were read through curl, the GitHub and npm APIs and one WebFetch (the Autodesk blog blocks curl).
 
