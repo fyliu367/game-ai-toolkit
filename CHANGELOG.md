@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-11-22
+Catalogue still 114 tools (0 added, 1 card revised). Window covered: 21 to 22 November 2026. This branch builds on update/2026-11-21 (unmerged, itself stacked back to update/2026-11-03), so the pull request carries all eighteen entries. Pages were read through curl and the GitHub and npm APIs.
+
+### Changed
+- **AI Game Developer / Unity-MCP** (Engine): plugin 1.14.0 (22 November 2026) makes installed extensions (such as the Timeline module, 2.1.3 and 2.1.4 the same day) update with the plugin on startup, ties each extension to exactly one core release, has the CLI run the highest plugin version anything in a project names, and makes the update notice wait for the installed extensions' versions. The release-cadence con now reads 1.11.1 to 1.14.0, and a Releases link was added. Efficiency figure unchanged. Source: https://github.com/IvanMurzak/Unity-MCP/releases/tag/1.14.0. Vendor release notes (commit summary), single source.
+
+### Checked, no change
+Genex Desktop (0.2.3 still newest) ; Aura Autopilot (21 Nov build still newest) ; RGB MoCap (20 Nov releases still newest) ; ANR (FG-V.B20) ; RTXNTC (0.10.1-beta) ; Claude Code (2.1.330 still newest) ; meshy-cli (0.8.7) ; Summer Engine (4.9.2) ; Layer AI, Flow Studio, Unity CLI, Meshy API and ElevenLabs changelogs (no entries dated 21 or 22 Nov) ; CG Channel to 22 Nov (no new AI tool posts) ; WebSearch sweep (GamesBeat items on Aura 1.0 and Nimble Fox are older than the window, and GamesBeat blocked curl, so their dates could not be read).
+
+### Watch list (not added or changed)
+Every open item from the 19 November list.
+
 ## 2026-11-21
 Catalogue still 114 tools (0 added, 3 cards revised). Window covered: 20 and 21 November 2026 (the 20 November run found nothing qualifying and made no branch), plus RGB MoCap's 19 November Unreal plugin, which that run missed. This branch builds on update/2026-11-19 (unmerged, itself stacked back to update/2026-11-03), so the pull request carries all seventeen entries. Pages were read through curl and the GitHub and npm APIs.
 
