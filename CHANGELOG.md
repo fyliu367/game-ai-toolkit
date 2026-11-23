@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-11-23
+Catalogue still 114 tools (0 added, 1 card revised). Window covered: 22 November (after the 22 November run) to 23 November 2026. This branch builds on update/2026-11-22 (unmerged, itself stacked back to update/2026-11-03), so the pull request carries all nineteen entries. Pages were read through curl and the GitHub and npm APIs.
+
+### Changed
+- **Genex Desktop (open source)** (Engine): 0.2.4 (22 November 2026, 19:40 UTC) lets a game's AI characters answer in the preview with free practice answers, or with real models in Live on Genex credits once you approve a cap that holds across Stop and Play; adds Genex voice so games can listen and speak; makes Inkling 2 Mini the best-fit local model on Macs with 48 GB or more and offers it on Windows and Linux; and gets OpenCode 2.x working on Windows (Genex CLI 1.44.0). Efficiency figure unchanged. Source: https://github.com/genex-games/genex-desktop/releases/tag/v0.2.4. Vendor release notes, single source.
+
+### Checked, no change
+Unity-MCP 1.14.1 (23 Nov; release-relock commits only, no user-facing change) and Timeline extension 2.1.5 ; Claude Code (2.1.330 still newest on GitHub and npm) ; meshy-cli (0.8.7) ; Aura Autopilot (21 Nov build still newest) ; ANR (FG-V.B20) ; RGB MoCap (20 Nov releases) ; RTXNTC (0.10.1-beta) ; RTX Remix (1.6.1) ; Summer Engine (4.9.2) ; Ludo CLI (0.2.2) ; CG Channel to 23 Nov (Silhouette 2027 AI roto and Video Inpaint ML are film roto/compositing tools, out of scope like Sapphire; Rebelle 8 and Affinity for iPad have no new AI generation features) ; WebSearch sweep (nothing dated 22 or 23 Nov; Aura, Unity AI, Roblox and Nimble Fox results predate the window).
+
+### Watch list (not added or changed)
+Genex AI-characters-in-preview and Genex voice credit pricing ; plus every open item from the 19 November list.
+
 ## 2026-11-22
 Catalogue still 114 tools (0 added, 1 card revised). Window covered: 21 to 22 November 2026. This branch builds on update/2026-11-21 (unmerged, itself stacked back to update/2026-11-03), so the pull request carries all eighteen entries. Pages were read through curl and the GitHub and npm APIs.
 
