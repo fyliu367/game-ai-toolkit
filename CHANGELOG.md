@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-11-24
+Catalogue still 114 tools (0 added, 1 card revised). Window covered: 23 November (after the 23 November run) to 24 November 2026. This branch builds on update/2026-11-23 (unmerged, itself stacked back to update/2026-11-03), so the pull request carries all twenty entries. Pages were read through curl and the GitHub API.
+
+### Changed
+- **Genex Desktop (open source)** (Engine): 0.2.5 (23 November 2026, 18:22 UTC) ships the voice SDK (embed SDK 0.38.0) and Genex CLI 1.45.2 that 0.2.4 lacked, so a game's voice works in the preview (placeholder voice free, real voices in Live), and fixes Antigravity sign-in; 0.2.6 (24 November, 02:28 UTC) lets real AI in Live start on a game not yet on Genex by adding it as a private draft with no files uploaded, and makes practice answers repeat the player's words; 0.2.7 (24 November, 16:05 UTC) adds Use my plan in Live, so a game's AI calls in the preview (including a play started in the Unreal editor) are answered by the person's own Claude Code or Codex plan with no Genex credits or sign-in (voices and the judge stay practice), and fixes agents not starting where PowerShell is slow on Windows. The 0.2.4 sentence now says it added voice instructions only, as the 0.2.5 notes state, and a pro notes the own-plan testing. Efficiency figure unchanged. Sources: https://github.com/genex-games/genex-desktop/releases/tag/v0.2.5 ; https://github.com/genex-games/genex-desktop/releases/tag/v0.2.6 ; https://github.com/genex-games/genex-desktop/releases/tag/v0.2.7 ; release notes in https://github.com/genex-games/genex-desktop/pull/868 , https://github.com/genex-games/genex-desktop/pull/873 and https://github.com/genex-games/genex-desktop/pull/882. Vendor release notes, single source; the maker lists voice on production, Claude Code plan answering and Windows/Linux for the new paths as not yet verified.
+
+### Checked, no change
+Unity-MCP 1.14.2 (24 Nov; build linker-directive fix only) and extensions 2.1.6 ; Claude Code 2.1.331 (23 Nov; Code Mode on more clouds, gateway, telemetry and fixes; nothing game-specific) ; meshy-cli 0.8.8 (24 Nov; `meshy relief` bas-relief and depth map for 3D printing and CNC, out of scope for game pipelines, plus credit-hint and URL preflight fixes) ; Aura Autopilot (21 Nov build still newest) ; ANR (FG-V.B20) ; RGB MoCap (20 Nov releases) ; RTXNTC (0.10.1-beta) ; RTX Remix (1.6.1) ; CG Channel to 24 Nov (a film VFX studio's hybrid AI pipeline breakdown is a studio, not a tool) ; WebSearch sweep (Aura 1.0, Jabali, Gaxos, Roblox, Unity AI and Nimble Fox results predate the window).
+
+### Watch list (not added or changed)
+Genex voice on production and own-plan answering independent confirmation ; plus every open item from the 19 November list.
+
 ## 2026-11-23
 Catalogue still 114 tools (0 added, 1 card revised). Window covered: 22 November (after the 22 November run) to 23 November 2026. This branch builds on update/2026-11-22 (unmerged, itself stacked back to update/2026-11-03), so the pull request carries all nineteen entries. Pages were read through curl and the GitHub and npm APIs.
 
