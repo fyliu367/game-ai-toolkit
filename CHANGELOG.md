@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-11-26
+Catalogue still 114 tools (0 added, 1 card revised). Window covered: 25 November (after the 25 November run) to 26 November 2026. This branch builds on update/2026-11-25 (unmerged, itself stacked back to update/2026-11-03), so the pull request carries all twenty-two entries. Pages were read through curl and the GitHub and npm APIs.
+
+### Changed
+- **Genex Desktop (open source)** (Engine): 0.2.10 (25 November 2026, 17:25 UTC) makes a failed AI call in an Unreal game show the reason and log the failure code (kept in Genex.log in Shipping builds), adds genex llm usage and genex llm calls (Genex CLI 1.46.4) so the agent can list a published game's recent AI calls with failure codes, tokens and charges, rewrites the AI-budget prompt before Play (one sentence, the limit, Used and Left over one bar), and lets Live's AI helper answer Play of a game's own packaged Unreal app on Mac and Linux. Efficiency figure unchanged. Sources: https://github.com/genex-games/genex-desktop/releases/tag/v0.2.10 ; release notes in https://github.com/genex-games/genex-desktop/pull/899. Vendor release notes, single source; the maker lists the new CLI rows against the real API, Windows and non-English text as not yet verified, and notes Play still cannot start a Genex-packaged Shipping Unreal app on macOS 27.
+
+### Checked, no change
+Ludo CLI (0.4.3 committed 26 Nov with 3D exports to FBX/OBJ, low-poly models and back views, plus team members pointed to the team owner for credits; not yet published to npm, which is still at 0.4.2, so held for the next run) ; Unity-MCP (1.14.3 still newest) ; Claude Code (2.1.332 still newest) ; RGB MoCap (25 Nov AppImage already covered) ; other listed GitHub repos (no new releases) ; WebSearch sweep (Unity AI, Aura 15.0, Unity 7 and Nimble Fox results predate the window or are already on the watch list).
+
+### Watch list (not added or changed)
+Ludo CLI 0.4.3 npm release (3D export, low-poly, back views) ; Genex genex llm calls against the real API ; plus every open item from the 25 November list.
+
 ## 2026-11-25
 Catalogue still 114 tools (0 added, 3 cards revised). Window covered: 24 November (after the 24 November run) to 25 November 2026, plus Ludo CLI 0.3.0 to 0.4.0 (20 November), which earlier runs missed because they checked GitHub releases (still 0.2.2) rather than npm. This branch builds on update/2026-11-24 (unmerged, itself stacked back to update/2026-11-03), so the pull request carries all twenty-one entries. Pages were read through curl and the GitHub and npm APIs.
 
