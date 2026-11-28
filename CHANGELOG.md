@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-11-27
+Catalogue still 114 tools (0 added, 4 cards revised). Window covered: 26 November (after the 26 November run) to 27 November 2026. This branch builds on update/2026-11-26 (unmerged, itself stacked back to update/2026-11-03), so the pull request carries all twenty-three entries. Pages were read through curl and the GitHub and npm APIs.
+
+### Changed
+- **Genex Desktop (open source)** (Engine): 0.2.11 (26 November 2026, 20:22 UTC) lets an Unreal game show a character's answer as it is written (GenerateStream now fires OnDelta per piece) and say a line in a Genex voice (new Speak call; Unreal plugin 0.56.22, Genex CLI 1.46.5), passes real streaming through in Live, and fixes several Windows start failures from user feedback. Efficiency figure unchanged. Sources: https://github.com/genex-games/genex-desktop/releases/tag/v0.2.11 ; release notes in https://github.com/genex-games/genex-desktop/pull/904 and https://github.com/genex-games/genex-desktop/pull/903. Vendor release notes, single source; the maker lists real AI streaming through a built 0.2.11, Windows and Linux as not yet verified.
+- **RGB MoCap (toyxyz, open source)** (Animation): RGB MoCap Connect 0.5.1 Unreal Live Link Win64 bundles (27 November 2026, UE 5.6.1, 5.7.4, 5.8.4) calibrate clavicle movement relative to the source chest and derive the A-pose correction from both reference skeletons. Source: https://github.com/toyxyz/toyxyz_RGBMocap/releases/tag/unreal-live-link-win64-v0.5.1. Maker's release notes, single source.
+- **Ludo CLI / Ludo Toolbox** (Engine): 0.4.3 (published to npm 27 November 2026, 11:01 UTC; held from the 26 November run) adds the low-poly 3D model, back-view images and a free ludo model export to FBX/OBJ (or a GLB/FBX holding a rigged model's clips), two-step agent login (ludo login --no-wait / --continue) and points team members to the team owner for credits. Efficiency figure unchanged. Sources: https://github.com/Ludo-AI/ludo-cli/commit/9a76bff ; https://github.com/Ludo-AI/ludo-cli/commit/92b2e47 ; https://github.com/Ludo-AI/ludo-cli/commit/c9a5541 ; https://registry.npmjs.org/@ludoai/cli (publish time). Vendor commits, single source.
+- **Cascadeur** (Animation): Cascadeur 2026.3 adds MCP and Python API workflows for AI assistants such as Claude Code, MetaHuman facial animation (Alpha) with body, face and camera over Unreal Live Link, IK Chains for creatures, automatic mocap cleaning, Override animation layers, and an early credit-based AI Cloud (text-to-motion, video mocap, mesh and rig generation) in a test phase. A release-post link and a con on the Alpha and test-phase status were added. Efficiency figure unchanged. Sources: https://cascadeur.com/blog/view/cascadeur-2026-3-mcp-facial-animation-creature-animation (vendor post, undated) ; release dated by https://www.cgchannel.com/2026/11/nekki-releases-cascadeur-2026-3-and-offers-40-off-for-black-friday/ (26 November 2026; a sponsored post written by Nekki, so not independent). Vendor description, single source.
+
+### Checked, no change
+Unity-MCP (1.14.3 still newest) ; Claude Code (2.1.332 still newest) ; meshy-cli (0.8.8) ; Aura Autopilot (21 Nov build) ; ANR (FG-V.B20) ; RTXNTC (0.10.1-beta) ; RTX Remix (1.6.1) ; Summer Engine (4.9.2) ; ElevenLabs Unity (v0.1.0) ; XeSS (3.0.2) ; other listed GitHub repos (no new releases) ; CG Channel to 26 Nov (Cascadeur 2026.3 taken; other November posts already reviewed) ; WebSearch sweep (Aura 1.0, Roblox, Jabali, Unity AI and Nimble Fox results predate the window).
+
+### Watch list (not added or changed)
+Cascadeur AI Cloud pricing and independent test of its MCP ; Genex Unreal streaming and Speak on Windows and Linux ; plus every open item from the 26 November list.
+
 ## 2026-11-26
 Catalogue still 114 tools (0 added, 1 card revised). Window covered: 25 November (after the 25 November run) to 26 November 2026. This branch builds on update/2026-11-25 (unmerged, itself stacked back to update/2026-11-03), so the pull request carries all twenty-two entries. Pages were read through curl and the GitHub and npm APIs.
 
